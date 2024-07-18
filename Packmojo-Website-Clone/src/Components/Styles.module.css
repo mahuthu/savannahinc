@@ -1,0 +1,49 @@
+section {
+  color: #32325c;
+}
+.echo {
+  background: #32325c no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 10rem 0;
+  opacity: 0.9;
+   /* Adjust the opacity value as needed */
+
+  
+}
+
+
+
+footer{
+    background-color: #32325c;
+}
+.footer{
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    color: white;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+    margin-top: 0.5rem;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+} 
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+} 
+.footer ul li a:hover{
+    color:#41E096 ;
+} 
+.footer ul li .active{
+    color:#41E096 ;
+} 
+
+.responsive-image {
+    width: 100%;
+}

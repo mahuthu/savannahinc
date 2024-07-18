@@ -1,0 +1,61 @@
+/* General styles */
+.overlay-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.servicesOverlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.overlay-text h1,
+.overlay-text h2,
+.overlay-text h3 {
+  margin: 20px 0; /* Added margin top and bottom */
+  font-weight: bold;
+}
+
+.big-numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.number {
+  font-size: 24px; /* Increased font size */
+  font-weight: bold;
+}
+
+/* Add height to increase container size */
+.container-fluid1 {
+  height: 250px; /* Adjust the height as needed */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .overlay-text h1 {
+    font-size: 24px; /* Decreased font size for smaller screens */
+  }
+
+  .overlay-text h2 {
+    font-size: 18px; /* Decreased font size for smaller screens */
+  }
+
+  .overlay-text h3 {
+    font-size: 16px; /* Decreased font size for smaller screens */
+  }
+
+  .number {
+    font-size: 18px; /* Decreased font size for smaller screens */
+  }
+
+  .container-fluid1 {
+    height: auto; /* Remove fixed height for smaller screens */
+  }
+}

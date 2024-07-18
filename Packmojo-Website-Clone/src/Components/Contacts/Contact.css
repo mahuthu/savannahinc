@@ -1,0 +1,72 @@
+/* Contact.css */
+
+body {
+  font-family: 'Arial', sans-serif; /* Use a modern, readable font */
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-section {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.contact-section:hover {
+  transform: translateY(-10px);
+}
+
+.contact-icon {
+  color: #40e096;
+  margin-bottom: 15px;
+  transition: color 0.3s;
+}
+
+.contact-icon:hover {
+  color: #fff;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.contact-divider {
+  border: none;
+  height: 1px;
+  background-color: #40e096;
+  width: 80%;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-section {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .contact-icon {
+    font-size: 2rem;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
+}

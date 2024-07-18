@@ -1,0 +1,39 @@
+/* Global styles */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom font sizes */
+
+h1 {
+  font-size: 2rem;
+  /* Adjust the font size as needed */
+}
+
+h2 {
+  font-size: 1.5rem;
+  /* Adjust the font size as needed */
+}
+
+h3 {
+  font-size: 1.25rem;
+  /* Adjust the font size as needed */
+}
+
+p {
+  font-size: 1.2rem;
+  /* Adjust the font size as needed */
+}
+
+/* Add more custom styles as needed */

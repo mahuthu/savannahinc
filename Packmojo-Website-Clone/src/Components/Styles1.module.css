@@ -1,0 +1,51 @@
+.iconsContainer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .icon {
+    margin: 20px;
+  }
+  
+  .icon i {
+    color: #41e096;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .icon:hover i {
+    color: #32a372;
+    transform: scale(1.1);
+  }
+  
+  .descriptionText {
+    color: #32325c;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .featureList, .benefitList {
+    background-color: #32325c;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .featureList h4, .benefitList h4 {
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .featureList ul, .benefitList ul {
+    color: #e5e5e5;
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .finalNote {
+    background-color: #41e096;
+    color: #32325c;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    border-radius: 10px;
+  }
+  

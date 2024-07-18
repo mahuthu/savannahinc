@@ -1,0 +1,130 @@
+
+.contactContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contactSection1{
+  display: flex;
+  align-items: center ;
+  margin: 80px;
+  flex-grow: 1;
+}
+
+
+.contactSection {
+  display: inline-block;
+  align-items: center;
+  margin-right: 0.5rem; /* Reduced margin */
+  flex-grow: 1; /* Added flex-grow */
+
+}
+
+
+
+.contactInfo {
+  margin-left: 1rem;
+
+}
+
+.contactDivider {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.formContainer {
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.formHeading {
+  color: #32325C;
+  margin-bottom: 1rem;
+
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.formButton {
+  padding: 0.5rem 2rem;
+  background-color: #32325c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+}
+
+.formButton:hover {
+  background-image:url("../../Dataset/nairobi2.jpg");
+  color: #32325C;
+}
+
+
+.mapContainer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.mapHeading {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.mapIframe {
+  margin-top: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+
+  .contactSection1 {
+    margin: -10px; /* Adjust margin for smaller screens */
+    flex-direction: column;
+    font-size: 0.85em;
+    padding-top: 10px;
+
+  }
+
+  .contactInfo {
+    margin-left: 0; /* Remove left margin for info text */
+    margin-top: 10px; /* Add top margin for spacing */
+    font-size: medium;
+  }
+
+  .formInput,
+  .formTextarea {
+    width: calc(100% - 1rem); /* Adjust input width for smaller screens */
+  }
+  .mapIframe {
+    width: 90%; /* Adjust width for smaller screens */
+    height: 300px; /* Set a fixed height or adjust as needed */
+  }
+
+
+}

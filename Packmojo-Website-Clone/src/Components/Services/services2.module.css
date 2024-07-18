@@ -1,0 +1,70 @@
+.servicesContainer {
+  padding: 50px 0;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.servicesOverlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.servicesHeading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.servicesHead {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.servicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.serviceIconContainer {
+  background: #fff;
+  border-radius: 10px;
+  width: 150px; /* Smaller width for smaller containers */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.serviceIconContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.serviceIcon {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #41E096; /* Change color as needed */
+}
+
+.serviceTitle {
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  margin: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .servicesHeading{
+    font-size: 1.6rem;
+  }
+  
+}

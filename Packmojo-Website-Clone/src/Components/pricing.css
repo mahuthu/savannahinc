@@ -1,0 +1,102 @@
+/* Pricing.css */
+
+.pricing-container {
+  margin-top: 20px;
+  padding-left: 20px; /* Add left padding to create space */
+  padding-right: 20px;
+}
+
+.pricing-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #32325c; /* Set text color to white */
+}
+
+.pricing-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Add gap between the sections */
+  justify-content: center;
+  margin-left: -20px; /* Compensate for the padding on the container */
+  margin-right: -20px; /* Center pricing options horizontally */
+}
+
+.pricing-option {
+  max-width: 300px; /* Limit the width of each pricing option */
+  width: 100%; /* Ensure pricing options take full width */
+  padding: 0.5rem;
+  background-color: #edfdf5; /* Set background color to black */
+  color: #32325c; /* Set text color to white */
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  flex: 1; /* Each section takes equal space */
+  padding: 0.5rem;
+}
+
+.pricing-card {
+  padding: 1rem;
+  flex: 1; /* Each section takes equal space */
+  padding: 0.5rem;
+}
+
+.pricing-title {
+  font-size: 1.5rem; /* Smaller font size for the title */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #32325c; /* Set text color to white */
+}
+
+.pricing-badge {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem; /* Smaller font size for the badge */
+}
+
+.pricing-price {
+  font-size: 2rem; /* Larger font size for the price */
+  margin-bottom: 0.5rem;
+  color: #41e096; /* Set text color to white */
+}
+
+.pricing-features {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pricing-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.feature-icon {
+  margin-right: 0.5rem;
+}
+
+.feature-text {
+  font-size: 1rem; /* Smaller font size for the feature text */
+  color: #32325c; /* Set text color to white */
+}
+
+.subscribe-button {
+  display: inline-block;
+  background-color: #32325c;
+  color: #fff;
+  padding: 0.5rem 1rem; /* Smaller padding for the button */
+  border: 1px solid #41e096;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem; /* Smaller font size for the button */
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background-color: #ff7f50;
+}
