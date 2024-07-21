@@ -1,4 +1,3 @@
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -26,8 +25,6 @@ venv.bak/
 __pycache__/
 local_settings.py
 db.sqlite3
-media
-staticfiles
 
 # Ignore the following:
 *.log
@@ -35,8 +32,6 @@ staticfiles
 *.pyc
 __pycache__/
 db.sqlite3
-/media
-/staticfiles
 
 # If your build process includes running tests, ignore the test databases
 *.db
@@ -52,10 +47,12 @@ coverage.xml
 .hypothesis/
 
 # Django static files
-/static/
+# Commented out to include static files
+# static/
 
 # Django media files
-/media/
+# Commented out to include media files
+# media/
 
 # Unit test / coverage reports
 *.cover
@@ -83,7 +80,6 @@ celerybeat.pid
 __pycache__
 local_settings.py
 db.sqlite3
-/media
 
 # Environments
 .env
