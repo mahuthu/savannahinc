@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Process.module.css"; // Import the CSS module
 
 const processSteps = [
@@ -41,8 +41,41 @@ const processSteps = [
 ];
 
 const Process1 = () => {
-  const processDisplay = processSteps.map((step) => (
-    <div className={`col-md-6 col-lg-4 ${styles.flipCardContainer}`} key={step.id}>
+  useEffect(() => {
+    const elements = Array.from(document.querySelectorAll(`.${styles.flipCardContainer}`));
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles['fade-in']);
+            entry.target.classList.remove(styles['initial-hidden']);
+          }
+        });
+      },
+      {
+        threshold: 0.1
+      }
+    );
+
+    elements.forEach(element => {
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      elements.forEach(element => {
+        if (element) observer.unobserve(element);
+      });
+    };
+  }, []);
+
+  const processDisplay = processSteps.map((step, index) => (
+    <div
+      className={`col-md-6 col-lg-4 ${styles.flipCardContainer} ${styles['initial-hidden']} ${index % 2 === 0 ? styles['delay-1'] : styles['delay-2']} ${window.innerWidth <= 767 ? styles['flip-on-mobile'] : ''}`} 
+      key={step.id}
+    >
       <div className={styles.flipCard}>
         <div className={styles.flipCardInner}>
           <div className={`${styles.flipCardFront}`} style={{ backgroundColor: "#32325C", color: "#fff" }}>

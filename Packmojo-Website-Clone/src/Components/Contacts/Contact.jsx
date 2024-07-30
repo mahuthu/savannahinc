@@ -16,7 +16,7 @@ const Contact = () => {
       <div className="contact-divider"></div>
       <div className="contact-section">
         <i className="fas fa-map-marker fa-3x contact-icon"></i>
-        <p className="contact-text">Kahawa Sukari, Nairobi, Kenya</p>
+        <p className="contact-text">Nairobi, Kenya</p>
       </div>
     </div>
   );

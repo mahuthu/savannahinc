@@ -8,7 +8,7 @@ import "../Components/Styles.module.css";
 const Training = () => {
     const services = [
         {
-            title: "Social Media Management Training and Consultation",
+            title: "Social Media Management",
             description: (
                 <>
                     <p>
@@ -29,7 +29,7 @@ const Training = () => {
             ),
         },
         {
-            title: "WhatsApp Business Integration Training and Consultation",
+            title: "WhatsApp Business Integration",
             description: (
                 <>
                     <p>
@@ -55,7 +55,7 @@ const Training = () => {
     return (
         <div className="App">
             <Navbar />
-            <AboutUs1 mainHeading="Social Media Management and WhatsApp Business Integration" subHeading="Home » Services" />
+            <AboutUs1 mainHeading="Social Media Management" subHeading="Home » Services" />
 
             {services.map((service, index) => (
                 <SubService key={index} title={service.title}  description={service.description} />

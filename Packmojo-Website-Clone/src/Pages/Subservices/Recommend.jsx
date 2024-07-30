@@ -55,7 +55,7 @@ const ERP = () => {
         <div className="App">
     
             <Navbar />
-            <AboutUs1 mainHeading="Chatbot Development" subHeading="Home &raquo; Services" />
+            <AboutUs1 mainHeading="Recommendation Systems" subHeading="Home &raquo; Services" />
 
             <SubService title={crmService.title} image={crmService.image} description={crmService.description} />
 

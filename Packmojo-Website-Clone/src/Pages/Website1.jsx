@@ -7,7 +7,7 @@ import Services from "../Components/Services/Services";
 import Projects from "../Components/Projects/Projects";
 import FrequentlyAskedQuestions from "../Components/FrequentlyAskedQuestions";
 import Pricing from "../Components/Pricing";
-import CustomerReviews from "../Components/CustomerReviews";
+// import CustomerReviews from "../Components/CustomerReviews";
 import Process from "../Components/Process";
 import React from "react";
 
@@ -27,7 +27,7 @@ const Website = () => {
             <Projects/>
             <FrequentlyAskedQuestions />
             <Pricing/>
-            <CustomerReviews/>
+            {/* <CustomerReviews/> */}
 
             <Footer />
         

@@ -45,7 +45,7 @@ const Pms = () => {
                     <li>Timeline and Gantt Charts: Create visual timelines, Gantt charts, and project schedules to monitor project timelines and dependencies.</li>
                 </ul>
                 <p style={{ backgroundColor: "#32325c", color: "#ffffff", padding: "10px", borderRadius: "5px", marginTop: "30px" }}>
-                    Businesses benefit from PMS solutions by:
+                    Businesses benefit include:
                 </p>
                 <ul style={{ textAlign: "left", marginBottom: "30px" }}>
                     <li>Improved Project Efficiency: Streamline workflows, reduce bottlenecks, and enhance project coordination for faster project delivery.</li>

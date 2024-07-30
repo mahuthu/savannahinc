@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import project1Image from '../../Dataset/blog.png'; // Import images for projects
 import project2Image from '../../Dataset/cart.png';
 import project3Image from '../../Dataset/initiateafrica.png';
-import project4Image from '../../Dataset/kofiake.png';
+// import project4Image from '../../Dataset/kofiake.png';
 import project5Image from '../../Dataset/savannahai.png';
 import project6Image from '../../Dataset/framer.png';
 
@@ -17,27 +17,23 @@ const Projects = () => {
     {
       id: 1,
       imageUrl: project1Image,
-      description: '<a href="https://savannah-ai.onrender.com/">Blog Site</a>',
+      description: '<a href="https://savannah-ai.onrender.com/">Blog Website</a>',
     },
     {
       id: 2,
       imageUrl: project2Image,
-      description: '<a href="https://kofia.netlify.app/"> eCommerce</a>',
+      description: '<a href="https://kofia.netlify.app/"> eCommerce Website</a>',
     },
     {
       id: 3,
       imageUrl: project3Image,
-      description: '<a href="https://intitiateafrica.netlify.app/">Company Website</a>',
+      description: '<a href="https://intitiateafrica.netlify.app/">Business Website</a>',
     },
-    {
-      id: 4,
-      imageUrl: project4Image,
-      description: '<a href="https://kofia.netlify.app/"> Business website</a>',
-    },
+    
     {
       id: 5,
       imageUrl: project5Image,
-      description: '<a href="https://savannahai.netlify.app/">Organization Website</a>',
+      description: '<a href="https://savannahai.netlify.app/">Company Website</a>',
     },
     {
       id: 6,

@@ -16,7 +16,6 @@
 .mainTitle {
   color: #42E096;
   font-size: 1.8rem;
-
 }
 
 .subtitle {
@@ -50,6 +49,11 @@
 }
 
 .flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+/* Automatic flip for small screens */
+.flipCard.flip-on-mobile .flipCardInner {
   transform: rotateY(180deg);
 }
 
@@ -94,6 +98,37 @@
   font-size: 1rem;
 }
 
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in animation styles */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-in.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-in.delay-2 {
+  animation-delay: 0.6s;
+}
+
+/* Initial hidden state */
+.initial-hidden {
+  opacity: 0;
+}
+
 /* Media query for small screens */
 @media (max-width: 767px) {
   .flipCard {
@@ -105,9 +140,7 @@
   }
 
   .mainTitle {
-    
     font-size: 1.5rem;
-  
   }
 
   .cardTitle {
@@ -120,5 +153,9 @@
 
   .flipCardContainer {
     padding: 10px;
+  }
+
+  .flipCard.flip-on-mobile .flipCardInner {
+    transform: rotateY(180deg); /* Automatically flip the card on mobile */
   }
 }
