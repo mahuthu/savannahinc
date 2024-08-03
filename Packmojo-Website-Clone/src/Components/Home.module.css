@@ -1,0 +1,32 @@
+/* Styles.module.css */
+
+.floating-icon {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensures icons are above other content */
+    background-color: #000; /* Background color for visibility, adjust as needed */
+    border-radius: 50%;
+    padding: 10px; /* Space around the icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+.floating-icon a {
+    color: #fff; /* Color of the icon */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 24px; /* Size of the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Width of the icon container */
+    height: 50px; /* Height of the icon container */
+}
+
+.floating-icon.whatsapp-icon {
+    background-color: #25D366; /* WhatsApp green color */
+}
+
+.floating-icon.phone-icon {
+    background-color: #34b7f1; /* Phone icon background color */
+    margin-top: 60px; /* Add margin to avoid overlap with WhatsApp icon */
+}
