@@ -3,4 +3,20 @@
     margin-top: 0; 
  }
 
- 
+ .navbar .dropdown-menu {
+    background-color: #000; /* Black background for dropdown */
+  }
+  
+  .navbar .dropdown-item {
+    color: white; /* White text for dropdown items */
+  }
+  
+  .navbar .dropdown-item:hover {
+    background-color: #333; /* Optional: Change background on hover */
+  }
+  
+  .navbar .dropdown-divider {
+    border-color: #444; /* Optional: Style the dropdown divider */
+  }
+  
+  
