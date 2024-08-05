@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Import images
 import project1Image from '../Dataset/servercore.jpg';
@@ -10,7 +10,6 @@ import project6Image from '../Dataset/image2.png';
 import project7Image from '../Dataset/ODOO.jpeg';
 import project9Image from '../Dataset/zoho1.png';
 import project10Image from '../Dataset/infobip.png';
-
 
 const images = [
   project1Image,
@@ -25,28 +24,44 @@ const images = [
 ];
 
 const ImageGallery = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const randomIndex = Math.floor(Math.random() * images.length);
+      setCurrentImageIndex(randomIndex);
+
+      // After revealing the image, reset the index after a delay
+      setTimeout(() => {
+        setCurrentImageIndex(null);
+      }, 1000); // Time to keep the image in color
+    }, 2000); // Time between reveals
+
+    return () => clearInterval(interval);
+  }, []);
+
   // Inline styles
   const galleryStyle = {
     display: 'flex',
     flexDirection: 'row',
-    flexWrap: 'wrap', // Allows images to wrap to the next line if they don't fit in one row
-    gap: '20px', // Space between images
+    flexWrap: 'wrap',
+    gap: '20px',
     justifyContent: 'center',
     padding: '20px',
     overflowX: 'auto',
-    marginTop: '20px', // Ensure it appears naturally at the top of the page
-    backgroundColor: '#fff', // Match the background to ensure a natural appearance
+    marginTop: '20px',
+    backgroundColor: '#fff',
   };
 
-  const imgStyle = {
-    width: '100px', // Image width
-    height: '100px', // Image height
-    objectFit: 'contain', // Ensures images fit within their container without being cut off
-    transition: 'filter 0.3s ease',
-    filter: 'grayscale(100%)',
-    borderRadius: '8px', // Optional: add rounded corners
-    flex: '1 1 auto', // Allows images to grow and shrink as needed
-  };
+  const imgStyle = (index) => ({
+    width: '100px',
+    height: '100px',
+    objectFit: 'contain',
+    transition: 'filter 0.5s ease',
+    filter: currentImageIndex === index ? 'grayscale(0%)' : 'grayscale(100%)',
+    borderRadius: '8px',
+    flex: '1 1 auto',
+  });
 
   return (
     <div style={galleryStyle}>
@@ -55,9 +70,7 @@ const ImageGallery = () => {
           key={index}
           src={image}
           alt={`Project ${index + 1}`}
-          style={imgStyle}
-          onMouseOver={(e) => e.currentTarget.style.filter = 'grayscale(0%)'}
-          onMouseOut={(e) => e.currentTarget.style.filter = 'grayscale(100%)'}
+          style={imgStyle(index)}
         />
       ))}
     </div>
