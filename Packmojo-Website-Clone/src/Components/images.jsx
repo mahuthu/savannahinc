@@ -6,7 +6,7 @@ import project2Image from '../Dataset/Salesforce.jpeg';
 import project3Image from '../Dataset/Azure.jpg';
 import project4Image from '../Dataset/tableau1.jpg';
 import project5Image from '../Dataset/whatsapp.png';
-import project6Image from '../Dataset/image2.png';
+import project6Image from '../Dataset/gold.jpeg';
 import project7Image from '../Dataset/ODOO.jpeg';
 import project9Image from '../Dataset/zoho1.png';
 import project10Image from '../Dataset/infobip.png';
