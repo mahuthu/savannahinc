@@ -5,6 +5,8 @@ import SubService from "../../Components/SubService";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
 import React from "react";
 import pmsImage from "../../Dataset/pms.png";
+import crmImage2 from "../../Dataset/project operations.png";
+import styles from "../../Components/Styles.module.css";
 
 const Pms = () => {
 
@@ -68,7 +70,17 @@ const Pms = () => {
 
 
             <SubService title={crmService.title} image={crmService.image} description={crmService.description} />
-
+            <div className={styles["crm-partners"]}>
+                <h3>Our PMS Partners</h3>
+                <div className={styles["partner-logos"]}>
+                    <div className={styles["partner-logo"]}>
+                        <img src={crmImage2} alt="Microsoft Dynamics" />
+                        <p>Microsoft Dynamics Project Operations</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
             <Footer />
         
         </div>

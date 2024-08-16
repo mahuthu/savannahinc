@@ -44,7 +44,7 @@ const Ims = () => {
               <li>Data-driven Insights: Leverage data analytics to gain insights into inventory performance, identify trends, and make data-driven decisions.</li>
           </ul>
           <p style={{ backgroundColor: "#32325c", color: "#ffffff", padding: "10px", borderRadius: "5px", marginTop: "30px", marginBottom: "20px" }}>
-              Businesses benefit from IMS solutions:
+              Businesses benefit include:
           </p>
           <ul style={{ textAlign: "left", marginBottom: "30px" }}>
               <li>Cost Reduction: Reduce inventory holding costs, minimize stockouts, and improve inventory turnover to optimize working capital.</li>

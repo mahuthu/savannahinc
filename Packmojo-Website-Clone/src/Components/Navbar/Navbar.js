@@ -203,7 +203,7 @@ const Navbar = () => {
           </ul>
           <form className="d-flex" role="search">
             {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
-            <Link className="dropdown-item" to="/login">
+            <Link className="dropdown-item" to="/login" style = {{backgroundColor:"#fff", color:"#444"}}>
               Login
             </Link>
           </form>

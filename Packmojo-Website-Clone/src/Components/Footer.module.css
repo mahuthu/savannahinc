@@ -1,0 +1,50 @@
+.footer {
+    background-color: #32325c;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .column {
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  
+  .logo {
+    width: 50%;
+    height: auto;
+    margin-left: 40px;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navLink:hover {
+    color: #40e096;
+  }
+  
+  .bottomFooter {
+    color: #40e096;
+    padding: 10px 0;
+  }
+  
+  .copyright {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  
+  .socialIcon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }

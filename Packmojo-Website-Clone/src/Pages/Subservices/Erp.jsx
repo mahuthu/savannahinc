@@ -4,6 +4,9 @@ import Footer from "../../Components/Footer";
 import SubService from "../../Components/SubService";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
 import erpImage from "../../Dataset/erp1.jpg";
+import crmImage1 from "../../Dataset/_BusinessCentral2.png";
+import crmImage2 from "../../Dataset/ODOO.jpeg";
+import styles from "../../Components/Styles.module.css";
 
 const ERP = () => {
     const erpService = {
@@ -54,6 +57,24 @@ const ERP = () => {
             <Navbar />
             <AboutUs1 mainHeading="Enterprise Resource Planning" subHeading="Home » Services" />
             <SubService title={erpService.title} image={erpService.image} description={erpService.description} />
+            <div className={styles["crm-partners"]}>
+                <h3>Our ERP Partners</h3>
+                <div className={styles["partner-logos"]}>
+                    <div className={styles["partner-logo"]}>
+                        <img src={crmImage1} alt="Microsoft Dynamics" />
+                        <p>Microsoft Business Central</p>
+                    </div>
+                    <div className={styles["partner-logo"]}>
+                        <img src={crmImage2} alt="Zoho CRM" />
+                        <p>ODOO ERP</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+
             <Footer />
         </div>
     );

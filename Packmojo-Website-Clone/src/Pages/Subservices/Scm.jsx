@@ -5,6 +5,9 @@ import SubService from "../../Components/SubService";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
 import React from "react";
 import scmImage from "../../Dataset/scm.jpeg";
+import crmImage2 from "../../Dataset/scm2.png";
+import styles from "../../Components/Styles.module.css";
+
 
 const Model = () => {
     const crmService = {
@@ -43,7 +46,7 @@ const Model = () => {
                     <li>Supply Chain Visibility: Gain real-time visibility into supply chain activities, track shipments, and manage supply chain risks more effectively.</li>
                 </ul>
                 <p style={{ backgroundColor: "#32325c", color: "#ffffff", padding: "10px", borderRadius: "5px", marginTop: "30px" }}>
-                    Businesses benefit from SCM solutions by:
+                    Businesses benefit include:
                 </p>
                 <ul style={{ textAlign: "left", marginBottom: "30px" }}>
                     <li>Improved Efficiency: Reduce lead times, minimize inventory holding costs, and optimize resource utilization for increased operational efficiency.</li>
@@ -64,7 +67,17 @@ const Model = () => {
             <AboutUs1 mainHeading="Model Training and Fine Tuning" subHeading="Home &raquo; Services" />
 
             <SubService title={crmService.title} image={crmService.image} description={crmService.description} />
-
+            <div className={styles["crm-partners"]}>
+                <h3>Our SCM Partners</h3>
+                <div className={styles["partner-logos"]}>
+                    <div className={styles["partner-logo"]}>
+                        <img src={crmImage2} alt="Microsoft Dynamics" />
+                        <p>Microsoft Supply Chain Management</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
             <Footer />
         
         </div>

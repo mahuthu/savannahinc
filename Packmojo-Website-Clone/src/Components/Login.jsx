@@ -31,7 +31,7 @@ const Login = () => {
     justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${backgroundImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
   };

@@ -4,10 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import project1Image from '../../Dataset/servercore.jpg';
 import project2Image from '../../Dataset/Salesforce.jpeg';
-import project3Image from '../../Dataset/Azure.jpg';
+import project3Image from '../../Dataset/microsoft azure.png';
 import project4Image from '../../Dataset/tableau1.jpg';
 import project5Image from '../../Dataset/whatsapp.png';
-import project6Image from '../../Dataset/image2.png';
+import project6Image from '../../Dataset/gold2.png';
 import project7Image from '../../Dataset/ODOO.jpeg';
 import project9Image from '../../Dataset/zoho1.png';
 import project10Image from "../../Dataset/infobip.png";
@@ -27,32 +27,35 @@ const Projects1 = () => {
   ];
 
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 2,
+    speed: 5000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    rtl: true,
     arrows: false,
-    autoplaySpeed: 3000,
+    variableWidth: true,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
-      { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } }
+      { breakpoint: 1024, settings: { slidesToShow: 4 } },
+      { breakpoint: 768, settings: { slidesToShow: 3 } },
+      { breakpoint: 480, settings: { slidesToShow: 2 } }
     ],
-   
   };
 
   return (
     <div className="projects-container">
-      <h2 className="projects-heading">Our Partners</h2>
-      <Slider {...sliderSettings}>
-        {projects.map((project) => (
-          <div key={project.id} className="project-item">
-            <img src={project.imageUrl} alt={`Project ${project.id}`} className="project-image" />
-            <p className="project-description">{project.description}</p>
-          </div>
-        ))}
-      </Slider>
+      {/* <h2 className="projects-heading"></h2> */}
+        <Slider {...sliderSettings}>
+          {projects.map((project) => (
+            <div key={project.id}>
+              <img src={project.imageUrl} alt={project.description} className="project-image" />
+            </div>
+          ))}
+        </Slider>
+      {/* <h3 className="projects-subheading"></h3> */}
     </div>
   );
 };

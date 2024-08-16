@@ -5,6 +5,12 @@ import "../../Components/Styles.module.css";
 import SubService from "../../Components/SubService";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
 import crmImage from "../../Dataset/crm1.jpg";
+import crmImage2 from "../../Dataset/zoho.png";
+import crmImage3 from "../../Dataset/Salesforce.jpeg";
+import crmImage4 from "../../Dataset/ODOO.jpeg";
+import crmImage1 from "../../Dataset/dynamics customers.png";
+import styles from "../../Components/Styles.module.css";
+
 
 const Crm = () => {
     const crmService = {
@@ -43,7 +49,7 @@ const Crm = () => {
                   <li>Sales and Pipeline Management: Track leads, manage opportunities, and optimize the sales pipeline for increased revenue and business growth.</li>
               </ul>
               <p style={{ backgroundColor: "#32325c", color: "#ffffff", padding: "10px", borderRadius: "5px", marginTop: "30px" }}>
-                  Businesses benefit from CRM solutions by:
+                  Businesses benefit include:
               </p>
               <ul style={{ textAlign: "left", marginBottom: "30px" }}>
                   <li>Improved Customer Relationships: Nurture customer relationships, deliver personalized experiences, and enhance customer satisfaction.</li>
@@ -62,12 +68,30 @@ const Crm = () => {
     return (
         <div className="App">
 
-            
-
             <Navbar />
             <AboutUs1 mainHeading="Customer Relationship Management" subHeading="Home » Services" />
             <SubService title={crmService.title} image={crmService.image} description={crmService.description} />
-
+            <div className={styles["crm-partners"]}>
+                <h3>Our CRM Partners</h3>
+                <div className={styles["partner-logos"]}>
+                    <div className={styles["partner-logo"]}>
+                        <img src={crmImage1} alt="Microsoft Dynamics" />
+                        <p>Microsoft Dynamics</p>
+                    </div>
+                    <div className={styles["partner-logo"]}>
+                        <img src={crmImage2} alt="Zoho CRM" />
+                        <p>Zoho CRM</p>
+                    </div>
+                    <div className={styles["partner-logo"]}>
+                        <img src={crmImage3} alt="Salesforce" />
+                        <p>Salesforce</p>
+                    </div>
+                    <div className={styles["partner-logo"]}>
+                        <img src={crmImage4} alt="Odoo" />
+                        <p>Odoo</p>
+                    </div>
+                </div>
+            </div>
 
             <Footer />
 
