@@ -1,28 +1,31 @@
 import React, { useEffect, useRef } from 'react';
-import rightImage from "../Dataset/business.jpg"; // Replace with your actual image path
-import styles from './Echo.module.css'; // Import the CSS module
+import styles from './Echo.module.css';
+import laptopImage from "../Dataset/comp1.png"; // Replace with your actual image path
+import appStoreImage from "../Dataset/appStore1.png"; // Replace with your actual image path
+import googlePlayImage from "../Dataset/googlePlay2.png"; // Replace with your actual image path
 
 const EchoFriendly = () => {
-  const headingRef = useRef(null);
-  const line1Ref = useRef(null);
-  const line2Ref = useRef(null);
-  const paragraphRef = useRef(null);
-  const imageRef = useRef(null); // New reference for the image
+  const titleRef = useRef(null);
+  const descriptionRef = useRef(null);
+  const badgesRef = useRef(null);
+  const laptopImageRef = useRef(null);
+  const mobileImageRef = useRef(null);
 
   useEffect(() => {
-    const elements = [line1Ref.current, headingRef.current, line2Ref.current, paragraphRef.current, imageRef.current];
+    const elements = [titleRef.current, descriptionRef.current, badgesRef.current, laptopImageRef.current, mobileImageRef.current];
     
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add(styles['fade-in']);
-            entry.target.classList.remove(styles['initial-hidden']);
+            observer.unobserve(entry.target); // Stop observing once the animation is triggered
           }
         });
       },
       {
-        threshold: 0.1
+        threshold: 0.1,
+        rootMargin: '0px 0px -10% 0px'
       }
     );
 
@@ -40,22 +43,24 @@ const EchoFriendly = () => {
   }, []);
 
   return (
-    <section className={`${styles.section} py-5`} style={{ backgroundColor: "#fff", color: '#32325c' }}>
-      <div className='container-fluid py-5'>
-        <div className='row align-items-center'>
-          <div className='col-lg-6'>
-            <div className={styles['heading-container']}>
-              <div ref={line1Ref} className={`${styles['heading-line']} ${styles['initial-hidden']} delay-1`}></div>
-              <h1 ref={headingRef} className={`${styles['heading-text']} ${styles['initial-hidden']} delay-2`}>About Us</h1>
-              <div ref={line2Ref} className={`${styles['heading-line']} ${styles['initial-hidden']} delay-1`}></div>
-            </div>
-            <p ref={paragraphRef} className={`${styles['small-font']} ${styles['initial-hidden']} delay-2`}>
-              Savannah Inc, a place where digital design innovation and experience converge. With deep roots in our industry, we provide adequate and efficient superior IT solutions. We specialize in software development, customization, IT consultancy services and training, driving vision into action for our clients.
-            </p>
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <h1 ref={titleRef} className={`${styles.title} ${styles['initial-hidden']}`}>
+            About Us
+          </h1>
+          <p ref={descriptionRef} className={`${styles.description} ${styles['initial-hidden']}`}>
+            Nathan Digital offers an intuitive and engaging user interface that delivers a seamless and
+            satisfying user experience through responsive Web & Mobile application - Available in iOS &
+            Android platforms.
+          </p>
+          <div ref={badgesRef} className={`${styles.badges} ${styles['initial-hidden']}`}>
+            <img src={appStoreImage} alt="Download on the App Store" className={styles.badge} />
+            <img src={googlePlayImage} alt="Get it on Google Play" className={styles.badge} />
           </div>
-          <div className='col-lg-6' >
-            <img ref={imageRef} src={rightImage} alt="Visual representation" className={`${styles.rightImage} ${styles['initial-hidden']} delay-2`} />
-          </div>
+        </div>
+        <div className={styles.imageContainer}>
+          <img ref={laptopImageRef} src={laptopImage} alt="Laptop Interface" className={`${styles.laptopImage} ${styles['initial-hidden']}`} />
         </div>
       </div>
     </section>

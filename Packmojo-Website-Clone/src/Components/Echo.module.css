@@ -10,101 +10,86 @@
 }
 
 .fade-in {
-  opacity: 0;
   animation: fadeIn 1s forwards;
-}
-
-.fade-in.delay-1 {
-  animation-delay: 0.3s;
-}
-
-.fade-in.delay-2 {
-  animation-delay: 0.6s;
 }
 
 .initial-hidden {
   opacity: 0;
+  transform: translateY(20px);
 }
 
 .section {
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 150px;
+  background-color: #f5f5f5;
+  padding: 80px 0;
 }
 
-.rightImage {
-  width: 60%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-.small-font {
-  font-size: 1.2rem;
-  margin-top: 20px;
-  text-align: left;
-}
-
-.heading-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-  padding-right: 80px;
+  justify-content: space-between;
 }
 
-.heading-line {
+.content {
   flex: 1;
-  height: 2px;
-  background-color: #41e096;
-  margin: 0 10px;
+  padding-right: 40px;
 }
 
-.heading-text {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #41e096;
-  white-space: nowrap;
-  padding: 0 10px;
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-/* Media query for small screens */
-@media (max-width: 767px) {
+.description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
 
-  .section {
-    padding: 0;
-  }
+.badges {
+  display: flex;
+  gap: 20px;
+}
 
-  .heading-container {
-    padding-right: 0;
-  }
+.badge {
+  height: 40px;
+}
 
-  .heading-container {
+.imageContainer {
+  flex: 1;
+  position: relative;
+}
+
+.laptopImage {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Apply different animation delays for staggered effects */
+.title.fade-in { animation-delay: 0.2s; }
+.description.fade-in { animation-delay: 0.4s; }
+.badges.fade-in { animation-delay: 0.6s; }
+.laptopImage.fade-in { animation-delay: 0.8s; }
+.mobileImage.fade-in { animation-delay: 1s; }
+
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
+    padding: 0 20px;
   }
 
-  .heading-line {
+  .content {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .imageContainer {
     width: 100%;
-    margin: 5px 0;
-  }
-
-  .heading-text {
-    font-size: 1.5rem;
-  }
-
-  .small-font {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .rightImage {
-    width: 100%;
-    margin-bottom: 20px;
   }
 }

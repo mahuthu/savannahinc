@@ -71,7 +71,7 @@
 .button {
   border-radius: 30px;
   background: #41e096;
-  color: #32325C;
+  color: #000;
   font-weight: bold;
   border: none;
   transition: background-color 0.3s, color 0.3s;

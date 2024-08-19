@@ -2,7 +2,7 @@ import React from "react";
 import HomeContent from "../Components/HomeContent";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer";
-import Contact from "../Components/Contacts/Contact";
+import Contact from "../Components/support";
 import "../Components/Styles.module.css";
 import "../Components/Home.module.css";
 

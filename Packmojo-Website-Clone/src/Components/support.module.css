@@ -1,0 +1,112 @@
+.supportSection {
+    background-color: #f0f4ff; /* Light blue background */
+    padding: 40px 0;
+  }
+  
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e4ebfe; /* Slightly darker blue for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .supportTextWrapper {
+    padding-left: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    top: -30px;
+    color:#000;
+  }
+  
+  .supportTextWrapper::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 25px;
+    background-color: #000; /* Dark blue */
+    margin-right: 10px;
+    border-radius: 2px;
+    color: #000;
+  }
+  
+  .supportText {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000; /* Dark blue */
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .imageWrapper {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .supportImage {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .textContent {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #002855; /* Dark blue */
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contactButton {
+    background-color: #41E096; /* Bright blue */
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .contactButton:hover {
+    background-color: #0041a8; /* Darker blue on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .contentWrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .imageWrapper, .textContent {
+      padding: 0;
+    }
+  
+    .textContent {
+      margin-top: 20px;
+    }
+  
+    .supportImage {
+      width: 80%; /* Adjust image size for smaller screens */
+      margin: 0 auto;
+    }
+  }
+  
