@@ -8,6 +8,9 @@ import CustomerReviews from "./reviews/reviews";
 import Process1 from "./process2";
 import ContactStrip from "./strip/strip";
 import Images from "./images";
+import Services1 from "./Services/service6"
+import CaseStudies from "./casestudies";
+import Members from "./members"
 
 const HomeContent = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 992);
@@ -41,6 +44,9 @@ const HomeContent = () => {
       <Introduction />
       <EchoFriendly />
       <Services />
+      <Services1 />
+      <CaseStudies />
+      <Members />
       <Process1 />
       <CustomerReviews />
       <StartJourney />

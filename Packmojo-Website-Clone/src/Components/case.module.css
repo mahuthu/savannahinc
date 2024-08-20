@@ -1,0 +1,72 @@
+.caseStudiesContainer {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fff;
+  padding-top: 50px;
+}
+
+.caseStudiesHeading {
+  margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.caseStudiesHeading::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 3px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.caseStudiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.caseStudyCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.companyLogo {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.techDetails {
+  color: #555;
+  font-size: 14px;
+   /* Example additional styling */
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.title1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; /* Dark blue */
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}

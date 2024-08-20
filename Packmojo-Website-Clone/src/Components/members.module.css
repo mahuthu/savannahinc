@@ -1,0 +1,71 @@
+.industryPartnership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .imageRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .personImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 10px;
+  }
+  
+  .personImage.round {
+    border-radius: 50%;
+  }
+  
+  .colorBlock {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+  }
+  
+  .yellow { background-color: #000; }
+  .green { background-color: #d82809f1; }
+  .blue { background-color: #0c7c2e; }
+  
+  /* Different Shapes for Color Blocks */
+  .circle {
+    border-radius: 50%;
+  }
+  
+  .roundedSquare {
+    border-radius: 20%;
+  }
+  
+  .rectangle {
+    width: 140px;
+    height: 60px;
+    border-radius: 10%;
+  }
+  
+  .textContent {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .nathanLogo {
+    max-width: 200px;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #555;
+  }
+  
