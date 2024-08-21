@@ -1,71 +1,83 @@
 .industryPartnership {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 50px;
+
   
-  .imageRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 10px 0;
-  }
-  
-  .personImage {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin: 0 10px;
-  }
-  
-  .personImage.round {
-    border-radius: 50%;
-  }
-  
-  .colorBlock {
-    width: 100px;
-    height: 100px;
-    margin: 0 10px;
-  }
-  
-  .yellow { background-color: #000; }
-  .green { background-color: #d82809f1; }
-  .blue { background-color: #0c7c2e; }
-  
-  /* Different Shapes for Color Blocks */
-  .circle {
-    border-radius: 50%;
-  }
-  
-  .roundedSquare {
-    border-radius: 20%;
-  }
-  
-  .rectangle {
-    width: 140px;
-    height: 60px;
-    border-radius: 10%;
-  }
-  
-  .textContent {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .nathanLogo {
-    max-width: 200px;
-    margin: 10px 0;
-  }
-  
-  p {
-    font-size: 18px;
-    color: #555;
-  }
-  
+}
+
+.imageRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.personImage {
+  width: 120px; /* Increased size */
+  height: 120px; /* Increased size */
+  object-fit: cover;
+  margin: 0 15px; /* Adjusted margin */
+  border-radius: 20%; /* Slight curve */
+  transform: scale(1.1) rotate(-5deg); /* Curved inward */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.personImage.round {
+  border-radius: 50%;
+  transform: scale(1.1) rotate(5deg); /* Curved inward for round images */
+}
+
+.colorBlock {
+  width: 120px; /* Increased size */
+  height: 120px; /* Increased size */
+  margin: 0 15px; /* Adjusted margin */
+  border-radius: 25%; /* Slight curve */
+  transform: scale(1.1) rotate(5deg); /* Curved inward */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.yellow { background-color: #000; }
+.green { background-color: #d82809f1; }
+.blue { background-color: #0c7c2e; }
+
+/* Different Shapes for Color Blocks */
+.circle {
+  border-radius: 50%;
+  transform: scale(1.1) rotate(-5deg); /* Curved inward for circle */
+}
+
+.roundedSquare {
+  border-radius: 20%;
+  transform: scale(1.1) rotate(5deg); /* Curved inward for rounded square */
+}
+
+.rectangle {
+  width: 160px; /* Increased size */
+  height: 80px; /* Increased size */
+  border-radius: 10%;
+  transform: scale(1.1) rotate(-5deg); /* Curved inward for rectangle */
+}
+
+.textContent {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.nathanLogo {
+  max-width: 200px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}

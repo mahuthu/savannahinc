@@ -4,11 +4,20 @@ import logo1 from "../Dataset/logo1.png";
 import logo2 from "../Dataset/logo2.png";
 import logo3 from "../Dataset/logo3.jpeg";
 import logo4 from "../Dataset/logo4.jpg";
+import cardBackground from '../Dataset/bac4.jpg'; // Import your background image
+import backgroundImage from '../Dataset/bac3.jpg'; // Import your background image
 
 const CaseStudies = () => {
   return (
-    <div className={styles.caseStudiesContainer}>
-      <h2 className={styles.caseStudiesHeading}> Case Studies</h2>
+    <div className={styles.caseStudiesContainer}
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}
+    >
+      <h2 className={styles.caseStudiesHeading}>Case Studies</h2>
       <div className={styles.caseStudiesGrid}>
         <CaseStudyCard 
           logo={logo1}
@@ -45,7 +54,10 @@ const CaseStudies = () => {
 
 const CaseStudyCard = ({ logo, company, title, description, techDetails }) => {
   return (
-    <div className={styles.caseStudyCard}>
+    <div 
+      className={styles.caseStudyCard} 
+      
+    >
       <img src={logo} alt={`${company} logo`} className={styles.companyLogo} />
       <h3 className={styles.title}>{company}</h3>
       <h4 className={styles.title1}>{title}</h4>

@@ -8,6 +8,8 @@ import erpIcon from '../../Dataset/ERPICON.svg';
 import imssIcon from '../../Dataset/ims4.svg';
 import logisticsIcon from '../../Dataset/logisticsICON.svg';
 import styles from './service6.module.css';
+import cardBackground from '../../Dataset/bac4.jpg'; // Import your background image
+import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
 
 // Map icon names to their respective paths
 const iconPaths = {
@@ -22,7 +24,14 @@ const iconPaths = {
 
 const SoftwareModules = () => {
   return (
-    <div className={styles.softwareModules}>
+    <div className={styles.softwareModules}
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}
+    >
       <h2 className={styles.heading}>Software Modules</h2>
       <div className={styles.modulesContainer}>
         <ModuleCard
@@ -77,7 +86,10 @@ const ModuleCard = ({ title, description, iconName, iconColor }) => {
   const svgData = iconPaths[iconName];
 
   return (
-    <div className={styles.moduleCard}>
+    <div 
+      className={styles.moduleCard} 
+      
+    >
       <div className={styles.cardContent}>
         <h3>{title}</h3>
         <p>{description}</p>

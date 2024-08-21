@@ -90,7 +90,7 @@
   }
   
   .contactButton:hover {
-    background-color: #0041a8; /* Darker blue on hover */
+    background-color: #32a372; /* Darker blue on hover */
   }
   
   @media (max-width: 768px) {

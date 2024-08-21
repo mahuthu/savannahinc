@@ -43,19 +43,20 @@ const HomeContent = () => {
       <ContactStrip />
       <Introduction />
       <EchoFriendly />
-      <Services />
+      {/* <Services /> */}
       <Services1 />
-      <CaseStudies />
       <Members />
-      <Process1 />
-      <CustomerReviews />
-      <StartJourney />
+      <CaseStudies />
+      {/* <Process1 /> */}
+      {/* <CustomerReviews /> */}
       <div style={imagesStyle}>
         <Images />
       </div>
       <div style={projectsStyle}>
         <Projects1 />
       </div>
+      <StartJourney />
+
     </>
   );
 };

@@ -3,6 +3,7 @@ import styles from './Echo.module.css';
 import laptopImage from "../Dataset/comp1.png"; // Replace with your actual image path
 import appStoreImage from "../Dataset/appStore1.png"; // Replace with your actual image path
 import googlePlayImage from "../Dataset/googlePlay2.png"; // Replace with your actual image path
+import backgroundImage from '../Dataset/bac3.jpg'; // Replace with your actual background image path
 
 const EchoFriendly = () => {
   const titleRef = useRef(null);
@@ -43,8 +44,18 @@ const EchoFriendly = () => {
   }, []);
 
   return (
-    <section className={styles.section}>
-      <div className={styles.container}>
+    <section className={styles.section}
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}
+    >
+      <div 
+        className={styles.container}
+       
+      >
         <div className={styles.content}>
           <h1 ref={titleRef} className={`${styles.title} ${styles['initial-hidden']}`}>
             About Us

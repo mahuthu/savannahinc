@@ -1,10 +1,18 @@
 import React from 'react';
 import styles from './support.module.css';
 import supportImage from '../Dataset/support1.png'; // Replace with your actual image path
+import backgroundImage from '../Dataset/bac3.jpg'; // Import your background image
 
 const Support = () => {
   return (
-    <section className={styles.supportSection}>
+    <section className={styles.supportSection}
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}
+    >
         <h3 className={styles.supportTextWrapper}>Support</h3> {/* Support text at top-left corner */}
 
       <div className={styles.container}>
