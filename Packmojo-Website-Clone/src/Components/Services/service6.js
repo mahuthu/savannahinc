@@ -39,49 +39,50 @@ const SoftwareModules = () => {
           description="Automate financial tasks for efficient account management"
           iconName="ImssIcon"
           iconColor="#FF5733"
+          link = "#"
         />
         <ModuleCard
           title="ERP"
           description="Streamline your enterprise resource planning."
           iconName="ErpIcon"
           iconColor="#FF5733"
+          link= "#"
         />
         <ModuleCard
           title="HRMS"
           description="Optimize performance with strategic decisions based on actionable insights."
           iconName="HrmsIcon"
           iconColor="#3498DB"
+          link= "#"
         />
         <ModuleCard
           title="CRM"
           description="Enhance customer relationships and improve sales with powerful CRM tools."
           iconName="CrmIcon"
           iconColor="#2ECC71"
+          link= "#"
         />
-        <ModuleCard
-          title="Accounting & Finance"
-          description="Keep track of finances and manage accounts efficiently."
-          iconName="AccountingIcon"
-          iconColor="#F1C40F"
-        />
+        
         <ModuleCard
           title="Business Management"
           description="Handle business operations with comprehensive tools."
           iconName="BusinessIcon"
           iconColor="#F1C40F"
+          link="#"
         />
         <ModuleCard
           title="Logistics Management"
           description="Optimize logistics and supply chain operations."
           iconName="LogisticsIcon"
           iconColor="#F1C40F"
+          link="#"
         />
       </div>
     </div>
   );
 };
 
-const ModuleCard = ({ title, description, iconName, iconColor }) => {
+const ModuleCard = ({ title, description, iconName, iconColor, link }) => {
   // Get the correct icon path
   const svgData = iconPaths[iconName];
 
@@ -93,7 +94,7 @@ const ModuleCard = ({ title, description, iconName, iconColor }) => {
       <div className={styles.cardContent}>
         <h3>{title}</h3>
         <p>{description}</p>
-        <a href="/crm" className={styles.readMore}>Read More ↗</a>
+        <a href={link} className={styles.readMore}>Read More ↗</a>
       </div>
       <div className={styles.cardIcon}>
         {svgData ? <UniqueSVG svgData={svgData} fillColor={iconColor} /> : null}

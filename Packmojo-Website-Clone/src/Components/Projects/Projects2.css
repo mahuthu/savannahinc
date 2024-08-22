@@ -1,7 +1,6 @@
 .projects-container {
   padding: 40px 0;
   background-color: #fff;
-  text-align: center;
   overflow: hidden;
 }
 
@@ -39,6 +38,8 @@
   object-fit: contain;
   padding: 40px;
 }
+
+.project-image .hover
 
 
 /* Override some slick-carousel styles */

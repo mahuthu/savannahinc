@@ -1,80 +1,70 @@
+/* process1.module.css */
 .processSection {
-    background-color:#fff;
-    padding: 60px 0;
-  }
-  
-  .sectionTitle {
-    font-size: 2.5rem;
-    color: #32325d;
-    font-weight: bold;
-  }
-  
-  .sectionSubtitle {
-    font-size: 1.8rem;
-    color: #41e096;
-    margin-bottom: 20px;
-  }
-  
-  .processLogo i {
-    color: #41e096;
-    font-size: 2.5rem;
-  }
-  
-  .card {
-    border: none;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .cardBody {
-    padding: 30px;
-  }
-  
-  .cardTitle {
-    font-size: 1.5rem;
-    color: #32325d;
-    margin-top: 15px;
-  }
-  
-  .cardText {
-    font-size: 1rem;
-    color: #fff;
-  }
-  
-  .processIcon {
-    color: #41e096;
-    transition: color 0.3s;
-  }
-  
-  .processIcon:hover {
-    color: #32a372;
-  }
-  
-  .textCenter {
-    text-align: center;
-  }
-  
-  .textWhite {
-    color: #fff !important;
-  }
-  
-  .bgDark {
-    background-color: #32325d !important;
-  }
-  
-  /* Fade-in animation */
-  .fadeIn {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .fadeIn.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.sectionTitle {
+  font-size: 1.8 rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.timelineContainer {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timelineContainer::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 50px;
+  margin-left: -3px;
+}
+
+.timelineItem {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+.timelineIcon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  background-color: #000;
+  top: 0;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.timelineContent {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-left: 60px;
+}
+
+.timelineContent h3 {
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.timelineContent p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}

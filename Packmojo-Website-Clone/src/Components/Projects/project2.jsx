@@ -45,9 +45,36 @@ const Projects1 = () => {
     ],
   };
 
+  const headingStyle = {
+    marginBottom: '20px',
+    color: '#333',
+    position: 'relative',
+    paddingLeft: '30px',
+    fontSize: '1.2rem',
+    fontWeight: 'bold',
+    paddingTop: '40px',
+  };
+
+  const headingBeforeStyle = {
+    content: '""',
+    position: 'absolute',
+    left: "20px",
+    top: '80%',
+    transform: 'translateY(-50%)',
+    height: '25px',
+    width: '3px',
+    borderRadius: '2px',
+    backgroundColor: "#41e096",
+
+  };
+
   return (
+    <div>
+      <h2 style={headingStyle}>
+        Our Partners
+        <span style={headingBeforeStyle}></span>
+      </h2>
     <div className="projects-container">
-      {/* <h2 className="projects-heading"></h2> */}
         <Slider {...sliderSettings}>
           {projects.map((project) => (
             <div key={project.id}>
@@ -56,6 +83,7 @@ const Projects1 = () => {
           ))}
         </Slider>
       {/* <h3 className="projects-subheading"></h3> */}
+    </div>
     </div>
   );
 };

@@ -23,8 +23,9 @@
   transform: translateY(-50%);
   height: 25px;
   width: 3px;
-  background-color: #000;
   border-radius: 2px;
+  background-color: #41e096;
+
 }
 
 .caseStudiesGrid {

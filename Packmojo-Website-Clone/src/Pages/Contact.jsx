@@ -1,7 +1,7 @@
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer";
 import "../Components/Styles.module.css";
-import Con from "../Components/Cont/Cont";
+import Con from "../Components/Contact1";
 import AboutUs1 from "../Components/Aboutus/Aboutus6";
 import React from "react";
 

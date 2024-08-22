@@ -1,0 +1,82 @@
+/* Insights.module.css */
+.insightsSection {
+    padding: 60px 20px;
+  }
+  
+  .sectionHeading {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 20px;
+  }
+  
+  .sectionHeading h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .sectionHeading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #41e096;
+  }
+  
+  .insightsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .insightCard {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .insightImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .insightContent {
+    padding: 20px;
+  }
+  
+  .category {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .readMore {
+    color: #41e096;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .readMore:hover {
+    text-decoration: underline;
+    color: #32a372
+  }
+  
+  @media (max-width: 768px) {
+    .insightCard {
+      flex: 0 0 100%;
+    }
+  }

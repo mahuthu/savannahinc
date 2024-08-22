@@ -4,7 +4,6 @@ import logo1 from "../Dataset/logo1.png";
 import logo2 from "../Dataset/logo2.png";
 import logo3 from "../Dataset/logo3.jpeg";
 import logo4 from "../Dataset/logo4.jpg";
-import cardBackground from '../Dataset/bac4.jpg'; // Import your background image
 import backgroundImage from '../Dataset/bac3.jpg'; // Import your background image
 
 const CaseStudies = () => {
