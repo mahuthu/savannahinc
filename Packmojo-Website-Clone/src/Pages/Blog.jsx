@@ -6,6 +6,8 @@ import Footer from "../Components/Footer";
 import "../Components/Styles.module.css";
 import AboutUs1 from "../Components/Aboutus/Aboutus6";
 import styles from "../Components/Blog/Blog.module.css";
+import backgroundImage from '../Dataset/bac3.jpg'; // Import your background image
+
 
 const BlogPage = () => {
   const [blogs, setBlogs] = useState([]);
@@ -32,24 +34,32 @@ const BlogPage = () => {
     <div className="App">
       <Navbar />
       <AboutUs1 mainHeading="Blog" subHeading="Home » Blog" />
-      <div className={styles["blog-page-container"]}>
-        {blogs.map((blog) => (
-          <Blog
-            key={blog.id}
-            id={blog.id}
+      <div className={styles["blog-grid-container"]}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+      >
+        <h2 className={styles["heading"]}>Blogs</h2>
 
-            image={blog.image}
-          
-
-            title={blog.title}
-            description={blog.description}
-          
-          />
-        ))}
+        <div className={styles["blog-grid"]}>
+          {blogs.map((blog) => (
+            <Blog
+              key={blog.id}
+              id={blog.id}
+              image={blog.image}
+              title={blog.title}
+              description={blog.description}
+            />
+          ))}
+        </div>
       </div>
       <Footer />
     </div>
   );
+  
 };
 
 export default BlogPage;

@@ -1,68 +1,84 @@
-
+import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
-import "../../Components/Styles.module.css";
-import SubService from "../../Components/SubService";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import React from "react";
-import erpImage from "../../Dataset/tableau1.jpg"
+import SubService from "../../Components/SubService";
+import styles from "../../Components/crm.module.css";
+import erpImage from "../../Dataset/tableau1.jpg";
+import backgroundImage from '../../Dataset/bac1.jpg'; // Import your background image
 
+const MarketingAnalytics = () => {
+    const analyticsFeatures = [
+        { icon: "fas fa-chart-line", title: "Data Visualization" },
+        { icon: "fas fa-chart-line", title: "Trend Analysis" },
+        { icon: "fas fa-database", title: "Data Integration" },
+        { icon: "fas fa-chart-bar", title: "Performance Metrics" },
+    ];
 
-const ERP = () => {
+    const analyticsSolutions = [
+        "Data Visualization: Create interactive dashboards, charts, and graphs to visualize marketing data and trends.",
+        "Trend Analysis: Identify patterns, analyze customer behavior, and predict market trends for strategic decision-making.",
+        "Data Integration: Integrate marketing data sources for comprehensive insights and holistic view of marketing performance.",
+        "Performance Metrics: Track key performance indicators (KPIs), measure campaign effectiveness, and optimize marketing strategies.",
+    ];
 
-    const crmService = {
-        title: "Marketing Analytics Solutions",
-        image: erpImage,
-        description: (
-            <>
-                <div className="icons-container d-flex justify-content-around flex-wrap bg-light" style={{ color: "#32325c" }}>
-                    <div className="icon text-center">
-                        <i className="fas fa-chart-line fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                        <p>Data Visualization</p>
-                    </div>
-                    <div className="icon text-center">
-                        <i className="fas fa-chart-line fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                        <p>Trend Analysis</p>
-                    </div>
-                    <div className="icon text-center">
-                        <i className="fas fa-database fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                        <p>Data Integration</p>
-                    </div>
-                    <div className="icon text-center">
-                        <i className="fas fa-chart-bar fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                        <p>Performance Metrics</p>
-                    </div>
-                </div>
-                <p style={{ marginTop: "30px", marginBottom: "20px" }}>
-                    Leverage marketing analytics solutions for data-driven insights, trend analysis, and performance metrics visualization. Our solutions empower you to make informed marketing decisions and optimize campaign effectiveness.
-                </p>
-                <p style={{ backgroundColor: "#32325c", color: "#ffffff", padding: "10px", borderRadius: "5px", marginTop: "30px" }}>
-                    Marketing Analytics solutions include:
-                </p>
-                <ul style={{ textAlign: "left", marginBottom: "30px" }}>
-                    <li>Data Visualization: Create interactive dashboards, charts, and graphs to visualize marketing data and trends.</li>
-                    <li>Trend Analysis: Identify patterns, analyze customer behavior, and predict market trends for strategic decision-making.</li>
-                    <li>Data Integration: Integrate marketing data sources for comprehensive insights and holistic view of marketing performance.</li>
-                    <li>Performance Metrics: Track key performance indicators (KPIs), measure campaign effectiveness, and optimize marketing strategies.</li>
-                </ul>
-                <p style={{ backgroundColor: "#32a372", color: "#fff", padding: "20px", borderRadius: "5px", textAlign: "left", marginTop: "50px" }}>
-                    Savannah Inc delivers Marketing Analytics Solutions tailored to your business needs. Let us help you unlock actionable insights and drive marketing success.
-                </p>
-            </>
-        ),
-      };
     return (
-        <div className="App">
-    
+        <div className={styles.app}>
             <Navbar />
             <AboutUs1 mainHeading="Marketing Analytics" subHeading="Home &raquo; Services" />
+            
+            <div
+                style={{
+                    backgroundImage: `url(${backgroundImage})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                }}
+            >
+                <main className={styles.main}>
+                    <section className={styles.hero}>
+                        <div className={styles.heroContent}>
+                            <h1>Marketing Analytics Solutions</h1>
+                            <p>
+                                Leverage marketing analytics solutions for data-driven insights, trend analysis, and performance metrics visualization.
+                                Our solutions empower you to make informed marketing decisions and optimize campaign effectiveness.
+                            </p>
+                        </div>
+                        <img src={erpImage} alt="Marketing Analytics Solutions" className={styles.heroImage} />
+                    </section>
 
-            <SubService title={crmService.title} image={crmService.image} description={crmService.description} />
+                    <section className={styles.features}>
+                        {analyticsFeatures.map((feature, index) => (
+                            <div key={index} className={styles.featureCard}>
+                                <i className={`${feature.icon} ${styles.featureIcon}`}></i>
+                                <h3>{feature.title}</h3>
+                            </div>
+                        ))}
+                    </section>
+
+                    <section className={styles.description}>
+                        <p>
+                            Marketing Analytics solutions include:
+                        </p>
+                        <ul>
+                            {analyticsSolutions.map((solution, index) => (
+                                <li key={index}>{solution}</li>
+                            ))}
+                        </ul>
+                    </section>
+
+                    <section className={styles.callToAction}>
+                        <p>
+                            Savannah Inc delivers Marketing Analytics Solutions tailored to your business needs. Let us help you unlock actionable insights and drive marketing success.
+                        </p>
+                        <button className={styles.ctaButton}>Get Started</button>
+                    </section>
+                </main>
+            </div>
 
             <Footer />
-        
         </div>
     );
-    }
+};
 
-export default ERP;
+export default MarketingAnalytics;

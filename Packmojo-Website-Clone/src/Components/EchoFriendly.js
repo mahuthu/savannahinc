@@ -61,8 +61,7 @@ const EchoFriendly = () => {
             About Us
           </h1>
           <p ref={descriptionRef} className={`${styles.description} ${styles['initial-hidden']}`}>
-            Nathan Digital offers an intuitive and engaging user interface that delivers a seamless and
-            satisfying user experience through responsive Web & Mobile application - Available in iOS &
+          Savannah Inc is a place where digital design, innovation and experience converge. With deep roots in our industry, we provide adequate and efficient IT solutions. We specialize in software development, customization, IT consultancy services and training, driving vision into action for our clients. - Our solutions are also available in iOS &
             Android platforms.
           </p>
           <div ref={badgesRef} className={`${styles.badges} ${styles['initial-hidden']}`}>

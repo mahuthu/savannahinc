@@ -8,7 +8,6 @@ import erpIcon from '../../Dataset/ERPICON.svg';
 import imssIcon from '../../Dataset/ims4.svg';
 import logisticsIcon from '../../Dataset/logisticsICON.svg';
 import styles from './service6.module.css';
-import cardBackground from '../../Dataset/bac4.jpg'; // Import your background image
 import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
 
 // Map icon names to their respective paths
@@ -36,46 +35,46 @@ const SoftwareModules = () => {
       <div className={styles.modulesContainer}>
         <ModuleCard
           title="IMS"
-          description="Automate financial tasks for efficient account management"
+          description="Automate inventory tracking and management for streamlined operations."
           iconName="ImssIcon"
           iconColor="#FF5733"
-          link = "#"
+          link = "/ims"
         />
         <ModuleCard
           title="ERP"
-          description="Streamline your enterprise resource planning."
+          description="Streamline your enterprise resource planning to integrate and automate business processes."
           iconName="ErpIcon"
-          iconColor="#FF5733"
-          link= "#"
+          iconColor="#1ABC9C"
+          link= "/erp"
         />
         <ModuleCard
-          title="HRMS"
-          description="Optimize performance with strategic decisions based on actionable insights."
+          title="LMS"
+          description=" Optimize training and educational performance with strategic insights and tools."
           iconName="HrmsIcon"
-          iconColor="#3498DB"
-          link= "#"
+          iconColor="#D35400"
+          link= "/lms"
         />
         <ModuleCard
           title="CRM"
           description="Enhance customer relationships and improve sales with powerful CRM tools."
           iconName="CrmIcon"
           iconColor="#2ECC71"
-          link= "#"
+          link= "/crm"
         />
         
         <ModuleCard
-          title="Business Management"
-          description="Handle business operations with comprehensive tools."
+          title="PMS"
+          description="Handle business operations with comprehensive project management tools."
           iconName="BusinessIcon"
           iconColor="#F1C40F"
-          link="#"
+          link="/pms"
         />
         <ModuleCard
           title="Logistics Management"
-          description="Optimize logistics and supply chain operations."
+          description="Optimize logistics and supply chain operations for efficient delivery and distribution."
           iconName="LogisticsIcon"
-          iconColor="#F1C40F"
-          link="#"
+          iconColor="#9B59B6"
+          link="/scm"
         />
       </div>
     </div>

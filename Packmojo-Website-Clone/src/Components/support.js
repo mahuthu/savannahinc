@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './support.module.css';
 import supportImage from '../Dataset/support1.png'; // Replace with your actual image path
 import backgroundImage from '../Dataset/bac3.jpg'; // Import your background image
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+
 
 const Support = () => {
   return (
@@ -28,7 +30,9 @@ const Support = () => {
               resolutions and uninterrupted productivity for your business. With round-the-clock assistance,
               you can navigate challenges seamlessly, maximizing the value of our products at any hour.
             </p>
-            <button className={styles.contactButton}>Contact Us</button>
+            <Link to="/contact">
+              <button className={styles.contactButton}>Contact Us</button>
+            </Link>
           </div>
         </div>
       </div>

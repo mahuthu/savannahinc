@@ -38,7 +38,7 @@ const IndustryPartnership = () => {
       <div className={styles.textContent}>
         <h2>Join 20+ industries in partnering with Savannah Inc</h2>
         <img src={logoNathanDigital} alt="Nathan Digital Logo" className={styles.nathanLogo} />
-        <p>for success business growth</p>
+        <p>for successful business growth</p>
       </div>
 
       {/* Bottom row of images and color blocks */}

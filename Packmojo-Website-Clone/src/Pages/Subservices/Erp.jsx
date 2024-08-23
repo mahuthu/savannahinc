@@ -1,79 +1,107 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
-import SubService from "../../Components/SubService";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
 import erpImage from "../../Dataset/erp1.jpg";
 import crmImage1 from "../../Dataset/_BusinessCentral2.png";
 import crmImage2 from "../../Dataset/ODOO.jpeg";
-import styles from "../../Components/Styles.module.css";
+import styles from "../../Components/crm.module.css"; // Reusing crm.module.css for consistency
+import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
+import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
 
 const ERP = () => {
-    const erpService = {
-        title: "ERP Solutions",
-        image: erpImage,
-        description: (
-            <>
-                <div className="icons-container d-flex justify-content-around flex-wrap bg-light" style={{ color:"#32325c" }}>
-                    <div className="icon text-center">
-                        <i className="fas fa-cogs fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                        <p>Streamlined Operations</p>
-                    </div>
-                    <div className="icon text-center">
-                        <i className="fas fa-chart-line fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                        <p>Real-time Insights</p>
-                    </div>
-                    <div className="icon text-center">
-                        <i className="fas fa-sitemap fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                        <p>Integrated Systems</p>
-                    </div>
-                    <div className="icon text-center">
-                        <i className="fas fa-balance-scale fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                        <p>Scalability</p>
-                    </div>
-                </div>
-                <p style={{marginTop: "30px", marginBottom: "20px"}}>
+    const erpFeatures = [
+        { icon: "fas fa-cogs", title: "Streamlined Operations" },
+        { icon: "fas fa-chart-line", title: "Real-time Insights" },
+        { icon: "fas fa-sitemap", title: "Integrated Systems" },
+        { icon: "fas fa-balance-scale", title: "Scalability" },
+    ];
 
-                    Enhance business operations and efficiency with Microsoft Dynamics ERP solutions. ERP solutions integrate seamlessly with your existing systems, providing real-time insights, automating processes, and optimizing resource allocation.
-                </p>
-                <p style={{ backgroundColor: "#32325c", color: "#ffffff", padding: "10px", borderRadius: "5px", marginTop: "30px" }}>
-                    ERP solutions include:
-                </p>
-                <ul style={{ textAlign: "left" }}>
-                    <li>Streamlined Operations: Consolidate and automate business processes, reduce manual tasks, and improve operational efficiency across departments.</li>
-                    <li>Real-time Insights: Access up-to-date data and analytics for informed decision-making, resource allocation, and performance tracking.</li>
-                    <li>Integrated Systems: Connect different business functions and departments, ensuring data consistency, collaboration, and seamless workflows.</li>
-                    <li>Scalability: Adapt and scale your ERP system as your business grows, accommodating new processes, users, and functionalities.</li>
-                </ul>
-                <p style={{ backgroundColor: "#32a372", color: "#fff", padding: "20px", borderRadius: "5px", textAlign: "left", marginTop: "50px" }}>
-                    Savannah Inc, specializes in ERP implementation, customization, and optimization tailored to your business goals. Let us help you harness the power of ERP to drive operational excellence and business growth.
-                </p>
-            </>
-        ),
-    };
+    const erpBenefits = [
+        "Enhance business operations and efficiency with Microsoft Dynamics ERP solutions.",
+        "ERP solutions integrate seamlessly with your existing systems, providing real-time insights, automating processes, and optimizing resource allocation.",
+        "Savannah Inc specializes in ERP implementation, customization, and optimization tailored to your business goals.",
+    ];
+
+    const erpPartners = [
+        { name: "Microsoft Business Central", image: crmImage1 },
+        { name: "ODOO ERP", image: crmImage2 },
+    ];
 
     return (
-        <div className="App">
+        <div className={styles.app}>
             <Navbar />
             <AboutUs1 mainHeading="Enterprise Resource Planning" subHeading="Home » Services" />
-            <SubService title={erpService.title} image={erpService.image} description={erpService.description} />
-            <div className={styles["crm-partners"]}>
-                <h3>Our ERP Partners</h3>
-                <div className={styles["partner-logos"]}>
-                    <div className={styles["partner-logo"]}>
-                        <img src={crmImage1} alt="Microsoft Dynamics" />
-                        <p>Microsoft Business Central</p>
+            
+            <div
+              style={{
+                backgroundImage: `url(${backgroundImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+              }}
+            >
+            <main className={styles.main}>
+                <section className={styles.hero}>
+                    <div className={styles.heroContent}>
+                        <h1>ERP Solutions</h1>
+                        <p>Enhance business operations and efficiency with customized ERP solutions.</p>
                     </div>
-                    <div className={styles["partner-logo"]}>
-                        <img src={crmImage2} alt="Zoho CRM" />
-                        <p>ODOO ERP</p>
+                    <img src={erpImage} alt="ERP Solutions" className={styles.heroImage} />
+                </section>
+
+                <section className={styles.features}>
+                    {erpFeatures.map((feature, index) => (
+                        <div key={index} className={styles.featureCard}>
+                            <i className={`${feature.icon} ${styles.featureIcon}`}></i>
+                            <h3>{feature.title}</h3>
+                        </div>
+                    ))}
+                </section>
+
+                <section className={styles.description}>
+                    {erpBenefits.map((benefit, index) => (
+                        <p key={index}>{benefit}</p>
+                    ))}
+                </section>
+
+                <section className={styles.benefits}
+                style={{
+                    backgroundImage: `url(${backgroundImage1})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                  }}>
+                    <h2>Business Benefits</h2>
+                    <ul>
+                        <li>Streamlined Operations: Consolidate and automate business processes, reduce manual tasks, and improve operational efficiency across departments.</li>
+                        <li>Real-time Insights: Access up-to-date data and analytics for informed decision-making, resource allocation, and performance tracking.</li>
+                        <li>Integrated Systems: Connect different business functions and departments, ensuring data consistency, collaboration, and seamless workflows.</li>
+                        <li>Scalability: Adapt and scale your ERP system as your business grows, accommodating new processes, users, and functionalities.</li>
+                    </ul>
+                </section>
+
+                <section className={styles.partners}>
+                    <h2>Our ERP Partners</h2>
+                    <div className={styles.partnerLogos}>
+                        {erpPartners.map((partner, index) => (
+                            <div key={index} className={styles.partnerLogo}>
+                                <img src={partner.image} alt={partner.name} />
+                                <p>{partner.name}</p>
+                            </div>
+                        ))}
                     </div>
-                    
-                </div>
+                </section>
+
+                <section className={styles.callToAction}>
+                    <h2>Ready to Transform Your Business Operations?</h2>
+                    <p>
+                        At Savannah Inc, we specialize in designing and implementing tailored ERP solutions to help you streamline operations and drive business success.
+                    </p>
+                    <button className={styles.ctaButton}>Get Started</button>
+                </section>
+            </main>
             </div>
-
-
-
 
             <Footer />
         </div>

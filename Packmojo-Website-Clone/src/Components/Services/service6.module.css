@@ -69,9 +69,14 @@
   
   .readMore {
     text-decoration: none;
-    color: #000;
+    color: #000;;
     font-weight: bold;
     font-size: 14px;
+  }
+
+  .readMore:hover {
+    text-decoration: underline;
+    color: #32a372
   }
   
   .cardIcon {

@@ -1,100 +1,116 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
-import "../../Components/Styles.module.css";
-import SubService from "../../Components/SubService";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
 import crmImage from "../../Dataset/crm1.jpg";
+import crmImage1 from "../../Dataset/dynamics customers.png";
 import crmImage2 from "../../Dataset/zoho.png";
 import crmImage3 from "../../Dataset/Salesforce.jpeg";
 import crmImage4 from "../../Dataset/ODOO.jpeg";
-import crmImage1 from "../../Dataset/dynamics customers.png";
-import styles from "../../Components/Styles.module.css";
+import styles from "../../Components/crm.module.css";
+import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
+import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+
 
 
 const Crm = () => {
-    const crmService = {
-        title: "CRM Solutions",
-        image: crmImage,
-        description:  (
-          <>
-              <div className="icons-container d-flex justify-content-around flex-wrap bg-light" style = {{color:"#32325c"}} >
-                  <div className="icon text-center">
-                      <i className="fas fa-users fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                      <p>Customer Management</p>
-                  </div>
-                  <div className="icon text-center">
-                      <i className="fas fa-chart-pie fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                      <p>Analytics and Insights</p>
-                  </div>
-                  <div className="icon text-center">
-                      <i className="fas fa-tasks fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                      <p>Task and Activity Management</p>
-                  </div>
-                  <div className="icon text-center">
-                      <i className="fas fa-money-bill-wave fa-3x" style={{ color: "#41E096", transition: "color 0.3s" }}></i>
-                      <p>Sales and Pipeline Management</p>
-                  </div>
-              </div>
-              <p style={{ marginTop: "30px", marginBottom: "20px" }}>
-                  Enhance customer relationships and drive sales with customized CRM solutions. CRM systems centralize customer data, provide actionable insights, and streamline sales and marketing processes for improved customer satisfaction and business growth.
-              </p>
-              <p style={{ backgroundColor: "#32325c", color: "#ffffff", padding: "10px", borderRadius: "5px", marginTop: "30px" }}>
-                   CRM solutions include:
-              </p>
-              <ul style={{ textAlign: "left", marginBottom: "30px" }}>
-                  <li>Customer Management: Centralize customer data, track interactions, and personalize customer experiences for improved engagement.</li>
-                  <li>Analytics and Insights: Gain actionable insights, analyze customer behavior, and make data-driven decisions to optimize sales and marketing strategies.</li>
-                  <li>Task and Activity Management: Organize tasks, manage activities, and streamline workflows to enhance productivity and efficiency.</li>
-                  <li>Sales and Pipeline Management: Track leads, manage opportunities, and optimize the sales pipeline for increased revenue and business growth.</li>
-              </ul>
-              <p style={{ backgroundColor: "#32325c", color: "#ffffff", padding: "10px", borderRadius: "5px", marginTop: "30px" }}>
-                  Businesses benefit include:
-              </p>
-              <ul style={{ textAlign: "left", marginBottom: "30px" }}>
-                  <li>Improved Customer Relationships: Nurture customer relationships, deliver personalized experiences, and enhance customer satisfaction.</li>
-                  <li>Informed Decision-Making: Access real-time data, generate reports, and leverage analytics for informed business decisions and strategy planning.</li>
-                  <li>Efficient Sales and Marketing: Streamline sales processes, automate marketing campaigns, and track performance metrics for better ROI.</li>
-                  <li>Scalability and Growth: Scale your business, expand customer base, and drive business growth with scalable CRM solutions.</li>
-              </ul>
-              <p style={{ backgroundColor: "#32a372", color: "#fff", padding: "20px", borderRadius: "5px", textAlign: "left", marginTop: "50px" }}>
-                  Savannah Inc, we specializes in designing and implementing tailored CRM solutions to help you build lasting customer relationships and drive business success.
-              </p>
-          </>
-      ),
-      };
+    const crmFeatures = [
+        { icon: "fas fa-users", title: "Customer Management" },
+        { icon: "fas fa-chart-pie", title: "Analytics and Insights" },
+        { icon: "fas fa-tasks", title: "Task and Activity Management" },
+        { icon: "fas fa-money-bill-wave", title: "Sales and Pipeline Management" },
+    ];
 
+    const crmBenefits = [
+        "Improved Customer Relationships",
+        "Informed Decision-Making",
+        "Efficient Sales and Marketing",
+        "Scalability and Growth",
+    ];
+
+    const crmPartners = [
+        { name: "Microsoft Dynamics", image: crmImage1 },
+        { name: "Zoho CRM", image: crmImage2 },
+        { name: "Salesforce", image: crmImage3 },
+        { name: "Odoo", image: crmImage4 },
+    ];
 
     return (
-        <div className="App">
-
+        <div className={styles.app}>
             <Navbar />
             <AboutUs1 mainHeading="Customer Relationship Management" subHeading="Home » Services" />
-            <SubService title={crmService.title} image={crmService.image} description={crmService.description} />
-            <div className={styles["crm-partners"]}>
-                <h3>Our CRM Partners</h3>
-                <div className={styles["partner-logos"]}>
-                    <div className={styles["partner-logo"]}>
-                        <img src={crmImage1} alt="Microsoft Dynamics" />
-                        <p>Microsoft Dynamics</p>
+            <div
+            style={{
+                backgroundImage: `url(${backgroundImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+              }}
+            >
+            <main className={styles.main}
+            
+            >
+                <section className={styles.hero}>
+                    <div className={styles.heroContent}>
+                        <h1>CRM Solutions</h1>
+                        <p>Enhance customer relationships and drive sales with customized CRM solutions.</p>
                     </div>
-                    <div className={styles["partner-logo"]}>
-                        <img src={crmImage2} alt="Zoho CRM" />
-                        <p>Zoho CRM</p>
+                    <img src={crmImage} alt="CRM Solutions" className={styles.heroImage} />
+                </section>
+
+                <section className={styles.features}>
+                    {crmFeatures.map((feature, index) => (
+                        <div key={index} className={styles.featureCard}>
+                            <i className={`${feature.icon} ${styles.featureIcon}`}></i>
+                            <h3>{feature.title}</h3>
+                        </div>
+                    ))}
+                </section>
+
+                <section className={styles.description}>
+                    <p>
+                        CRM systems centralize customer data, provide actionable insights, and streamline sales and marketing processes for improved customer satisfaction and business growth.
+                    </p>
+                </section>
+
+                <section className={styles.benefits}
+                style={{
+                    backgroundImage: `url(${backgroundImage1})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                  }}>
+                    <h2>Business Benefits</h2>
+                    <ul>
+                        {crmBenefits.map((benefit, index) => (
+                            <li key={index}>{benefit}</li>
+                        ))}
+                    </ul>
+                </section>
+
+                <section className={styles.partners}>
+                    <h2>Our CRM Partners</h2>
+                    <div className={styles.partnerLogos}>
+                        {crmPartners.map((partner, index) => (
+                            <div key={index} className={styles.partnerLogo}>
+                                <img src={partner.image} alt={partner.name} />
+                                <p>{partner.name}</p>
+                            </div>
+                        ))}
                     </div>
-                    <div className={styles["partner-logo"]}>
-                        <img src={crmImage3} alt="Salesforce" />
-                        <p>Salesforce</p>
-                    </div>
-                    <div className={styles["partner-logo"]}>
-                        <img src={crmImage4} alt="Odoo" />
-                        <p>Odoo</p>
-                    </div>
-                </div>
+                </section>
+
+                <section className={styles.callToAction}>
+                    <h2>Ready to Transform Your Customer Relationships?</h2>
+                    <p>
+                        At Savannah Inc, we specialize in designing and implementing tailored CRM solutions to help you build lasting customer relationships and drive business success.
+                    </p>
+                    <button className={styles.ctaButton}>Get Started</button>
+                </section>
+            </main>
             </div>
 
             <Footer />
-
         </div>
     );
 };

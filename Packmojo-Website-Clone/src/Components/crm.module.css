@@ -1,0 +1,157 @@
+.app {
+    font-family: 'Arial', sans-serif;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.heroContent {
+    flex: 1;
+}
+
+.heroContent h1 {
+    font-size: 2.5rem;
+    color: #32325c;
+    margin-bottom: 1rem;
+}
+
+.heroContent p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.heroImage {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.featureCard {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.featureCard:hover {
+    transform: translateY(-5px);
+}
+
+.featureIcon {
+    font-size: 2.5rem;
+    color: #41E096;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 3rem;
+}
+
+.benefits {
+    background-color: #fffc;
+    color: #555;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.benefits h2 {
+    margin-bottom: 1rem;
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.benefits li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #000;
+}
+
+.partners {
+    margin-bottom: 3rem;
+}
+
+.partners h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.partnerLogos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.partnerLogo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.partnerLogo img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.callToAction {
+    background-color: #f8f9fa;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.callToAction h2 {
+    color: #32325c;
+    margin-bottom: 1rem;
+}
+
+.callToAction p {
+    margin-bottom: 2rem;
+}
+
+.ctaButton {
+    background-color: #41E096;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #32a372;
+}

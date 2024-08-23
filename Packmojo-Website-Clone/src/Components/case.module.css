@@ -1,18 +1,18 @@
+/* Base styles (unchanged) */
 .caseStudiesContainer {
   font-family: Arial, sans-serif;
   padding: 20px;
   padding-top: 50px;
-
 }
 
 .caseStudiesHeading {
   margin-bottom: 20px;
-    color: #333;
-    position: relative;
-    padding-left: 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-top: 10px;
+  color: #333;
+  position: relative;
+  padding-left: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 10px;
 }
 
 .caseStudiesHeading::before {
@@ -25,12 +25,11 @@
   width: 3px;
   border-radius: 2px;
   background-color: #41e096;
-
 }
 
 .caseStudiesGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
   gap: 20px;
 }
 
@@ -49,7 +48,6 @@
 .techDetails {
   color: #555;
   font-size: 14px;
-   /* Example additional styling */
 }
 
 .title {
@@ -62,7 +60,7 @@
 .title1 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000; /* Dark blue */
+  color: #000;
   margin-bottom: 15px;
 }
 
@@ -70,4 +68,29 @@
   font-size: 1rem;
   color: #333;
   margin-bottom: 20px;
+}
+
+/* Responsive grid styles */
+@media (max-width: 1024px) {
+  .caseStudiesGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .caseStudiesGrid {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+
+  .caseStudyCard {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .title1 {
+    font-size: 1.3rem; /* Adjust title size for smaller screens */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Adjust description size for smaller screens */
+  }
 }

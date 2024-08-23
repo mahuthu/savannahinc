@@ -9,16 +9,19 @@ const Blog = ({ id, image, title, description }) => {
         return text.slice(0, maxLength) + "...";
     };
 
+    
     return (
-        <div className={styles["blog-container"]}>
+        <div className={styles["blog-card"]}>
             <img src={image} alt="" className={styles["blog-image"]} />
-            <h3 className={styles["blog-title"]}>{title}</h3>
-            <p className={styles["blog-description"]}>
+            <div className={styles["blog-content"]}>
+                <h3 className={styles["blog-title"]}>{title}</h3>
+                <p className={styles["blog-description"]}>
                 {truncateDescription(description, 200)}
-            </p>
-            <a href={`/blogs/${id}`} className={styles["view-more-link"]}>
-                View More &gt;&gt;
-            </a>
+                </p>
+                <a href={`/blogs/${id}`} className={styles["read-more-link"]}>
+                    Read More →
+                </a>
+            </div>
         </div>
     );
 };

@@ -112,5 +112,13 @@
       width: 80%; /* Adjust image size for smaller screens */
       margin: 0 auto;
     }
+
+    .title{
+      font-size: 1.3rem;
+    }
+
+    .description {
+      font-size: 0.9rem;
+    }
   }
   
