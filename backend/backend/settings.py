@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yfv2b8we1k%^1b)+xp^0ua*t=l3*dnnqm_^@=frd_*z#kb1v8-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Allow requests from your domain and IP address
 ALLOWED_HOSTS = ['savannahinc.co.ke', 'www.savannahinc.co.ke', '3.8.142.166', 'localhost', '127.0.0.1']
