@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import SubService from "../../Components/SubService";
 import styles from "../../Components/crm.module.css";
 import lmsImage from "../../Dataset/lms.png";
 import backgroundImage from '../../Dataset/bac3.jpg'; // Background image
@@ -17,10 +16,10 @@ const Lms = () => {
     ];
 
     const lmsBenefits = [
-        "Enhanced Training",
-        "Improved Training ROI",
-        "Flexible Learning Environments",
-        "Comprehensive Learning Analytics",
+        "Enhanced Training: Provide on-demand training, upskilling, and reskilling opportunities to improve knowledge and skills.",
+        "Improved Training ROI: Measure training effectiveness, identify areas for improvement, and maximize return on investment (ROI) in training initiatives",
+        "Flexible Learning Environments: Offer flexible learning options, including mobile learning, self-paced modules, and virtual classrooms for diverse learner needs.",
+        "Comprehensive Learning Analytics: Gain insights into learner engagement, performance trends, and learning outcomes to optimize training strategies",
     ];
 
     return (

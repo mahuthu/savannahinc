@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import SubService from "../../Components/SubService";
 import styles from "../../Components/crm.module.css";
 import trainingImage from "../../Dataset/training.png";
 import backgroundImage from "../../Dataset/bac1.jpg"; // Import your background image

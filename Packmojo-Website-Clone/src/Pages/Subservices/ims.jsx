@@ -16,10 +16,10 @@ const Ims = () => {
     ];
 
     const imsBenefits = [
-        "Cost Reduction",
-        "Improved Efficiency",
-        "Enhanced Customer Service",
-        "Scalability",
+        "Cost Reduction: Reduce inventory holding costs, minimize stockouts, and improve inventory turnover to optimize working capital.",
+        "Improved Efficiency: Streamline inventory processes, automate replenishment, and enhance supply chain visibility for efficient operations.",
+        "Enhanced Customer Service: Ensure product availability, fulfill orders promptly, and meet customer demand with accurate inventory management.",
+        "Scalability: Scale your inventory management system as your business grows, accommodating new products, locations, and sales channels.",
     ];
 
     return (

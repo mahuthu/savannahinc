@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import SubService from "../../Components/SubService";
 import styles from "../../Components/crm.module.css";
 import recommendationImage from "../../Dataset/recommend.jpg";
 import backgroundImage from '../../Dataset/bac1.jpg'; // Import a background image if needed
+import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import a background image if needed
 
 const RecommendationSystems = () => {
     const recommendationFeatures = [
@@ -57,8 +57,19 @@ const RecommendationSystems = () => {
 
                     <section className={styles.description}>
                         <p>
-                            Advantages of Recommendation Systems solutions include:
+                        Our solutions help you harness the power of recommendation engines to deliver personalized experiences to your customers. By analyzing user behavior and preferences, we enable you to provide tailored content, products, or services that resonate with each individual..
                         </p>
+                    </section>
+
+                    <section className={styles.benefits}
+                    style={{
+                        backgroundImage: `url(${backgroundImage1})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                      }}
+                        >
+                        <h2>Advantages of Recommendation Systems solutions include:</h2>
                         <ul>
                             {recommendationSolutions.map((solution, index) => (
                                 <li key={index}>{solution}</li>

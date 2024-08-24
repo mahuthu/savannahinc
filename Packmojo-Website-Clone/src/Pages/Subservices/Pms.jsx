@@ -2,11 +2,12 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import SubService from "../../Components/SubService";
 import styles from "../../Components/crm.module.css";
 import pmsImage from "../../Dataset/pms.png";
 import pmsPartnerImage from "../../Dataset/project operations.png";
 import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
+import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+
 
 const Pms = () => {
     const pmsFeatures = [
@@ -17,10 +18,10 @@ const Pms = () => {
     ];
 
     const pmsBenefits = [
-        "Improved Project Efficiency",
-        "Enhanced Collaboration",
-        "Resource Optimization",
-        "Project Tracking and Reporting",
+        "Improved Project Efficiency: Streamline workflows, reduce bottlenecks, and enhance project coordination for faster project delivery.",
+        "Enhanced Collaboration: Foster team collaboration, improve communication, and ensure everyone stays aligned with project goals.",
+        "Resource Optimization: Allocate resources effectively, manage workloads, and optimize resource utilization for cost savings.",
+        "Project Tracking and Reporting: Monitor project progress, generate reports, and analyze performance metrics to make data-driven decisions.",
     ];
 
     const pmsPartners = [
@@ -65,7 +66,7 @@ const Pms = () => {
 
                     <section className={styles.benefits}
                         style={{
-                            backgroundImage: `url(${backgroundImage})`,
+                            backgroundImage: `url(${backgroundImage1})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',

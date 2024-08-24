@@ -14,7 +14,7 @@ class UserSerializer(serializers.ModelSerializer):
 class FeedbackSerializer(serializers.ModelSerializer):
     class Meta:
         model = Feedback
-        fields = ['id', 'name', 'email', 'comment', 'created_at']
+        fields = ['id', 'name', 'email', 'phone', 'company' ,'comment', 'created_at']
 
 class BlogSerializer(serializers.ModelSerializer):
     class Meta:

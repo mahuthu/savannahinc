@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import SubService from "../../Components/SubService";
 import styles from "../../Components/crm.module.css";
 import erpImage from "../../Dataset/data.jpg";
-import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
+import backgroundImage from '../../Dataset/bac1.jpg'; // Import your background image
+import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
 
 const DataCollection = () => {
     const dataCollectionFeatures = [
@@ -58,14 +58,26 @@ const DataCollection = () => {
 
                     <section className={styles.description}>
                         <p>
-                            Our data collection and annotation solutions include:
+                        Our solutions help you streamline data collection and annotation processes, ensuring that your business has access to high-quality, labeled data for AI and machine learning applications. We provide tools and services that enable you to gather accurate data from various sources and annotate it efficiently, whether it's text, images, video, or audio data.
                         </p>
+                    </section>
+
+                    <section className={styles.benefits}
+                    style={{
+                        backgroundImage: `url(${backgroundImage1})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                      }}
+                        >
+                        <h2> Our data collection and annotation solutions include::</h2>
                         <ul>
                             {dataCollectionSolutions.map((solution, index) => (
                                 <li key={index}>{solution}</li>
                             ))}
                         </ul>
                     </section>
+
 
                     <section className={styles.callToAction}>
                         <p>

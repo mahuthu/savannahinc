@@ -1,8 +1,17 @@
 import React from "react";
+import backgroundImage from '../Dataset/bac1.jpg'; // Import your background image
+
 
 const FrequentlyAskedQuestions = () => {
   return (
-    <section className="py-5">
+    <section className="py-5"
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}
+    >
       <div className="container-fluid">
         <div className="container">
           <div className="row align-items-center">

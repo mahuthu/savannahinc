@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import SubService from "../../Components/SubService";
 import styles from "../../Components/crm.module.css";
 import crmImage from "../../Dataset/training.png";
 import backgroundImage from '../../Dataset/bac1.jpg'; // Import your background image
+import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
 
 const Training = () => {
     const trainingFeatures = [
@@ -54,11 +54,21 @@ const Training = () => {
                             </div>
                         ))}
                     </section>
-
                     <section className={styles.description}>
                         <p>
-                            Our AI Training and Consultation services provide:
+                        Our solutions help you leverage AI to its fullest potential through comprehensive training and consultation services. We offer expert guidance on implementing AI technologies tailored to your specific business needs.
                         </p>
+                    </section>
+
+                    <section className={styles.benefits}
+                    style={{
+                        backgroundImage: `url(${backgroundImage1})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                      }}
+                        >
+                        <h2> Our AI Training and Consultation services provide:</h2>
                         <ul>
                             {trainingSolutions.map((solution, index) => (
                                 <li key={index}>{solution}</li>

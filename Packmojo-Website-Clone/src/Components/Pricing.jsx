@@ -5,6 +5,8 @@ import { price } from '../constants/Data';
 import './pricing.css'; // Import your custom CSS file for this component
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import backgroundImage from '../Dataset/bac3.jpg'; // Import your background image
+
 
 const Pricing = () => {
   const sliderSettings = {
@@ -42,7 +44,14 @@ const Pricing = () => {
   };
 
   return (
-    <div className="pricing-container">
+    <div className="pricing-container"
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}
+    >
       <h2 className="pricing-heading">Pricing</h2>
       <Slider {...sliderSettings}>
         {price.map((option, index) => (

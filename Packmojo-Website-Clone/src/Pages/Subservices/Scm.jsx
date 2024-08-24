@@ -2,11 +2,12 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import SubService from "../../Components/SubService";
 import styles from "../../Components/crm.module.css";
 import scmImage from "../../Dataset/scm.jpeg";
 import scmPartnerImage from "../../Dataset/scm2.png";
 import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
+import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+
 
 const Model = () => {
     const scmFeatures = [
@@ -17,10 +18,10 @@ const Model = () => {
     ];
 
     const scmBenefits = [
-        "Improved Efficiency",
-        "Enhanced Collaboration",
-        "Customer Satisfaction",
-        "Cost Savings",
+        "Improved Efficiency: Reduce lead times, minimize inventory holding costs, and optimize resource utilization for increased operational efficiency",
+        "Enhanced Collaboration: Foster collaboration among supply chain partners, improve communication, and reduce delays and disruptions",
+        "Customer Satisfaction: Ensure on-time deliveries, reduce order errors, and enhance overall customer satisfaction through streamlined supply chain processes",
+        "Cost Savings: Identify cost-saving opportunities, optimize supply chain networks, and negotiate better terms with suppliers for cost reduction",
     ];
 
     const scmPartners = [
@@ -65,7 +66,7 @@ const Model = () => {
 
                     <section className={styles.benefits}
                         style={{
-                            backgroundImage: `url(${backgroundImage})`,
+                            backgroundImage: `url(${backgroundImage1})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',

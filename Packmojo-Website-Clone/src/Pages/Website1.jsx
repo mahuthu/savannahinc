@@ -3,8 +3,6 @@ import Footer from "../Components/Footer";
 import "../Components/Styles.module.css";
 import Process1 from "../Components/Website";
 import AboutUs1 from "../Components/Aboutus/Aboutus6";
-import Services from "../Components/Services/Services";
-import Projects from "../Components/Projects/Projects";
 import FrequentlyAskedQuestions from "../Components/FrequentlyAskedQuestions";
 import Pricing from "../Components/Pricing";
 // import CustomerReviews from "../Components/CustomerReviews";
@@ -21,12 +19,11 @@ const Website = () => {
 
             
             <Process1/>
-            <Services/>
             <Process />
             
-            <Projects/>
             <FrequentlyAskedQuestions />
             <Pricing/>
+            
             {/* <CustomerReviews/> */}
 
             <Footer />

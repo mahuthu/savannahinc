@@ -3,9 +3,9 @@ import EchoFriendly from "./EchoFriendly";
 import StartJourney from "./StartJourney";
 import Introduction from "./Introduction";
 import Projects1 from "./Projects/project2";
-import Services from "./Services/Services4";
-import CustomerReviews from "./reviews/reviews";
-import Process1 from "./process2";
+// import Services from "./Services/Services4";
+// import CustomerReviews from "./reviews/reviews";
+// import Process1 from "./process2";
 import ContactStrip from "./strip/strip";
 import Images from "./images";
 import Services1 from "./Services/service6"

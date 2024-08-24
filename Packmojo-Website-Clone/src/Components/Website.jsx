@@ -1,4 +1,6 @@
 import React from "react";
+import backgroundImage from '../Dataset/bac3.jpg'; // Import your background image
+
 
 const processSteps = [
   {
@@ -24,7 +26,15 @@ const Process1 = () => {
   ));
 
   return (
-    <section>
+    <section
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}
+    
+    >
       
       <hr style={{ margin: "20px auto", maxWidth: "80%" }} /> {/* Added underline */}
       <div className="container-fluid py-5">

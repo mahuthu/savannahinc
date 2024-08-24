@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import SubService from "../../Components/SubService";
 import styles from "../../Components/crm.module.css";
 import erpImage from "../../Dataset/infobip.png";
 import backgroundImage from '../../Dataset/bac1.jpg'; // Import your background image
+import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
 
 const ChatbotDevelopment = () => {
     const chatbotFeatures = [
@@ -57,8 +57,19 @@ const ChatbotDevelopment = () => {
 
                     <section className={styles.description}>
                         <p>
-                            Chatbot Development solutions include:
+                        Our solutions help you integrate advanced chatbots into your business, enabling you to deliver instant, personalized support and engagement to your customers. By leveraging AI-powered chatbots, you can automate routine inquiries, provide 24/7 assistance, and guide users through their journey with ease
                         </p>
+                    </section>
+
+                    <section className={styles.benefits}
+                    style={{
+                        backgroundImage: `url(${backgroundImage1})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                      }}
+                        >
+                        <h2> Chatbot Development solutions include:</h2>
                         <ul>
                             {chatbotSolutions.map((solution, index) => (
                                 <li key={index}>{solution}</li>

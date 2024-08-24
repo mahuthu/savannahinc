@@ -2,10 +2,11 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import SubService from "../../Components/SubService";
 import styles from "../../Components/crm.module.css";
 import erpImage from "../../Dataset/Tableau.png";
 import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
+import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+
 
 const ERP = () => {
     const analyticsFeatures = [
@@ -59,13 +60,14 @@ const ERP = () => {
                         </p>
                     </section>
 
-                    <section className={styles.solutions}
-                        style={{
-                            backgroundImage: `url(${backgroundImage})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
-                        }}>
+                    <section className={styles.benefits}
+                    style={{
+                        backgroundImage: `url(${backgroundImage1})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                      }}
+                        >
                         <h2>Customer Analytics Solutions Include:</h2>
                         <ul>
                             {analyticsSolutions.map((solution, index) => (

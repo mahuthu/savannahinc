@@ -22,10 +22,10 @@ const Crm = () => {
     ];
 
     const crmBenefits = [
-        "Improved Customer Relationships",
-        "Informed Decision-Making",
-        "Efficient Sales and Marketing",
-        "Scalability and Growth",
+        "Customer Management: Centralize customer data, track interactions, and personalize customer experiences for improved engagement.",
+        "Analytics and Insights: Gain actionable insights, analyze customer behavior, and make data-driven decisions to optimize sales and marketing strategies.",
+        "Task and Activity Management: Streamline task assignments, automate workflows, and improve team collaboration for enhanced productivity.",
+        "Sales and Pipeline Management: Manage sales processes, track leads, and forecast sales performance for better revenue generation.",
     ];
 
     const crmPartners = [
