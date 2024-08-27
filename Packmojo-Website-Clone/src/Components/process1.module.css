@@ -1,14 +1,27 @@
-/* process1.module.css */
 .processSection {
   background-color: #f8f9fa;
   padding: 60px 0;
 }
 
 .sectionTitle {
-  font-size: 1.8 rem;
+  font-size: 2rem;
   margin-bottom: 30px;
   color: #333;
 }
+
+/* Targeting the paragraph immediately after .sectionTitle */
+.sectionTitle + p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.sectionTitle + p + p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
 
 .timelineContainer {
   position: relative;
@@ -62,9 +75,34 @@
 .timelineContent h3 {
   color: #000;
   margin-bottom: 15px;
+  font-size: 1.5rem; /* Targeting the header */
 }
 
 .timelineContent p {
   margin-bottom: 0;
   line-height: 1.6;
+  font-size: 1.1rem; /* Targeting the paragraph */
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .sectionTitle + p {
+    font-size: 1rem; /* Adjusting paragraph size after section title for smaller screens */
+  }
+
+  .sectionTitle + p + p {
+    font-size: 1rem; /* Adjusting paragraph size after section title for smaller screens */
+  }
+
+
+  .timelineContent h3 {
+    font-size: 1.2rem; /* Adjusting the header size for smaller screens */
+  }
+
+  .timelineContent p {
+    font-size: 0.9rem; /* Adjusting the paragraph size for smaller screens */
+  }
 }

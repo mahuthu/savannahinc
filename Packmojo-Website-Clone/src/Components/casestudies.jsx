@@ -20,32 +20,30 @@ const CaseStudies = () => {
       <div className={styles.caseStudiesGrid}>
         <CaseStudyCard 
           logo={logo1}
-          company="Company Name 1"
-          title="Project Title 1"
-          description="Brief description of the project or solution."
-          techDetails="Technical details or methodologies used."
+          company="KICC"
+          title="ERP System Migration"
+          description="Migrated legacy ERP to Microsoft Business Central, enhancing scalability and efficiency."
+        />
+         <CaseStudyCard 
+          logo={logo4}
+          company="Slimways Hardware"
+          title="IMS Integration and Website Development"
+          description="Integrated an Inventory Management System (IMS) and developed a custom website to enhance visibility and operational efficiency."
+        />
+       
+        <CaseStudyCard 
+          logo={logo3}
+          company="Thika Road Christian School"
+          title="Learning Management System Integration"
+          description="Implemented an LMS to enhance student performance tracking and support digital learning."
         />
         <CaseStudyCard 
           logo={logo2}
-          company="Company Name 2"
-          title="Project Title 2"
-          description="Brief description of the project or solution."
-          techDetails="Technical details or methodologies used."
+          company="Bidhaa Sasa"
+          title="Salesforce CRM Integration"
+          description="Integrated Salesforce CRM for Bidhaa Sasa, including platform customization,data migrations and workflow setup."
         />
-        <CaseStudyCard 
-          logo={logo3}
-          company="Company Name 3"
-          title="Project Title 3"
-          description="Brief description of the project or solution."
-          techDetails="Technical details or methodologies used."
-        />
-        <CaseStudyCard 
-          logo={logo4}
-          company="Company Name 4"
-          title="Project Title 4"
-          description="Brief description of the project or solution."
-          techDetails="Technical details or methodologies used."
-        />
+        
       </div>
     </div>
   );

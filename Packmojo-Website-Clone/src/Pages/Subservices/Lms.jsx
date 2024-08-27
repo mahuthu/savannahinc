@@ -6,14 +6,27 @@ import styles from "../../Components/crm.module.css";
 import lmsImage from "../../Dataset/lms.png";
 import backgroundImage from '../../Dataset/bac3.jpg'; // Background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Benefits background image
+import personalizedLearningIcon from '../../Dataset/procurement-managementscm.svg';
+import interactiveContentIcon from '../../Dataset/interactive.svg';
+import analyticsIcon from '../../Dataset/performance-analysismarketing.svg';
+import complianceIcon from '../../Dataset/compliance.svg';
+import UniqueSVG from '../../Components/UniqueSVG';
 
 const Lms = () => {
+    const iconPaths = {
+        PersonalizedLearning: personalizedLearningIcon,
+        InteractiveContent: interactiveContentIcon,
+        AnalyticsAndReporting: analyticsIcon,
+        ComplianceAndCertification: complianceIcon,
+    };
+
     const lmsFeatures = [
-        { icon: "fas fa-user-graduate", title: "Personalized Learning" },
-        { icon: "fas fa-play-circle", title: "Interactive Content" },
-        { icon: "fas fa-chart-line", title: "Analytics and Reporting" },
-        { icon: "fas fa-check-circle", title: "Compliance and Certification" },
+        { title: "Personalized Learning", icon: "PersonalizedLearning", iconColor: "#FF5733" },
+        { title: "Interactive Content", icon: "InteractiveContent", iconColor: "#1ABC9C" },
+        { title: "Analytics and Reporting", icon: "AnalyticsAndReporting", iconColor: "#D35400" },
+        { title: "Compliance and Certification", icon: "ComplianceAndCertification", iconColor: "#2ECC71" },
     ];
+
 
     const lmsBenefits = [
         "Enhanced Training: Provide on-demand training, upskilling, and reskilling opportunities to improve knowledge and skills.",
@@ -45,13 +58,18 @@ const Lms = () => {
                     </section>
 
                     <section className={styles.features}>
-                        {lmsFeatures.map((feature, index) => (
-                            <div key={index} className={styles.featureCard}>
-                                <i className={`${feature.icon} ${styles.featureIcon}`}></i>
-                                <h3>{feature.title}</h3>
+                    {lmsFeatures.map((feature, index) => (
+                        <div key={index} className={styles.featureCard}>
+                            <div className={styles.cardIcon}>
+                                <UniqueSVG 
+                                    svgData={iconPaths[feature.icon]} 
+                                    fillColor={feature.iconColor} 
+                                />
                             </div>
-                        ))}
-                    </section>
+                            <h3>{feature.title}</h3>
+                        </div>
+                    ))}
+                </section>
 
                     <section className={styles.description}>
                         <p>

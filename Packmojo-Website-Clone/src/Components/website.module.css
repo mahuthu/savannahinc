@@ -1,0 +1,115 @@
+/* General Styles */
+section {
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Process1 Component */
+  .process-step {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .process-step img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Process Component */
+  .process-container {
+    background-color: #f5f9fc;
+    padding: 3rem 1rem;
+  }
+  
+  .process-item {
+    margin-bottom: 2rem;
+  }
+  
+  .process-item img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* FAQ Component */
+  .faq-container {
+    padding: 3rem 1rem;
+  }
+  
+  .faq-question {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .faq-answer {
+    margin-left: 1rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.875rem;
+    }
+  
+    .process-step img,
+    .process-item img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .faq-question {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.3rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .process-step,
+    .process-item {
+      padding: 0.75rem;
+    }
+  
+    .faq-answer {
+      margin-left: 0.5rem;
+    }
+  }
+  

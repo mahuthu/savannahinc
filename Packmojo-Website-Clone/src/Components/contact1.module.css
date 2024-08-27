@@ -15,9 +15,25 @@
     flex: 1;
     padding: 20px;
   }
+
+  .formSection h2{
+    font-size: 1.4rem;
+  }
+
+  .formSection p{
+    font-size: 1rem;
+  }
   
   .scheduleSection {
     margin-right: 40px;
+  }
+
+  .scheduleSection h2{
+    font-size: 1.4rem;
+  }
+
+  .scheduleSection p{
+    font-size: 1rem;
   }
   
   .meetingImage {

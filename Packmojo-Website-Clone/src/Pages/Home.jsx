@@ -35,7 +35,7 @@ const Home = () => {
 
     const phoneStyle = {
         ...iconStyle,
-        backgroundColor: '#32325c', // Phone icon background color
+        backgroundColor: '#000', // Phone icon background color
         bottom: '80px', // Adjust to avoid overlap with WhatsApp icon
     };
 
@@ -55,7 +55,7 @@ const Home = () => {
 
             {/* Phone Icon */}
             <div style={phoneStyle}>
-                <a href="tel:+254726258462" style={{ color: '#fff' }}>
+                <a href="tel:+254793704217" style={{ color: '#fff' }}>
                     <i className="fas fa-phone-alt"></i>
                 </a>
             </div>

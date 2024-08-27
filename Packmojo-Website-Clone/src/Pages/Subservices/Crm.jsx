@@ -10,16 +10,47 @@ import crmImage4 from "../../Dataset/ODOO.jpeg";
 import styles from "../../Components/crm.module.css";
 import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+import customerManagementIcon from '../../Dataset/customer-managementcrm.svg';
+import analyticsIcon from '../../Dataset/reports-crm.svg';
+import tasksIcon from '../../Dataset/activity-managemencrm.svg';
+import salesIcon from '../../Dataset/saleserp.svg';
+import UniqueSVG from '../../Components/UniqueSVG';
 
 
 
 const Crm = () => {
+
+
+    const iconPaths = {
+        CustomerManagementIcon: customerManagementIcon,
+        AnalyticsIcon: analyticsIcon,
+        TasksIcon: tasksIcon,
+        SalesIcon: salesIcon,
+    };
+
     const crmFeatures = [
-        { icon: "fas fa-users", title: "Customer Management" },
-        { icon: "fas fa-chart-pie", title: "Analytics and Insights" },
-        { icon: "fas fa-tasks", title: "Task and Activity Management" },
-        { icon: "fas fa-money-bill-wave", title: "Sales and Pipeline Management" },
+        {
+            title: "Customer Management",
+            icon: "CustomerManagementIcon",
+            iconColor: "#FF5733"
+        },
+        {
+            title: "Analytics and Insights",
+            icon: "AnalyticsIcon",
+            iconColor: "#1ABC9C"
+        },
+        {
+            title: "Task and Activity Management",
+            icon: "TasksIcon",
+            iconColor: "#D35400"
+        },
+        {
+            title: "Sales and Pipeline Management",
+            icon: "SalesIcon",
+            iconColor: "#2ECC71"
+        }
     ];
+    
 
     const crmBenefits = [
         "Customer Management: Centralize customer data, track interactions, and personalize customer experiences for improved engagement.",
@@ -59,13 +90,18 @@ const Crm = () => {
                 </section>
 
                 <section className={styles.features}>
-                    {crmFeatures.map((feature, index) => (
-                        <div key={index} className={styles.featureCard}>
-                            <i className={`${feature.icon} ${styles.featureIcon}`}></i>
-                            <h3>{feature.title}</h3>
-                        </div>
-                    ))}
-                </section>
+                        {crmFeatures.map((feature, index) => (
+                            <div key={index} className={styles.featureCard}>
+                                <div className={styles.cardIcon}>
+                                    <UniqueSVG 
+                                        svgData={iconPaths[feature.icon]} 
+                                        fillColor={feature.iconColor} 
+                                    />
+                                </div>
+                                <h3>{feature.title}</h3>
+                            </div>
+                        ))}
+                    </section>
 
                 <section className={styles.description}>
                     <p>

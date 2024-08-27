@@ -20,7 +20,7 @@
 }
 
 .heroContent h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #32325c;
     margin-bottom: 1rem;
 }
@@ -32,8 +32,6 @@
 
 .heroImage {
     width: 40%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .features {
@@ -41,6 +39,10 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+}
+
+.features h3 {
+    font-size: 1.2rem;
 }
 
 .featureCard {
@@ -56,10 +58,11 @@
 }
 
 .featureIcon {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #41E096;
     margin-bottom: 1rem;
 }
+
 
 .description p {
     font-size: 1.1rem;
@@ -89,6 +92,7 @@
     margin-bottom: 0.5rem;
     padding-left: 1.5rem;
     position: relative;
+    font-size: 1.1rem;
 }
 
 .benefits li::before {
@@ -172,12 +176,16 @@
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         }
 
+        .features h3 {
+            font-size: 1rem;
+        }
+
         .benefits {
             padding: 1rem;
         }
 
         .benefits h2 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         .benefits ul {
@@ -185,7 +193,7 @@
         }
 
         .benefits li {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         .partnerLogo img {
@@ -198,7 +206,7 @@
         }
 
         .callToAction h2 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         .callToAction p {
@@ -210,11 +218,15 @@
             font-size: 1rem;
         }
 
-        .description {
+        .description p {
             font-size: 1rem;
         }
 
         .heroContent h1 {
-            font-size: 2rem;
+            font-size: 1.6rem;
+        }
+
+        .heroContent p {
+            font-size: 1.1rem;
         }
     }

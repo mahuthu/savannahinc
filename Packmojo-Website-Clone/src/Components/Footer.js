@@ -44,7 +44,7 @@ const Footer = () => {
               <h5 className={styles.heading}>Our Solutions</h5>
               <li><NavLink to="/website" className={styles.navLink}>Website Design and Development</NavLink></li>
               <li><NavLink to="/social" className={styles.navLink}>Social Media Management</NavLink></li>
-              <li><NavLink to="/business" className={styles.navLink}>Management Softwares</NavLink></li>
+              <li><NavLink to="/business" className={styles.navLink}>Management Information Systems</NavLink></li>
               <li><NavLink to="/chatbot" className={styles.navLink}>Chatbots</NavLink></li>
               <li><NavLink to="/recommend" className={styles.navLink}>Recommendation Engines</NavLink></li>
               <li><NavLink to="/collection" className={styles.navLink}>Data collection and annotation</NavLink></li>

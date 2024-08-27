@@ -11,7 +11,7 @@ const processSteps = [
   },
   {
     logo: <i className="fas fa-globe"></i>,
-    title: "Business Solutions",
+    title: "Business Applications",
     description: "We provide a range of business solutions including Customer relationship management, Enterprise Resource Planning, Inventory Management, Project Management, and more, ensuring that your business operations run smoothly and efficiently.",
   },
   {

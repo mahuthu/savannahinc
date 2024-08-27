@@ -18,10 +18,10 @@
   }
   
   .title {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #fff;
+    color: #41E096;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -54,20 +54,21 @@
   
   .button {
     padding: 12px;
-    background-color: #41E096;
-    color: #000;
+    background-color: #000;
+    color: #41E096;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background-color 0.3s ease;
   }
   
   .button:hover {
-    background-color: #32a372;
+    background-color: #41E096;
+    color: #000
+    
   }
   
   .forgotPassword {
@@ -83,5 +84,5 @@
   }
   
   .link:hover {
-    color: #32a372;
+    color: #fff;
   }

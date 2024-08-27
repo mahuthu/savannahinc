@@ -7,14 +7,26 @@ import scmImage from "../../Dataset/scm.jpeg";
 import scmPartnerImage from "../../Dataset/scm2.png";
 import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+import inventorymanagement from '../../Dataset/shipping-logisticsscm.svg';
+import suppliercollaboration from '../../Dataset/supplier-managementscm.svg';
+import logisticsdistribution from '../../Dataset/supply-chain-analyticsscm.svg';
+import supplychainvisibility from '../../Dataset/quality-controlscm.svg';
+import UniqueSVG from '../../Components/UniqueSVG';
 
 
 const Model = () => {
+    const iconPaths = {
+        InventoryManagement: inventorymanagement,
+        SupplierCollaboration: suppliercollaboration,
+        LogisticsDistribution: logisticsdistribution,
+        SupplyChainVisibility: supplychainvisibility,
+    };
+
     const scmFeatures = [
-        { icon: "fas fa-boxes", title: "Inventory Optimization" },
-        { icon: "fas fa-truck", title: "Supplier Collaboration" },
-        { icon: "fas fa-shipping-fast", title: "Logistics and Distribution" },
-        { icon: "fas fa-eye", title: "Supply Chain Visibility" },
+        { title: "Inventory Management", icon: "InventoryManagement", iconColor: "#FF5733" },
+        { title: "Supplier Collaboration", icon: "SupplierCollaboration", iconColor: "#1ABC9C" },
+        { title: "Logistics and Distribution", icon: "LogisticsDistribution", iconColor: "#D35400" },
+        { title: "Supply Chain Visibility", icon: "SupplyChainVisibility", iconColor: "#2ECC71" },
     ];
 
     const scmBenefits = [
@@ -52,7 +64,12 @@ const Model = () => {
                     <section className={styles.features}>
                         {scmFeatures.map((feature, index) => (
                             <div key={index} className={styles.featureCard}>
-                                <i className={`${feature.icon} ${styles.featureIcon}`}></i>
+                                <div className={styles.cardIcon}>
+                                    <UniqueSVG 
+                                        svgData={iconPaths[feature.icon]} 
+                                        fillColor={feature.iconColor} 
+                                    />
+                                </div>
                                 <h3>{feature.title}</h3>
                             </div>
                         ))}

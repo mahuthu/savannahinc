@@ -8,24 +8,37 @@ import crmImage2 from "../../Dataset/ODOO.jpeg";
 import styles from "../../Components/crm.module.css"; // Reusing crm.module.css for consistency
 import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+import streamlinedoperations from '../../Dataset/activity-managemencrm.svg';
+import realtimeinsights from '../../Dataset/reports-crm.svg';
+import integratesystems from '../../Dataset/reorder-ims.svg';
+import scalability from '../../Dataset/saleserp.svg';
+import UniqueSVG from '../../Components/UniqueSVG';
+import crmImage3 from "../../Dataset/msfinance.jpeg"
 
 const ERP = () => {
+    const iconPaths = {
+        StreamlinedOperations: streamlinedoperations,
+        RealTimeInsights: realtimeinsights,
+        IntegratedSystems: integratesystems,
+        Scalability: scalability,
+    };
+
     const erpFeatures = [
-        { icon: "fas fa-cogs", title: "Streamlined Operations" },
-        { icon: "fas fa-chart-line", title: "Real-time Insights" },
-        { icon: "fas fa-sitemap", title: "Integrated Systems" },
-        { icon: "fas fa-balance-scale", title: "Scalability" },
+        { title: "Streamlined Operations", icon: "StreamlinedOperations", iconColor: "#FF5733" },
+        { title: "Real-time Insights", icon: "RealTimeInsights", iconColor: "#1ABC9C" },
+        { title: "Integrated Systems", icon: "IntegratedSystems", iconColor: "#D35400" },
+        { title: "Scalability", icon: "Scalability", iconColor: "#2ECC71" },
     ];
 
     const erpBenefits = [
         "Enhance business operations and efficiency with Microsoft Dynamics ERP solutions.",
         "ERP solutions integrate seamlessly with your existing systems, providing real-time insights, automating processes, and optimizing resource allocation.",
-        "Savannah Inc specializes in ERP implementation, customization, and optimization tailored to your business goals.",
     ];
 
     const erpPartners = [
         { name: "Microsoft Business Central", image: crmImage1 },
         { name: "ODOO ERP", image: crmImage2 },
+        {name: " Microsoft Finance & Operations", image: crmImage3 },
     ];
 
     return (
@@ -53,11 +66,17 @@ const ERP = () => {
                 <section className={styles.features}>
                     {erpFeatures.map((feature, index) => (
                         <div key={index} className={styles.featureCard}>
-                            <i className={`${feature.icon} ${styles.featureIcon}`}></i>
+                            <div className={styles.cardIcon}>
+                                <UniqueSVG 
+                                    svgData={iconPaths[feature.icon]} 
+                                    fillColor={feature.iconColor} 
+                                />
+                            </div>
                             <h3>{feature.title}</h3>
                         </div>
                     ))}
                 </section>
+
 
                 <section className={styles.description}>
                     {erpBenefits.map((benefit, index) => (

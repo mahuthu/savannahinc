@@ -2,28 +2,96 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
-  color:aliceblue
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 10px 5%;
+  font-family: 'Arial', sans-serif;
 }
 
 .contactInfo {
   display: flex;
-  flex-direction: column;
-  padding-left: 10px;
+  align-items: center;
+}
+
+.label {
+  font-size: 14px;
+  margin-right: 10px;
 }
 
 .phoneNumber {
   font-weight: bold;
+  font-size: 16px;
+  color: #41E096;
 }
 
 .socialIcons {
   display: flex;
-  gap: 10px;
-  padding-right: 10px;
+  gap: 15px;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #333333;
+  transition: all 0.3s ease;
 }
 
 .icon {
-  width: 18px;
-  height: 18px;
-  color: #41E096; /* Change this to match your design */
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+/* Twitter */
+.iconLink:hover .twitterIcon {
+  color: #1DA1F2;
+}
+
+/* Instagram */
+.iconLink:hover .instagramIcon {
+  color: #E4405F;
+}
+
+/* LinkedIn */
+.iconLink:hover .linkedinIcon {
+  color: #0077B5;
+}
+
+/* Ensure background color remains unchanged on hover */
+.iconLink:hover {
+  background-color: #333333;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .contactStrip {
+    padding: 10px 2%;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .phoneNumber {
+    font-size: 14px;
+  }
+
+  .socialIcons {
+    gap: 10px;
+  }
+
+  .iconLink {
+    width: 24px;
+    height: 24px;
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+  }
 }

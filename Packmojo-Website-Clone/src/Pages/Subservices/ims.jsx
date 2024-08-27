@@ -6,13 +6,27 @@ import imsImage from "../../Dataset/ims.jpeg";
 import styles from "../../Components/crm.module.css";
 import backgroundImage from '../../Dataset/bac3.jpg';
 import backgroundImage1 from '../../Dataset/bac4.jpg';
+import realTimeTracking from '../../Dataset/reports-crm.svg';
+import demandForecasting from '../../Dataset/saleserp.svg';
+import inventoryOptimization from '../../Dataset/reorder-ims.svg';
+import dataDrivenInsights from '../../Dataset/inventory-analyticsims.svg';
+import UniqueSVG from '../../Components/UniqueSVG';
+
 
 const Ims = () => {
+
+    const iconPaths = {
+        RealTimeTracking: realTimeTracking,
+        DemandForecasting: demandForecasting,
+        InventoryOptimization: inventoryOptimization,
+        DataDrivenInsights: dataDrivenInsights,
+    };
+
     const imsFeatures = [
-        { icon: "fas fa-box", title: "Real-time Inventory Tracking" },
-        { icon: "fas fa-chart-line", title: "Demand Forecasting" },
-        { icon: "fas fa-cogs", title: "Inventory Optimization" },
-        { icon: "fas fa-chart-bar", title: "Data-driven Insights" },
+        { title: "Real-time Inventory Tracking", icon: "RealTimeTracking", iconColor: "#3498DB" },
+        { title: "Demand Forecasting", icon: "DemandForecasting", iconColor: "#9B59B6" },
+        { title: "Inventory Optimization", icon: "InventoryOptimization", iconColor: "#E67E22" },
+        { title: "Data-driven Insights", icon: "DataDrivenInsights", iconColor: "#16A085" },
     ];
 
     const imsBenefits = [
@@ -22,6 +36,8 @@ const Ims = () => {
         "Scalability: Scale your inventory management system as your business grows, accommodating new products, locations, and sales channels.",
     ];
 
+
+    
     return (
         <div className={styles.app}>
             <Navbar />
@@ -44,13 +60,18 @@ const Ims = () => {
                     </section>
 
                     <section className={styles.features}>
-                        {imsFeatures.map((feature, index) => (
-                            <div key={index} className={styles.featureCard}>
-                                <i className={`${feature.icon} ${styles.featureIcon}`}></i>
-                                <h3>{feature.title}</h3>
+                    {imsFeatures.map((feature, index) => (
+                        <div key={index} className={styles.featureCard}>
+                            <div className={styles.cardIcon}>
+                                <UniqueSVG 
+                                    svgData={iconPaths[feature.icon]} 
+                                    fillColor={feature.iconColor} 
+                                />
                             </div>
-                        ))}
-                    </section>
+                            <h3>{feature.title}</h3>
+                        </div>
+                    ))}
+                </section>
 
                     <section className={styles.description}>
                         <p>

@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './website.module.css';
 
 const processSteps = [
   {
@@ -7,23 +8,18 @@ const processSteps = [
     title: "Requirement Gathering",
     description: "Understand client needs, goals, and preferences for the website.",
   },
-
   {
     logo: <i className="fa fa-dollar" aria-hidden="true"></i>,
     id: "3",
     title: "Place your order",
-    description:
-      "Choose your preferred design and place your order.",
+    description: "Choose your preferred design and place your order.",
   },
-
-
   {
     logo: <i className="fas fa-tools"></i>,
     id: "2",
     title: "Design and Development",
     description: "Create wireframes, design mockups, and develop the website with interactive features.",
   },
-
   {
     logo: <i className="fas fa-check-circle"></i>,
     id: "3",
@@ -36,9 +32,6 @@ const processSteps = [
     title: "Deployment",
     description: "Deploy the website on a hosting server and configure domain settings.",
   },
-
-  
-
   {
     logo: <i className="fas fa-sync-alt"></i>,
     id: "5",
@@ -58,7 +51,7 @@ const Process = () => {
 
   return (
     <section>
-      <div className="container-fluid py-5" style={{ backgroundColor: "#F5F9FC" }}>
+      <div className={`${styles.processContainer}`}>
         <div className="container">
           <div className="row text-center">
             <div className="col-12">

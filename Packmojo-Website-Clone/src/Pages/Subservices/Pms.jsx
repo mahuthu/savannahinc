@@ -7,14 +7,26 @@ import pmsImage from "../../Dataset/pms.png";
 import pmsPartnerImage from "../../Dataset/project operations.png";
 import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+import taskManagementIcon from '../../Dataset/procurement-managementscm.svg';
+import collaborationToolsIcon from '../../Dataset/lead-managementcrm.svg';
+import resourceAllocationIcon from '../../Dataset/demographic-analysismarketing.svg';
+import timelineChartsIcon from '../../Dataset/performance-analysismarketing.svg';
+import UniqueSVG from '../../Components/UniqueSVG';
 
 
 const Pms = () => {
+    const iconPaths = {
+        TaskManagement: taskManagementIcon,
+        CollaborationTools: collaborationToolsIcon,
+        ResourceAllocation: resourceAllocationIcon,
+        TimelineCharts: timelineChartsIcon,
+    };
+
     const pmsFeatures = [
-        { icon: "fas fa-tasks", title: "Task Management" },
-        { icon: "fas fa-users", title: "Collaboration Tools" },
-        { icon: "fas fa-chart-bar", title: "Resource Allocation" },
-        { icon: "fas fa-chart-line", title: "Timeline and Gantt Charts" },
+        { title: "Task Management", icon: "TaskManagement", iconColor: "#3498DB" },
+        { title: "Collaboration Tools", icon: "CollaborationTools", iconColor: "#E74C3C" },
+        { title: "Resource Allocation", icon: "ResourceAllocation", iconColor: "#F39C12" },
+        { title: "Timeline and Gantt Charts", icon: "TimelineCharts", iconColor: "#2ECC71" },
     ];
 
     const pmsBenefits = [
@@ -50,14 +62,18 @@ const Pms = () => {
                     </section>
 
                     <section className={styles.features}>
-                        {pmsFeatures.map((feature, index) => (
-                            <div key={index} className={styles.featureCard}>
-                                <i className={`${feature.icon} ${styles.featureIcon}`}></i>
-                                <h3>{feature.title}</h3>
+                    {pmsFeatures.map((feature, index) => (
+                        <div key={index} className={styles.featureCard}>
+                            <div className={styles.cardIcon}>
+                                <UniqueSVG 
+                                    svgData={iconPaths[feature.icon]} 
+                                    fillColor={feature.iconColor} 
+                                />
                             </div>
-                        ))}
-                    </section>
-
+                            <h3>{feature.title}</h3>
+                        </div>
+                    ))}
+                </section>
                     <section className={styles.description}>
                         <p>
                             Project management solutions streamline workflows, enhance collaboration, and ensure timely project delivery with comprehensive project tracking.

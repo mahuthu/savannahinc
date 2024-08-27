@@ -70,10 +70,10 @@
 
 .button {
   border-radius: 30px;
-  background: #41e096;
-  color: #000;
+  background-color: transparent;
+  color: #41e096;
   font-weight: bold;
-  border: none;
+  border-radius: 30px;
   transition: background-color 0.3s, color 0.3s;
   display: inline-block;
   margin-top: 20px;
@@ -82,8 +82,8 @@
 }
 
 .button:hover {
-  background-color: #32a372;
-  color: #fff;
+  background-color: #41e096;
+  color: #000;
 }
 
 @media (max-width: 700px) {

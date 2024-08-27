@@ -1,16 +1,16 @@
 import React from "react";
 import backgroundImage from '../Dataset/bac1.jpg'; // Import your background image
-
+import styles from './website.module.css';
 
 const FrequentlyAskedQuestions = () => {
   return (
-    <section className="py-5"
-    style={{
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-    }}
+    <section className={`${styles.faqContainer}`}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
     >
       <div className="container-fluid">
         <div className="container">
@@ -56,8 +56,8 @@ const FrequentlyAskedQuestions = () => {
 
 const Question = ({ question, answer }) => (
   <>
-    <h5>{question}</h5>
-    <p className="ms-4">{answer}</p>
+    <h5 className={styles.faqQuestion}>{question}</h5>
+    <p className={styles.faqAnswer}>{answer}</p>
   </>
 );
 
