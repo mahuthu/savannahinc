@@ -105,7 +105,7 @@ const Crm = () => {
 
                 <section className={styles.description}>
                     <p>
-                        CRM systems centralize customer data, provide actionable insights, and streamline sales and marketing processes for improved customer satisfaction and business growth.
+                        Customer Relationship Management systems centralize customer data, provide actionable insights, and streamline sales and marketing processes for improved customer satisfaction and business growth.
                     </p>
                 </section>
 

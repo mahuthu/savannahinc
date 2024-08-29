@@ -41,7 +41,7 @@ const CaseStudies = () => {
           logo={logo2}
           company="Bidhaa Sasa"
           title="Salesforce CRM Integration"
-          description="Integrated Salesforce CRM for Bidhaa Sasa, including platform customization,data migrations and workflow setup."
+          description="Integrated Salesforce CRM including platform customization, data migrations and workflow setup."
         />
         
       </div>

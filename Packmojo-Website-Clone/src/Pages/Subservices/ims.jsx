@@ -75,7 +75,7 @@ const Ims = () => {
 
                     <section className={styles.description}>
                         <p>
-                            IMS solutions offer real-time inventory tracking, demand forecasting, and inventory optimization, reducing costs and improving efficiency.
+                            Inventory Management System solutions offer real-time inventory tracking, demand forecasting, and inventory optimization, reducing costs and improving efficiency.
                         </p>
                     </section>
 

@@ -73,7 +73,7 @@ const Lms = () => {
 
                     <section className={styles.description}>
                         <p>
-                            LMS solutions offer personalized learning paths, interactive content, and advanced analytics to drive training and development.
+                            Learning Management System solutions offer personalized learning paths, interactive content, and advanced analytics to drive training and development.
                         </p>
                     </section>
 

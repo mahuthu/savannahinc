@@ -58,7 +58,7 @@ const ERP = () => {
                 <section className={styles.hero}>
                     <div className={styles.heroContent}>
                         <h1>ERP Solutions</h1>
-                        <p>Enhance business operations and efficiency with customized ERP solutions.</p>
+                        <p>Enhance business operations and efficiency with customized Enterprise Resource Planning solutions.</p>
                     </div>
                     <img src={erpImage} alt="ERP Solutions" className={styles.heroImage} />
                 </section>

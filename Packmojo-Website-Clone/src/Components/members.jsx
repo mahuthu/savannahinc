@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './members.module.css'; // Ensure you're importing the correct CSS module
 
 // Importing images
-import person1 from '../Dataset/person1.jpeg';
-import person2 from '../Dataset/person2.jpeg';
+import person1 from '../Dataset/person2.jpeg';
+import person2 from '../Dataset/person1.jpeg';
 import person3 from '../Dataset/person3.jpeg';
-import person4 from '../Dataset/person4.jpeg';
-import person5 from '../Dataset/person5.jpeg';
-import person6 from '../Dataset/person6.jpeg';
+import person4 from '../Dataset/person8.jpeg';
+import person5 from '../Dataset/person9.jpeg';
+import person6 from '../Dataset/person5.jpeg';
 import person7 from '../Dataset/person7.jpeg';
 import logoNathanDigital from "../Dataset/7.png";
 import backgroundImage from '../Dataset/bac7.jpg'; // Import your background image

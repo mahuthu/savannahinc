@@ -77,7 +77,7 @@ const Model = () => {
 
                     <section className={styles.description}>
                         <p>
-                            SCM systems optimize inventory levels, improve supplier collaboration, and reduce lead times, resulting in a more agile and efficient supply chain.
+                            Supply Chain Management systems optimize inventory levels, improve supplier collaboration, and reduce lead times, resulting in a more agile and efficient supply chain.
                         </p>
                     </section>
 

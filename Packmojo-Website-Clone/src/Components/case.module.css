@@ -58,9 +58,9 @@
 }
 
 .title1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  color: #000;
+  color: #555;
   margin-bottom: 15px;
 }
 
@@ -87,7 +87,7 @@
   }
 
   .title1 {
-    font-size: 1.3rem; /* Adjust title size for smaller screens */
+    font-size: 1.1rem; /* Adjust title size for smaller screens */
   }
 
   .description {
