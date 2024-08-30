@@ -38,7 +38,7 @@
   }
   
   .supportText {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #000; /* Dark blue */
     margin: 0;
@@ -67,7 +67,7 @@
   }
   
   .title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #002855; /* Dark blue */
     margin-bottom: 15px;
