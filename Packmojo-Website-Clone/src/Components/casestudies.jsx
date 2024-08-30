@@ -28,7 +28,7 @@ const CaseStudies = () => {
           logo={logo4}
           company="Slimways Hardware"
           title="IMS Integration and Website Development"
-          description="Integrated an Inventory Management System (IMS) and developed a custom website to enhance visibility and operational efficiency."
+          description="Integrated an Inventory Management System (IMS) and developed a custom website."
         />
        
         <CaseStudyCard 

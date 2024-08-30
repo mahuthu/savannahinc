@@ -21,7 +21,7 @@
 .phoneNumber {
   font-weight: bold;
   font-size: 16px;
-  color: #41E096;
+  color: #fff;
 }
 
 .socialIcons {
@@ -53,8 +53,8 @@
 }
 
 /* Instagram */
-.iconLink:hover .instagramIcon {
-  color: #E4405F;
+.iconLink:hover .facebookIcon {
+  color: #1877F2;
 }
 
 /* LinkedIn */

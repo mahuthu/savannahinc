@@ -24,7 +24,7 @@ const Footer = () => {
               <li>Nairobi, Kenya</li>
               <li>Phone1: 0793704217</li>
               <li>Phone2: 0726258462</li>
-              <li>Email: info@savannahinc.com</li>
+              <li>Email: info@savannahinc.co.ke</li>
             </ul>
           </div>
 

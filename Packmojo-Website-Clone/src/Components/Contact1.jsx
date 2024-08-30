@@ -68,7 +68,7 @@ const ContactSection = () => {
             <h3>Kenya, Nairobi</h3>
             <p><span role="img" aria-label="map marker">📍</span> Office 14, 2nd Floor, Three Sails Complex Kahawa Sukari, Kenya</p>
             <p><span role="img" aria-label="phone">📞</span> +254 793 704217</p>
-            <p><span role="img" aria-label="email">📧</span> info@savannahinc.com</p>
+            <p><span role="img" aria-label="email">📧</span> info@savannahinc.co.ke</p>
             <p><span role="img" aria-label="clock">🕒</span> Monday - Friday: 9:00 AM - 5:00 PM</p>
           </div>
         </div>
