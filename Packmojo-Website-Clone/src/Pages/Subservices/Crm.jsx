@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import crmImage from "../../Dataset/crm1.jpg";
+import crmImage from "../../Dataset/crm3.jpg";
 import crmImage1 from "../../Dataset/dynamics customers.png";
 import crmImage2 from "../../Dataset/zoho.png";
 import crmImage3 from "../../Dataset/Salesforce.jpeg";

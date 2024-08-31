@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './strip.module.css';
-import { Twitter, Facebook, Linkedin } from 'lucide-react';
+import { Twitter, Facebook, Linkedin, Phone } from 'lucide-react';
 
 const ContactStrip = () => {
   return (
     <div className={styles.contactStrip}>
       <div className={styles.contactInfo}>
-        <span className={styles.label}>Get in touch:</span>
+        <Phone className={styles.phoneIcon} />
         <span className={styles.phoneNumber}>+254-793-704-217</span>  
       </div>
       <div className={styles.socialIcons}>

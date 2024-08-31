@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
-import erpImage from "../../Dataset/erp1.jpg";
+import erpImage from "../../Dataset/ERP3.jpg";
 import crmImage1 from "../../Dataset/_BusinessCentral2.png";
 import crmImage2 from "../../Dataset/ODOO.jpeg";
 import styles from "../../Components/crm.module.css"; // Reusing crm.module.css for consistency

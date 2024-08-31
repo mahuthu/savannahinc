@@ -3,7 +3,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
 import styles from "../../Components/crm.module.css";
-import scmImage from "../../Dataset/scm.jpeg";
+import scmImage from "../../Dataset/scm1.jpg";
 import scmPartnerImage from "../../Dataset/scm2.png";
 import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image

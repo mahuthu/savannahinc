@@ -3,7 +3,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer";
 import AboutUs1 from "../../Components/Aboutus/Aboutus6";
 import styles from "../../Components/crm.module.css";
-import erpImage from "../../Dataset/data.jpg";
+import erpImage from "../../Dataset/annot.jpeg";
 import backgroundImage from '../../Dataset/bac1.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
 

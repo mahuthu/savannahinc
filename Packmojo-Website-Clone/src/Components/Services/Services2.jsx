@@ -23,25 +23,25 @@ const Services = () => {
      
     return (
         <div className={styles.servicesContainer} style={{ backgroundImage: `url(${backgroundImage})` }}>
-            <div className = {styles.servicesOverlay}>
-            <h2 className={styles.servicesHeading}>Digital Prescence Services</h2>
-            <div className={styles.serviceInfo}>
-                {services.map((service, index) => (
-                        <div key={index} className={`${styles.serviceSection} ${index % 2 === 1 ? `${styles.bgLight} ${styles.textDark}` : styles.bgDark}`}>
-                        <div className="service-image">
-                        <img src={service.image} alt={service.title} className={styles.serviceImage} />
+            <div className={styles.servicesOverlay}>
+                <h2 className={styles.servicesHeading}>Our Solutions</h2>
+                <div className={styles.serviceGrid}>
+                    {services.map((service, index) => (
+                        <div key={index} className={styles.serviceCard}>
+                            <div className={styles.serviceImageWrapper}>
+                                <img src={service.image} alt={service.title} className={styles.serviceImage} />
+                            </div>
+                            <div className={styles.serviceContent}>
+                                <h3 className={styles.serviceTitle}>{service.title}</h3>
+                                <p className={styles.serviceDescription}>{service.description}</p>
+                            </div>
                         </div>
-                        <div className="service-details">
-                        <h3 className={styles.serviceTitle}>{service.title}</h3>
-                        <p className={styles.serviceDescription}>{service.description}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
-
 };
+
     
 export default Services;

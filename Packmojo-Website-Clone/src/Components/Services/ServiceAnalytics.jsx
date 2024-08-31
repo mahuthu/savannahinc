@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './Services1.module.css'; // Import CSS module for styling
 import backgroundImage from "../../Dataset/nairobi2.jpg"; // Import your background image
 import chatbotImage from "../../Dataset/chatbot.jpeg"; // Import image for Chatbot Development
-import dataCollectionImage from "../../Dataset/data.jpg"; // Import image for Data collection and annotation Services
-import recommendationImage from "../../Dataset/recommend.jpg"; // Import image for Recommendation Engines
+import dataCollectionImage from "../../Dataset/microsoft azure.png"; // Import image for Data collection and annotation Services
+import recommendationImage from "../../Dataset/microsoft azure.png"; // Import image for Recommendation Engines
 import customerAnalyticsImage from "../../Dataset/tableau1.jpg"; // Import image for Customer Analytics
 import marketingAnalyticsImage from "../../Dataset/tableau1.jpg"; // Import image for Marketing Analytics
 import trainingImage from "../../Dataset/training.png"; // Import image for Training and Consultation
@@ -45,13 +45,17 @@ const Services = () => {
     return (
         <div className={styles.servicesContainer} style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className={styles.servicesOverlay}>
-                <h2 className={styles.servicesHeading}>Our Services</h2>
-                <div className={styles.serviceInfo}>
+                <h2 className={styles.servicesHeading}>Our Solutions</h2>
+                <div className={styles.serviceGrid}>
                     {services.map((service, index) => (
-                        <div key={index} className={`${styles.serviceSection} ${index % 2 === 0 ? `${styles.bgLight} ${styles.textDark}` : styles.bgDark}`}>
-                            <img src={service.image} alt={service.title} className={styles.serviceImage} />
-                            <h3 className={styles.serviceTitle}>{service.title}</h3>
-                            <p className={styles.serviceDescription}>{service.description}</p>
+                        <div key={index} className={styles.serviceCard}>
+                            <div className={styles.serviceImageWrapper}>
+                                <img src={service.image} alt={service.title} className={styles.serviceImage} />
+                            </div>
+                            <div className={styles.serviceContent}>
+                                <h3 className={styles.serviceTitle}>{service.title}</h3>
+                                <p className={styles.serviceDescription}>{service.description}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -59,5 +63,6 @@ const Services = () => {
         </div>
     );
 };
+
 
 export default Services;

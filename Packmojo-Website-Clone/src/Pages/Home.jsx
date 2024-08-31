@@ -48,7 +48,7 @@ const Home = () => {
 
             {/* WhatsApp Icon */}
             <div style={whatsappStyle}>
-                <a href="https://wa.me/0726258462" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }}>
+                <a href="https://wa.me/+254726258462" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }}>
                     <i className="fab fa-whatsapp"></i>
                 </a>
             </div>
