@@ -19,4 +19,6 @@
     border-color: #444; /* Optional: Style the dropdown divider */
   }
   
-  
+  .navbar .navitem .navlink {
+    font-size: 10px;
+  }

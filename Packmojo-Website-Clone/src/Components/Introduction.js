@@ -152,7 +152,7 @@ const Introduction = () => {
         id="particles-js"
         className={`${classes.background} ${isFading ? classes.fadeOut : classes.fadeIn}`}
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${images[currentImageIndex]})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${images[currentImageIndex]})`,
         }}
       />
 

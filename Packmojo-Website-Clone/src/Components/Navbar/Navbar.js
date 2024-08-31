@@ -9,8 +9,8 @@ const Navbar = () => {
       <div className="container-fluid " >
         <Link className="navbar-brand" to="/">
           {" "}
-          <img src={logoImage} alt="Logo" width="50" height="50" />{" "}
-          <b> Savannah Inc </b>{" "}
+          <img src={logoImage} alt="Logo" width="45" height="45" />{" "}
+          <b style = {{fontSize:"20px"}}> Savannah Inc </b>{" "}
         </Link>
         <button
           className="navbar-toggler"
