@@ -9,7 +9,7 @@ const Login = () => {
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/token/', {
+      const response = await axios.post('https://savannahinc.co.ke:8000/api/token/', {
         username,
         password
       });
@@ -17,7 +17,7 @@ const Login = () => {
       alert('Login successful');
       
       // Redirect to Django admin dashboard
-      window.location.href = 'http://localhost:8000/admin/';
+      window.location.href = 'https://savannahinc.co.ke:8000/admin/';
 
     } catch (error) {
       console.error('Login error:', error);

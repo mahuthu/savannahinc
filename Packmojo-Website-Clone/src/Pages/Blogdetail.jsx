@@ -10,7 +10,7 @@ const BlogDetailPage = () => {
   return (
     <div className="App">
       <Navbar />
-      <AboutUs1 mainHeading="Blog Detail" subHeading="Home » Blog » Blog Detail" />
+      <AboutUs1 mainHeading="Blog Detail" subHeading="Home » Blog Detail" />
       <BlogDetail />
       <Footer />
     </div>
