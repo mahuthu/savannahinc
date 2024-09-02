@@ -12,19 +12,19 @@ const insightsData = [
   {
     image: automationImage,
     category: 'AUTOMATION',
-    title: 'How automation and machine learning is changing the business dynamics in KSA',
+    title: 'How automation and machine learning is changing the business dynamics',
     link: '#'
   },
   {
     image: hrmsImage,
-    category: 'HRMS',
-    title: 'Empowering Employees: Unveiling the Transformative Potential of HRMS Software',
+    category: 'CRM',
+    title: 'Empowering Employees: Unveiling the Transformative Potential of CRM Software',
     link: '#'
   },
   {
     image: accountingImage,
     category: 'ACCOUNTING',
-    title: 'How can Accounting Software Help You Enhance Financial Performance in Saudi Arabia?',
+    title: 'How can an ERP Software Help You Enhance Financial Performance?',
     link: '#'
   }
 ];
