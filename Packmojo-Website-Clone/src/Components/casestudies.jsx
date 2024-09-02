@@ -22,26 +22,26 @@ const CaseStudies = () => {
           logo={logo1}
           company="KICC"
           title="ERP System Migration"
-          description="Migrated legacy ERP to Microsoft Business Central, enhancing scalability and efficiency."
+          description="Migration from legacy ERP to Microsoft Business Central, enhancing scalability and efficiency."
         />
          <CaseStudyCard 
           logo={logo4}
           company="Slimways Hardware"
           title="IMS Integration and Website Development"
-          description="Integrated an Inventory Management System (IMS) and developed a custom website."
+          description="Integration of an Inventory Management System (IMS) and a custom website."
         />
        
         <CaseStudyCard 
           logo={logo3}
           company="Thika Road Christian School"
           title="Learning Management System Integration"
-          description="Implemented an LMS to enhance student performance tracking and support digital learning."
+          description="Implementation of an LMS to enhance student performance tracking and support digital learning."
         />
         <CaseStudyCard 
           logo={logo2}
           company="Bidhaa Sasa"
           title="Salesforce CRM Integration"
-          description="Integrated Salesforce CRM including platform customization, data migrations and workflow setup."
+          description="Integration of Salesforce CRM, platform customization, data migrations and workflow setup."
         />
         
       </div>
