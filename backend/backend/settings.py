@@ -45,7 +45,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://savannahinc.co.ke",  # Frontend URL
     "http://savannahinc.co.ke",
     "http://www.savannahinc.co.ke",
+    "https://www.savannahinc.co.ke",
     'http://localhost:3000',
+
 
 ]
 
@@ -106,7 +108,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Static files (CSS, JavaScript, Images)
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 

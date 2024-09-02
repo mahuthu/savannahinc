@@ -1,15 +1,11 @@
 .supportSection {
-    background-color: #f0f4ff; /* Light blue background */
     padding: 40px 0;
   }
   
   .container {
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    background-color: #e4ebfe; /* Slightly darker blue for the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
   }
   
@@ -23,6 +19,7 @@
     position: relative;
     padding-left: 30px;
     padding-top: 10px;
+    font-size: 1.3rem;
   }
   
   .supportTextWrapper::before {
@@ -38,7 +35,7 @@
   }
   
   .supportText {
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: bold;
     color: #000; /* Dark blue */
     margin: 0;
@@ -57,8 +54,9 @@
   }
   
   .supportImage {
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
+    padding-left: 80px;
   }
   
   .textContent {
@@ -67,8 +65,9 @@
   }
   
   .title {
-    font-size: 1.4rem;
-    color: #002855; /* Dark blue */
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000; /* Dark blue */
     margin-bottom: 15px;
   }
   
@@ -76,6 +75,7 @@
     font-size: 1rem;
     color: #333;
     margin-bottom: 20px;
+    padding-right: 30px;
   }
   
   .contactButton {
@@ -110,6 +110,7 @@
     .supportImage {
       width: 80%; /* Adjust image size for smaller screens */
       margin: 0 auto;
+      padding-left: 0px;
     }
 
     .title{
@@ -118,6 +119,8 @@
 
     .description {
       font-size: 0.9rem;
+      text-align: left;
+      padding-left: 50px;
     }
   }
   

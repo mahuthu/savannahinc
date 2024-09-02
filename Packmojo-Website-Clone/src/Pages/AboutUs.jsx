@@ -9,6 +9,7 @@ import StartJourney from "../Components/StartJourney";
 import  { useState, useEffect } from "react";
 import Projects1 from "../Components/Projects/project2";
 import Images from "../Components/images";
+import Data from "../Components/data";
 
 
 
@@ -50,6 +51,7 @@ const Business = () => {
             <AboutUs1 />
 
             <Services/>
+            <Data/>
             
                     <div style={imagesStyle}>
                 <Images />

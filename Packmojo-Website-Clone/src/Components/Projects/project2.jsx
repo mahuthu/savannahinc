@@ -47,11 +47,10 @@ const Projects1 = () => {
 
   const headingStyle = {
     marginBottom: '20px',
-    color: '#333',
+    color: '#000',
     position: 'relative',
     paddingLeft: '30px',
-    fontSize: '1.2rem',
-    fontWeight: 'bold',
+    fontSize: '1.4rem',
     paddingTop: '40px',
   };
 
