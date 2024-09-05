@@ -10,7 +10,10 @@ import ContactStrip from "./strip/strip";
 import Images from "./images";
 import Services1 from "./Services/service6"
 import CaseStudies from "./casestudies";
-import Members from "./members"
+import Members from "./members";
+import Solutions from "./solutions";
+import Blog1 from "./blogs1";
+
 
 const HomeContent = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 992);
@@ -43,6 +46,7 @@ const HomeContent = () => {
       <ContactStrip />
       <Introduction />
       <EchoFriendly />
+      <Solutions />
       {/* <Services /> */}
       <Services1 />
       <Members />
@@ -56,6 +60,7 @@ const HomeContent = () => {
         <Projects1 />
       </div>
       <StartJourney />
+      <Blog1 />
 
     </>
   );

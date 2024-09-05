@@ -7,11 +7,10 @@
 
 .caseStudiesHeading {
   margin-bottom: 20px;
-  color: #333;
+  color: #222;
   position: relative;
   padding-left: 15px;
   font-size: 1.4rem;
-  font-weight: bold;
   padding-top: 10px;
 }
 
@@ -80,6 +79,11 @@
 @media (max-width: 768px) {
   .caseStudiesGrid {
     grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+
+  .caseStudiesHeading{
+    font-size: 1.1rem;
+    padding-left: 10px;
   }
 
   .caseStudyCard {

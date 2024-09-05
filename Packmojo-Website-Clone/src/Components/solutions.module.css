@@ -1,0 +1,201 @@
+.caseStudiesContainer {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    padding-top: 50px;
+  }
+  
+  .caseStudiesHeading {
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    padding-left: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  
+  .caseStudiesHeading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 3px;
+    border-radius: 2px;
+    background-color: #41e096;
+  }
+  
+
+
+
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .mainCard {
+    background-color: #e4ebfe; /* Light blue background */
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cardContent {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+  
+  .button {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #f0f0f0;
+  }
+
+  .buttonLink{
+    color:#333;
+  }
+
+    .buttonLink:hover{
+        color:#41e096;
+    }
+  
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forSMEs {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4b0082;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .smallCardsContainer {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .smallCard {
+    flex: 1;
+    border-radius: 8px;
+    padding: 25px;
+    color: white;
+  }
+  
+  .blueCard {
+    background-color: #41E096;
+  }
+  
+  .greenCard {
+    background-color: #000;
+    
+  }
+  
+  .smallCardTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .smallCardDescription {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .smallCard .button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .smallCard .button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+
+    .caseStudiesHeading{
+        font-size: 1.1rem;
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 22px;
+    }
+
+    .description{
+        font-size: 14px;
+    }
+
+    .mainCard {
+      flex-direction: column;
+    }
+  
+    .cardContent {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .smallCardsContainer {
+      flex-direction: column;
+    }
+
+    .button {
+        padding: 8px 16px; /* Reduce padding for smaller screens */
+        font-size: 14px; /* Reduce font size for smaller screens */
+      }
+
+    .smallCard .button {
+        padding: 8px 16px; /* Reduce padding for smaller screens */
+        font-size: 14px; /* Reduce font size for smaller screens */
+      }
+  }

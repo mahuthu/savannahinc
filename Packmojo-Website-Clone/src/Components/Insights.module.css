@@ -79,4 +79,8 @@
     .insightCard {
       flex: 0 0 100%;
     }
+
+    .sectionHeading h2 {
+      font-size: 1.1rem;
+    }
   }

@@ -18,11 +18,18 @@
     display: flex;
     align-items: center;
     top: -30px;
-    color:#000;
+    color:#222;
     margin-bottom: 20px;
     position: relative;
     padding-left: 30px;
     padding-top: 10px;
+  }
+
+  .supportTextWrapper h3{
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
+
   }
   
   .supportTextWrapper::before {
@@ -98,6 +105,10 @@
       flex-direction: column;
       text-align: center;
     }
+
+    .supportTextWrapper h3{
+      font-size: 1.1rem;
+    }
   
     .imageWrapper, .textContent {
       padding: 0;
@@ -117,7 +128,7 @@
     }
 
     .description {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
   
