@@ -159,4 +159,11 @@
     .mainNews, .sideNews {
       width: 100%;
     }
+
+    .caseStudiesHeading {
+      font-size: 1.1rem;
+    }
+
+
+
   }
