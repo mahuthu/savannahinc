@@ -8,7 +8,7 @@ import project3Image from '../../Dataset/microsoft azure.png';
 import project4Image from '../../Dataset/tableau1.jpg';
 import project5Image from '../../Dataset/whatsapp.png';
 import project6Image from '../../Dataset/gold2.png';
-import project7Image from '../../Dataset/ODOO.jpeg';
+import project7Image from '../../Dataset/odoolearning.png';
 import project9Image from '../../Dataset/zoho1.png';
 import project10Image from "../../Dataset/infobip.png";
 import './Projects2.css';
