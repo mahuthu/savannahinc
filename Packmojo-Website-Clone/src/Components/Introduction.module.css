@@ -1,19 +1,11 @@
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 
 .containerfluid {
@@ -44,6 +36,19 @@
   animation: fadeOut 1s forwards;
 }
 
+.contentWrapper {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.content {
+  width: 100%;
+}
+
 .typist {
   display: inline-block;
   position: relative;
@@ -51,7 +56,7 @@
 }
 
 .title {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   font-weight: bold;
   color: #41e096;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
@@ -60,7 +65,7 @@
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #ffffff;
   margin-top: 20px;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
@@ -73,7 +78,6 @@
   background-color: transparent;
   color: #41e096;
   font-weight: bold;
-  border-radius: 30px;
   transition: background-color 0.3s, color 0.3s;
   display: inline-block;
   margin-top: 20px;
@@ -100,5 +104,52 @@
   .button {
     display: ruby-base;
     margin: 20px auto 0;
+    background-color:transparent;
+    border-color: #41e096;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerfluid {
+    display: flex;
+  }
+
+  .backgroundWrapper {
+    width: 60%; /* Updated to 60% */
+    position: relative;
+  }
+
+  .background {
+    position: absolute;
+  }
+
+  .contentWrapper {
+    width: 40%; /* Updated to 40% */
+    background-image: url('../Dataset/black.jpg'); /* Background image */
+    background-size: cover; /* Ensure the image covers the whole area */
+    background-position: center; /* Center the background image */
+    padding: 0 2rem;
+    justify-content: center;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+ .title {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .button {
+    display: ruby-base;
+    margin: 20px auto 0;
+    background-color:transparent ;
+    border-color: #41e096;
   }
 }

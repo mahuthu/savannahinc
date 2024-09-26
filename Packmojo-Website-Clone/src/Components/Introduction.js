@@ -37,22 +37,19 @@ const Introduction = () => {
   }, [nextImageIndex]);
 
   useEffect(() => {
-    // Load particles.js and initialize it
     const scriptParticles = document.createElement('script');
-    scriptParticles.src = '/scripts/particles.js'; // Path to particles.js
+    scriptParticles.src = '/scripts/particles.js';
     scriptParticles.async = true;
 
     const scriptApp = document.createElement('script');
-    scriptApp.src = '/scripts/app.js'; // Path to app.js
+    scriptApp.src = '/scripts/app.js';
     scriptApp.async = true;
 
     document.body.appendChild(scriptParticles);
     document.body.appendChild(scriptApp);
 
-    // Ensure particles.js has loaded and initialized
     scriptParticles.onload = () => {
       scriptApp.onload = () => {
-        // Initialize particles.js if needed
         if (window.particlesJS) {
           window.particlesJS('particles-js', {
             particles: {
@@ -138,7 +135,6 @@ const Introduction = () => {
       };
     };
 
-    // Cleanup scripts on component unmount
     return () => {
       document.body.removeChild(scriptParticles);
       document.body.removeChild(scriptApp);
@@ -147,38 +143,36 @@ const Introduction = () => {
 
   return (
     <div className={classes.containerfluid}>
-      {/* Background Image and Particles */}
-      <div
-        id="particles-js"
-        className={`${classes.background} ${isFading ? classes.fadeOut : classes.fadeIn}`}
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${images[currentImageIndex]})`,
-        }}
-      />
-
-      <div className="container">
-        <div className="row align-items-center" style={{ height: '100vh' }}>
-          <div className="col-12 text-start">
-            <Typist
-              className={classes.typist}
-              avgTypingDelay={50}
-              startDelay={100}
-              cursor={{ show: false }}
-              onTypingDone={handleTypingComplete}
-            >
-              <h1 className={classes.title}>
-                Software to transform <br /> your business
-              </h1>
-              <h2 className={`mt-4 ${classes.subtitle}`}>
-                Experience improved operational efficiency, amplified growth and strategic scaling with our software solutions.
-              </h2>
-            </Typist>
-            {isTypingComplete && (
-              <Link to="/aboutus" className={`btn btn-success px-4 py-2 ${classes.button}`}>
-                Discover More
-              </Link>
-            )}
-          </div>
+      <div className={classes.backgroundWrapper}>
+        <div
+          id="particles-js"
+          className={`${classes.background} ${isFading ? classes.fadeOut : classes.fadeIn}`}
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${images[currentImageIndex]})`,
+          }}
+        />
+      </div>
+      <div className={classes.contentWrapper}>
+        <div className={classes.content}>
+          <Typist
+            className={classes.typist}
+            avgTypingDelay={50}
+            startDelay={100}
+            cursor={{ show: false }}
+            onTypingDone={handleTypingComplete}
+          >
+            <h1 className={classes.title}>
+              Software to transform <br /> your business
+            </h1>
+            <h2 className={`mt-4 ${classes.subtitle}`}>
+              Experience improved operational efficiency, amplified growth and strategic scaling with our software solutions.
+            </h2>
+          </Typist>
+          {isTypingComplete && (
+            <Link to="/about" className={`btn px-4 py-2 ${classes.button}`}>
+              View more →
+            </Link>
+          )}
         </div>
       </div>
     </div>
