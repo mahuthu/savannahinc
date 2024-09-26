@@ -31,7 +31,7 @@ const Introduction = () => {
         setIsFading(false);
       }, 1000);
 
-    }, 60000);
+    }, 600000);
 
     return () => clearInterval(interval);
   }, [nextImageIndex]);
