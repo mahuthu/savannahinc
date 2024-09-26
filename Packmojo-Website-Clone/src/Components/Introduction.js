@@ -169,7 +169,7 @@ const Introduction = () => {
             </h2>
           </Typist>
           {isTypingComplete && (
-            <Link to="/about" className={`btn px-4 py-2 ${classes.button}`}>
+            <Link to="/aboutus" className={`btn px-4 py-2 ${classes.button}`}>
               View more →
             </Link>
           )}
