@@ -16,7 +16,7 @@ const ContactStrip = () => {
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
           <Facebook className={`${styles.icon} ${styles.facebookIcon}`} />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
+        <a href="https://www.linkedin.com/company/savannahinc" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
           <Linkedin className={`${styles.icon} ${styles.linkedinIcon}`} />
         </a>
       </div>

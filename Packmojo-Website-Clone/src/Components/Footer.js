@@ -71,11 +71,21 @@ const Footer = () => {
 
             <div className="col-lg-6 col-12 text-center text-lg-end text-md-end text-sm-center">
               <h4>
-                <i className={`fab fa-facebook-f ${styles.socialIcon}`} style={{ color: iconColors.facebook }}></i>
-                <i className={`fab fa-instagram ${styles.socialIcon}`} style={{ color: iconColors.instagram }}></i>
-                <i className={`fab fa-linkedin ${styles.socialIcon}`} style={{ color: iconColors.linkedin }}></i>
-                <i className={`fab fa-twitter-square ${styles.socialIcon}`} style={{ color: iconColors.twitter }}></i>
-                <i className={`fab fa-youtube ${styles.socialIcon}`} style={{ color: iconColors.youtube }}></i>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <i className={`fab fa-facebook-f ${styles.socialIcon}`} style={{ color: iconColors.facebook }}></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <i className={`fab fa-instagram ${styles.socialIcon}`} style={{ color: iconColors.instagram }}></i>
+                </a>
+                <a href="https://www.linkedin.com/company/savannahinc" target="_blank" rel="noopener noreferrer">
+                  <i className={`fab fa-linkedin ${styles.socialIcon}`} style={{ color: iconColors.linkedin }}></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <i className={`fab fa-twitter-square ${styles.socialIcon}`} style={{ color: iconColors.twitter }}></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                  <i className={`fab fa-youtube ${styles.socialIcon}`} style={{ color: iconColors.youtube }}></i>
+                </a>
               </h4>
             </div>
           </div>
