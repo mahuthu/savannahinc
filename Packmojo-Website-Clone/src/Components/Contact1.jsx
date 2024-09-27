@@ -32,7 +32,7 @@ const ContactSection = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:8000/api/feedback/', dataToSubmit);
+      const response = await axios.post('https://savannahinc.co.ke/api/feedback/', dataToSubmit);
       console.log(response.data);
       alert('Feedback submitted successfully');
       setFormData({
