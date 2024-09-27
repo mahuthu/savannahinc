@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-yfv2b8we1k%^1b)+xp^0ua*t=l3*dnnqm_^@=frd_*z#kb1v8-
 DEBUG = False
 
 # Allow requests from your domain and IP address
-ALLOWED_HOSTS = ['savannahinc.co.ke', 'www.savannahinc.co.ke', '3.8.142.166', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['savannahinc.co.ke', 'www.savannahinc.co.ke','18.175.254.168', 'localhost', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
@@ -42,14 +42,24 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://savannahinc.co.ke",  # Frontend URL
+    "http://savannahinc.co.ke",
+    "https://savannahinc.co.ke",
+    "https://www.savannahinc.co.ke"   # Frontend URL
     "http://savannahinc.co.ke",
     "http://www.savannahinc.co.ke",
-    "https://www.savannahinc.co.ke",
     'http://localhost:3000',
 
 
 ]
+
+
+CORS_ALLOW_CREDENTIALS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://savannahinc.co.ke",
+    "https://www.savannahinc.co.ke",
+]
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (

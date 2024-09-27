@@ -18,7 +18,7 @@ const Cont = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/feedback/', formData);
+      const response = await axios.post('https://savannahinc.co.ke/api/feedback/', formData);
       console.log(response.data);
       alert('Feedback submitted successfully');
       setFormData({
