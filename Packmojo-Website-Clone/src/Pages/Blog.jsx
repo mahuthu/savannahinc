@@ -16,7 +16,7 @@ const BlogPage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("https://www.savannahinc.co.ke:8000/api/blogs/");
+        const response = await axios.get("https://www.savannahinc.co.ke/api/blogs/");
         console.log("Blogs fetched:", response.data);
         setBlogs(response.data);
         setFetched(true);  // Update the flag to prevent re-fetching
