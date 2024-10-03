@@ -6,6 +6,7 @@ import styles from "../../Components/crm.module.css";
 import recommendationImage from "../../Dataset/reccomend3.jpeg";
 import backgroundImage from '../../Dataset/bac1.jpg'; // Import a background image if needed
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import a background image if needed
+import { Link } from "react-router-dom";
 
 const RecommendationSystems = () => {
     const recommendationFeatures = [
@@ -81,7 +82,7 @@ const RecommendationSystems = () => {
                         <p>
                             At Savannah Inc, we build Recommendation Systems Solutions that boost user engagement and drive business growth. Let us help you deliver personalized experiences that keep users coming back.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

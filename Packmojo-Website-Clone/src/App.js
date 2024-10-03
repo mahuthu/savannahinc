@@ -25,9 +25,10 @@ import Consult from "./Pages/Subservices/Consult";
 import Marketing from "./Pages/Subservices/Marketing";
 import Recommend from "./Pages/Subservices/Recommend";
 import Customer from "./Pages/Subservices/Customer";
-import Blog from "./Pages/Blog"
-import Cont from "./Pages/Contact"
-import BlogDetail from "./Pages/Blogdetail"
+import Blog from "./Pages/Blog";
+import Cont from "./Pages/Contact";
+import BlogDetail from "./Pages/Blogdetail";
+import Pos from "./Pages/Subservices/pos";
 
 
 
@@ -60,6 +61,7 @@ const App = () => {
         <Route path="/erp" element={<Erp />} />
         <Route path="/ims" element={<Ims />} />
         <Route path="/pms" element={<Pms />} />
+        <Route path="/pos" element={<Pos />} />
         <Route path="/lms" element={<Lms />} />
         <Route path="/scm" element={<Scm />} />
         <Route path="/training1" element={<Training1 />} />

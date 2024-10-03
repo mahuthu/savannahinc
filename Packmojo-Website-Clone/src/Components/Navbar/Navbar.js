@@ -101,6 +101,11 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link className="dropdown-item" to="/pos">
+                  Point of Sale Solutions
+                  </Link>
+                </li>
+                <li>
                   <Link className="dropdown-item" to="/pms">
                   Project Management Systems
                   </Link>

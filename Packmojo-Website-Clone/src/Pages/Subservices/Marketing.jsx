@@ -6,6 +6,7 @@ import styles from "../../Components/crm.module.css";
 import erpImage from "../../Dataset/marketinganalytics1.png";
 import backgroundImage from '../../Dataset/bac1.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+import { Link } from "react-router-dom";
 
 
 const MarketingAnalytics = () => {
@@ -83,7 +84,7 @@ const MarketingAnalytics = () => {
                         <p>
                             Savannah Inc delivers Marketing Analytics Solutions tailored to your business needs. Let us help you unlock actionable insights and drive marketing success.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

@@ -12,6 +12,8 @@ import suppliercollaboration from '../../Dataset/supplier-managementscm.svg';
 import logisticsdistribution from '../../Dataset/supply-chain-analyticsscm.svg';
 import supplychainvisibility from '../../Dataset/quality-controlscm.svg';
 import UniqueSVG from '../../Components/UniqueSVG';
+import { Link } from "react-router-dom";
+import odooImage from "../../Dataset/ODOO.jpeg";
 
 
 const Model = () => {
@@ -38,6 +40,7 @@ const Model = () => {
 
     const scmPartners = [
         { name: "Microsoft Supply Chain Management", image: scmPartnerImage },
+        {name : "Odoo", image: odooImage},
     ];
 
     return (
@@ -113,7 +116,7 @@ const Model = () => {
                         <p>
                             At Savannah Inc, we specialize in designing and implementing tailored SCM solutions to streamline your supply chain operations and drive business success.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

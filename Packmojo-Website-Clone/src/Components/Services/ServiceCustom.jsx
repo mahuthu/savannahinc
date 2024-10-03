@@ -9,6 +9,7 @@ import projectImage from "../../Dataset/pms1.png";
 import learningImage from "../../Dataset/lms.png";
 import supplyChainImage from "../../Dataset/scm1.jpg";
 import trainingImage from "../../Dataset/training.png";
+import posImage from "../../Dataset/pos2.png";
 
 const Services2 = () => {
     const services = [
@@ -19,7 +20,7 @@ const Services2 = () => {
         },
         {
             title: "ERP Solutions",
-            description: "Enhance business operations and efficiency with Microsoft Dynamics ERP solutions.",
+            description: "Enhance business operations and efficiency with ERP solutions.",
             image: erpImage,
         },
         {
@@ -32,6 +33,13 @@ const Services2 = () => {
             description: "Optimize inventory management with customized solutions tailored to your business needs.",
             image: inventoryImage,
         },
+
+        {
+            title: "POS Solutions", // New POS service
+            description: "Streamline sales and transaction processes with tailored Point of Sale systems for your business.",
+            image: posImage,
+        },
+
         {
             title: "Project Management Systems",
             description: "Efficiently manage projects and tasks with customized project management systems.",
@@ -49,7 +57,7 @@ const Services2 = () => {
         },
         {
             title: "Training and Consultation",
-            description: "Get expert training and consultation services on various IT and business topics.",
+            description: "Get expert training and consultation services on various IT and business solutions.",
             image: trainingImage,
         },
     ];

@@ -6,6 +6,7 @@ import styles from "../../Components/crm.module.css";
 import erpImage from "../../Dataset/customer2.png";
 import backgroundImage from '../../Dataset/bac3.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+import { Link } from "react-router-dom";
 
 
 const ERP = () => {
@@ -80,7 +81,7 @@ const ERP = () => {
                         <p>
                             At Savannah Inc, we offer Customer Analytics Solutions designed to enhance your customer understanding and drive strategic marketing decisions. Let us help you unlock valuable customer insights for business growth.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

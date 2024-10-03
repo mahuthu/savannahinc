@@ -6,6 +6,7 @@ import styles from "../../Components/crm.module.css";
 import crmImage from "../../Dataset/training.png";
 import backgroundImage from '../../Dataset/bac1.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+import { Link } from "react-router-dom";
 
 const Training = () => {
     const trainingFeatures = [
@@ -80,7 +81,7 @@ const Training = () => {
                         <p>
                             At Savannah Inc, we offer comprehensive AI Training and Consultation services to empower your workforce and drive business growth through AI innovation. Let us help you unlock the full potential of AI for improved productivity and efficiency.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

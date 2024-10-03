@@ -11,7 +11,9 @@ import taskManagementIcon from '../../Dataset/procurement-managementscm.svg';
 import collaborationToolsIcon from '../../Dataset/lead-managementcrm.svg';
 import resourceAllocationIcon from '../../Dataset/demographic-analysismarketing.svg';
 import timelineChartsIcon from '../../Dataset/performance-analysismarketing.svg';
+import pms1Image from '../../Dataset/ODOO.jpeg';
 import UniqueSVG from '../../Components/UniqueSVG';
+import { Link } from "react-router-dom";
 
 
 const Pms = () => {
@@ -38,6 +40,7 @@ const Pms = () => {
 
     const pmsPartners = [
         { name: "Microsoft Dynamics Project Operations", image: pmsPartnerImage },
+        {name : "Odoo Project Management", image: pms1Image},
     ];
 
     return (
@@ -112,7 +115,7 @@ const Pms = () => {
                         <p>
                             At Savannah Inc, we specialize in designing and implementing customized Project Management Systems tailored to your project management needs.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

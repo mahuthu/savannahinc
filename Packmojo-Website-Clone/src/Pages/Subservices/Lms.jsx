@@ -11,6 +11,7 @@ import interactiveContentIcon from '../../Dataset/interactive.svg';
 import analyticsIcon from '../../Dataset/performance-analysismarketing.svg';
 import complianceIcon from '../../Dataset/compliance.svg';
 import UniqueSVG from '../../Components/UniqueSVG';
+import { Link } from "react-router-dom";
 
 const Lms = () => {
     const iconPaths = {
@@ -99,7 +100,7 @@ const Lms = () => {
                         <p>
                             At Savannah Inc, we design and implement customized Learning Management Systems tailored to your training and development goals. Let us empower your learners with engaging and impactful learning experiences.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

@@ -11,6 +11,9 @@ import demandForecasting from '../../Dataset/saleserp.svg';
 import inventoryOptimization from '../../Dataset/reorder-ims.svg';
 import dataDrivenInsights from '../../Dataset/inventory-analyticsims.svg';
 import UniqueSVG from '../../Components/UniqueSVG';
+import pms1Image from '../../Dataset/ODOO.jpeg';
+import { Link } from "react-router-dom";
+
 
 
 const Ims = () => {
@@ -35,6 +38,11 @@ const Ims = () => {
         "Enhanced Customer Service: Ensure product availability, fulfill orders promptly, and meet customer demand with accurate inventory management.",
         "Scalability: Scale your inventory management system as your business grows, accommodating new products, locations, and sales channels.",
     ];
+
+    const imsPartners = [
+        {name : "Odoo", image: pms1Image},
+    ];
+
 
 
     
@@ -94,12 +102,25 @@ const Ims = () => {
                         </ul>
                     </section>
 
+                    <section className={styles.partners}>
+                        <h2>Our IMS Partners</h2>
+                        <div className={styles.partnerLogos}>
+                            {imsPartners.map((partner, index) => (
+                                <div key={index} className={styles.partnerLogo}>
+                                    <img src={partner.image} alt={partner.name} />
+                                    <p>{partner.name}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
+
                     <section className={styles.callToAction}>
                         <h2>Ready to Streamline Your Inventory Management?</h2>
                         <p>
                             At Savannah Inc, we specialize in designing and implementing customized Inventory Management Systems tailored to your business requirements. Let us help you streamline your inventory processes and achieve operational excellence.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

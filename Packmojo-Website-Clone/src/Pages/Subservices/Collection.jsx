@@ -6,6 +6,7 @@ import styles from "../../Components/crm.module.css";
 import erpImage from "../../Dataset/annot.jpeg";
 import backgroundImage from '../../Dataset/bac1.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+import { Link } from "react-router-dom";
 
 const DataCollection = () => {
     const dataCollectionFeatures = [
@@ -84,7 +85,7 @@ const DataCollection = () => {
                             Savannah Inc offers end-to-end Data Collection and Annotation Solutions to support your AI and machine learning initiatives. 
                             Let us help you unlock the full potential of your data.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

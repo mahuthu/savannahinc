@@ -14,6 +14,7 @@ import integratesystems from '../../Dataset/reorder-ims.svg';
 import scalability from '../../Dataset/saleserp.svg';
 import UniqueSVG from '../../Components/UniqueSVG';
 import crmImage3 from "../../Dataset/msfinance.jpeg"
+import { Link } from "react-router-dom";
 
 const ERP = () => {
     const iconPaths = {
@@ -117,8 +118,8 @@ const ERP = () => {
                     <p>
                         At Savannah Inc, we specialize in designing and implementing tailored ERP solutions to help you streamline operations and drive business success.
                     </p>
-                    <button className={styles.ctaButton}>Get Started</button>
-                </section>
+                    <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
+                    </section>
             </main>
             </div>
 

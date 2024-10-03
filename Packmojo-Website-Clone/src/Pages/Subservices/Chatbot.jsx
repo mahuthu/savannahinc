@@ -6,6 +6,7 @@ import styles from "../../Components/crm.module.css";
 import erpImage from "../../Dataset/infobip1.jpeg";
 import backgroundImage from '../../Dataset/bac1.jpg'; // Import your background image
 import backgroundImage1 from '../../Dataset/bac4.jpg'; // Import your background image
+import { Link } from "react-router-dom";
 
 const ChatbotDevelopment = () => {
     const chatbotFeatures = [
@@ -81,7 +82,7 @@ const ChatbotDevelopment = () => {
                         <p>
                             Savannah Inc specializes in Chatbot Development Solutions that enhance customer interactions and drive business growth. Let us create conversational experiences that delight your customers.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

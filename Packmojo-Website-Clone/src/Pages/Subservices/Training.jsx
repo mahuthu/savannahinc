@@ -5,6 +5,7 @@ import AboutUs1 from "../../Components/Aboutus/Aboutus6";
 import styles from "../../Components/crm.module.css";
 import trainingImage from "../../Dataset/training.png";
 import backgroundImage from "../../Dataset/bac1.jpg"; // Import your background image
+import { Link } from "react-router-dom";
 
 const Training = () => {
     const trainingFeatures = [
@@ -77,7 +78,7 @@ const Training = () => {
                         <p>
                             At Savannah Inc, we offer comprehensive training and consultation services to empower your workforce and drive business growth through technology and expertise.
                         </p>
-                        <button className={styles.ctaButton}>Get Started</button>
+                        <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
                     </section>
                 </main>
             </div>

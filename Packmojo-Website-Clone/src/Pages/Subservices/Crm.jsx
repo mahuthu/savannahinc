@@ -15,6 +15,7 @@ import analyticsIcon from '../../Dataset/reports-crm.svg';
 import tasksIcon from '../../Dataset/activity-managemencrm.svg';
 import salesIcon from '../../Dataset/saleserp.svg';
 import UniqueSVG from '../../Components/UniqueSVG';
+import { Link } from "react-router-dom";
 
 
 
@@ -141,8 +142,8 @@ const Crm = () => {
                     <p>
                         At Savannah Inc, we specialize in designing and implementing tailored CRM solutions to help you build lasting customer relationships and drive business success.
                     </p>
-                    <button className={styles.ctaButton}>Get Started</button>
-                </section>
+                    <Link to="/contact" className={styles.ctaButton}>Get Started</Link> {/* Use Link to redirect */}
+                    </section>
             </main>
             </div>
 
