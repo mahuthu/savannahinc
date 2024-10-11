@@ -32,6 +32,8 @@
   background-size: cover;
   background-position: center;
   transition: opacity 3s ease-in-out;
+  background-repeat: no-repeat;
+
 }
 
 .fadeIn {
@@ -51,7 +53,7 @@
 }
 
 .title {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   font-weight: bold;
   color: #41e096;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);

@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Typist from 'react-typist';
 import classes from './Introduction.module.css';
-import backgroundImage1 from "../Dataset/business.jpg";
-import backgroundImage2 from "../Dataset/nairobi2.jpg";
+import backgroundImage1 from "../Dataset/nairobi2.jpg";
+import backgroundImage2 from "../Dataset/business.jpg";
 
 const images = [backgroundImage1, backgroundImage2];
 
@@ -152,7 +152,15 @@ const Introduction = () => {
         id="particles-js"
         className={`${classes.background} ${isFading ? classes.fadeOut : classes.fadeIn}`}
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${images[currentImageIndex]})`,
+          backgroundImage: `
+            linear-gradient(
+              90deg,
+              rgba(0, 0, 0, 0.9) 0%,
+              rgba(0, 0, 0, 0.5) 50%,
+              rgba(0, 0, 0, 0.0) 100%
+            ),
+            url(${images[currentImageIndex]})
+          `,
         }}
       />
 

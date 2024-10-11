@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import Contact from "../Components/support";
 import "../Components/Styles.module.css";
 import "../Components/Home.module.css";
+import Store from "../Components/store"
 
 const Home = () => {
     // Common style for floating icons
@@ -44,6 +45,7 @@ const Home = () => {
             <Navbar />
             <HomeContent />
             <Contact />
+            <Store/>
             <Footer />
 
             {/* WhatsApp Icon */}

@@ -32,7 +32,7 @@ const ERP = () => {
     ];
 
     const erpBenefits = [
-        "Enhance business operations and efficiency with Microsoft Dynamics ERP solutions.",
+        "Enhance business operations and efficiency with dynamics ERP solutions.",
         "ERP solutions integrate seamlessly with your existing systems, providing real-time insights, automating processes, and optimizing resource allocation.",
     ];
 
