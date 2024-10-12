@@ -147,6 +147,13 @@
     color: white;
   }
 
+.readMore{
+  background-color: #f0f4ff;
+  border-color: #f0f4ff;
+
+}
+
+
   .readMore:hover {
     color: #41E096
   }
@@ -167,3 +174,142 @@
 
 
   }
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+  color: #1a1a1a;
+}
+
+.modalGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.modalImageSection {
+  width: 100%;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.modalDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modalTag {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #41E096;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+.modalDetails h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.modalDescription {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .modalOverlay {
+    padding: 1rem;
+  }
+
+  .modalContent {
+    padding: 1.5rem;
+  }
+
+  .modalDetails h2 {
+    font-size: 1.5rem;
+  }
+
+  .modalDescription {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .modalOverlay {
+    padding: 0;
+  }
+
+  .modalContent {
+    border-radius: 0;
+    max-height: 100vh;
+    padding: 1rem;
+  }
+
+  .closeButton {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .modalDetails h2 {
+    font-size: 1.25rem;
+  }
+
+  .modalDescription {
+    font-size: 0.9rem;
+  }
+}
+
+.modalDescription p {
+  margin-bottom: 1rem;
+}
+
+.modalDescription p:last-child {
+  margin-bottom: 0;
+}

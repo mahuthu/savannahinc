@@ -1,5 +1,4 @@
 .softwareModules {
-    font-family: Arial, sans-serif;
     padding: 20px;
     background-color: #fff; /* Light blue background */
 
@@ -58,6 +57,8 @@
     font-size: 18px;
     color: #333;
     padding-bottom: 20px;
+    font-family: Arial, sans-serif;
+
   }
   
   .cardContent p {
@@ -66,6 +67,8 @@
     margin-bottom: 20px;
     line-height: 1.4;
     padding-bottom: 20px;
+    font-family: Arial, sans-serif;
+
   }
   
   .readMore {
@@ -73,6 +76,8 @@
     color: #000;;
     font-weight: bold;
     font-size: 14px;
+    font-family: Arial, sans-serif;
+
   }
 
   .readMore:hover {

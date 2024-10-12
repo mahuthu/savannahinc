@@ -1,6 +1,5 @@
 /* Base styles (unchanged) */
 .caseStudiesContainer {
-  font-family: Arial, sans-serif;
   padding: 20px;
   padding-top: 50px;
 }
@@ -12,6 +11,7 @@
   padding-left: 15px;
   font-size: 1.4rem;
   padding-top: 10px;
+
 }
 
 .caseStudiesHeading::before {
@@ -47,6 +47,8 @@
 .techDetails {
   color: #555;
   font-size: 14px;
+  font-family: Arial, sans-serif;
+
 }
 
 .title {
@@ -54,6 +56,8 @@
   font-weight: bold;
   color: #666;
   margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+
 }
 
 .title1 {
@@ -61,12 +65,16 @@
   font-weight: bold;
   color: #555;
   margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+
 }
 
 .description {
   font-size: 0.9rem;
   color: #333;
   margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+
 }
 
 /* Responsive grid styles */

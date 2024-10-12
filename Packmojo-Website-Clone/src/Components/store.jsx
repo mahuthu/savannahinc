@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import styles from './store.module.css';
 import macbook from "../Dataset/macbook2019.jpg"
@@ -134,7 +134,7 @@ const products = [
   {
     id: 7,
     image: mouse,
-    title: "Gaming Mouse",
+    title: "Wireless Mouse",
     description: "20K DPI, wireless, RGB lighting",
     price: 1200,
     specs:{
@@ -167,18 +167,39 @@ const products = [
 const HardwareStore = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const sliderRef = useRef(null);
+  const isMobile = window.innerWidth <= 640;
 
   const next = () => {
     setCurrentIndex((prevIndex) => 
-      prevIndex + 3 >= products.length ? 0 : prevIndex + 3
+      prevIndex + 1 >= products.length ? 0 : prevIndex + 1
     );
   };
 
   const prev = () => {
     setCurrentIndex((prevIndex) => 
-      prevIndex - 3 < 0 ? products.length - 3 : prevIndex - 3
+      prevIndex - 1 < 0 ? products.length - 1 : prevIndex - 1
     );
   };
+
+  useEffect(() => {
+    let interval;
+    if (isMobile) {
+      interval = setInterval(() => {
+        next();
+      }, 4000); // Change slide every 3 seconds
+    }
+    return () => clearInterval(interval);
+  }, [isMobile]);
+
+  useEffect(() => {
+    if (isMobile && sliderRef.current) {
+      sliderRef.current.scrollTo({
+        left: currentIndex * sliderRef.current.offsetWidth,
+        behavior: 'smooth'
+      });
+    }
+  }, [currentIndex, isMobile]);
 
   const handleOpenModal = (product) => {
     setSelectedProduct(product);
@@ -190,7 +211,6 @@ const HardwareStore = () => {
     document.body.style.overflow = 'unset';
   };
 
-  const isMobile = window.innerWidth <= 640;
   const visibleProducts = isMobile ? products : products.slice(currentIndex, currentIndex + 3);
 
   return (
@@ -199,7 +219,10 @@ const HardwareStore = () => {
 
       <section className={styles.sliderSection}>
         <div className={styles.sliderWrapper}>
-          <div className={styles.productsContainer}>
+          <div 
+            className={`${styles.productsContainer} ${isMobile ? styles.mobileProductsContainer : ''}`}
+            ref={sliderRef}
+          >
             {visibleProducts.map((product) => (
               <article key={product.id} className={styles.productCard}>
                 <div className={styles.imageWrapper}>
