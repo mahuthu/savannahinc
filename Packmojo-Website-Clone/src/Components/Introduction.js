@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Typist from 'react-typist';
 import classes from './Introduction.module.css';
-import backgroundImage1 from "../Dataset/nairobi2.jpg";
-import backgroundImage2 from "../Dataset/business.jpg";
+import backgroundImage2 from "../Dataset/nairobi2.jpg";
+import backgroundImage1 from "../Dataset/business.jpg";
 
 const images = [backgroundImage1, backgroundImage2];
 
@@ -31,7 +31,7 @@ const Introduction = () => {
         setIsFading(false);
       }, 1000);
 
-    }, 60000);
+    }, 100000);
 
     return () => clearInterval(interval);
   }, [nextImageIndex]);
