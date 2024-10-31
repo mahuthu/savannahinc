@@ -33,105 +33,6 @@
   background-position: center;
   transition: opacity 3s ease-in-out;
   background-repeat: no-repeat;
-
-}
-
-.fadeIn {
-  opacity: 1;
-  animation: fadeIn 1s forwards;
-}
-
-.fadeOut {
-  opacity: 0;
-  animation: fadeOut 1s forwards;
-}
-
-.typist {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-}
-
-.title {
-  font-size: 2.1rem;
-  font-weight: bold;
-  color: #41e096;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  position: relative;
-  z-index: 1;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin-top: 20px;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  position: relative;
-  z-index: 1;
-}
-
-.button {
-  border-radius: 30px;
-  background-color: transparent;
-  color: #41e096;
-  font-weight: bold;
-  border-radius: 30px;
-  transition: background-color 0.3s, color 0.3s;
-  display: inline-block;
-  margin-top: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-.button:hover {
-  background-color: #41e096;
-  color: #000;
-}
-
-@media (max-width: 700px) {
-  .title {
-    font-size: 2.2rem;
-    text-align: left;
-  }
-
-  .subtitle {
-    font-size: 1.2rem;
-    text-align: left;
-  }
-
-  .button {
-    display: ruby-base;
-    margin: 20px auto 0;
-  }
-}
-
-
-/* @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-.containerfluid {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  transition: opacity 3s ease-in-out;
 }
 
 .fadeIn {
@@ -146,51 +47,45 @@
 
 .contentWrapper {
   position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-}
-
-.content {
-  width: 100%;
-}
-
-.typist {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
+  z-index: 2;
+  padding: 2rem;
 }
 
 .title {
-  font-size: 2.3rem;
+  position: relative;
+  font-size: 2.1rem;
   font-weight: bold;
   color: #41e096;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  position: relative;
-  z-index: 1;
+  margin-bottom: 2rem;
+}
+
+.decorativeLine {
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 150px;
+  height: auto;
+  opacity: 0.8;
 }
 
 .subtitle {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #ffffff;
   margin-top: 20px;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  position: relative;
-  z-index: 1;
 }
 
 .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
   border-radius: 30px;
   background-color: transparent;
   color: #41e096;
   font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
-  display: inline-block;
-  margin-top: 20px;
-  position: relative;
-  z-index: 1;
+  border: 2px solid #41e096;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
 }
 
 .button:hover {
@@ -198,10 +93,23 @@
   color: #000;
 }
 
-@media (max-width: 700px) {
+
+
+@media (max-width: 991px) {
+  .background {
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.0) 100%
+    );
+  }
+
   .title {
     font-size: 2.2rem;
     text-align: left;
+    color: #41e096;
+
   }
 
   .subtitle {
@@ -212,52 +120,146 @@
   .button {
     display: ruby-base;
     margin: 20px auto 0;
-    background-color:transparent;
-    border-color: #41e096;
   }
 }
 
-@media (min-width: 768px) {
-  .containerfluid {
+
+@media (min-width: 992px) {
+  .splitContainer {
     display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Dataset/bac7.jpg");
+
   }
 
-  .backgroundWrapper {
-    width: 60%; 
+  .contentSection {
+    width: 40%;
+    background-image: url("../Dataset/bac7.jpg");
+    display: flex;
+    align-items: center;
     position: relative;
+    z-index: 2;
+  }
+
+  .contentWrapper {
+    padding: 4rem;
+  }
+
+  .imageSection {
+    width: 60%;
+    position: relative;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .title {
+    color: #333;
+    text-shadow: none;
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    color: #666;
+    text-shadow: none;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 90%;
+  }
+
+  .button {
+    background-color: #41e096;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+  }
+
+  .button:hover {
+    background-color: #33b378;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(65, 224, 150, 0.2);
   }
 
   .background {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        to left,
+        rgba(65, 224, 150, 0.9) 0%,
+        rgba(65, 224, 150, 0.7) 30%,
+        rgba(65, 224, 150, 0.4) 60%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+    }
+  }
+
+  #particles-js {
+    position: relative;
+    z-index: 2;
+  }
+
+  .decorativeLine {
+    opacity: 1;
+    width: 180px;
+  }
+}
+
+/* Small screen styles */
+@media (max-width: 500px) {
+  .background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.0) 100%
+    );
+    z-index: 1;
   }
 
   .contentWrapper {
-    width: 40%; 
-    background-image: url('../Dataset/black.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    padding: 0 2rem;
-    justify-content: center;
+    position: relative;
+    z-index: 2;
   }
 
-  .content {
-    max-width: 100%;
-  }
+  .title {
+    color: #41e096;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-size: 2.2rem;
 
- .title {
-    font-size: 2.3rem;
-    text-align: left;
+  
   }
 
   .subtitle {
-    font-size: 1.3rem;
-    text-align: left;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+
   }
 
   .button {
-    display: ruby-base;
-    margin: 20px auto 0;
-    background-color:transparent ;
-    border-color: #41e096;
+    background-color: transparent;
+    border: 2px solid #41e096;
+    color: #41e096;
   }
-} */
+
+  .decorativeLine {
+    width: 120px;
+    opacity: 0.9;
+  }
+}
