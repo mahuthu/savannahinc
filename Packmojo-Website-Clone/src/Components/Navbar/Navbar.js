@@ -6,7 +6,8 @@ import logoImage from "../../Dataset/7.png";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light px-0">
-      <div className="container-fluid " >
+      <div className="container-fluid" style={{ backgroundColor: "white" }}>
+
         <Link className="navbar-brand" to="/">
           {" "}
           <img src={logoImage} alt="Logo" width="45" height="45" />{" "}
