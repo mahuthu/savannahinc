@@ -52,7 +52,7 @@ const ERPLanding = () => {
         <div className={`${styles.smallCard} ${styles.greenCard}`}>
           <h3 className={styles.smallCardTitle} style={{color:"#f0f4ff"}}>Analytics, ML and AI Services</h3>
           <p className={styles.smallCardDescription}style = {{color:"#fff"}}>
-          Unlock insights with customer and marketing analytics, and enhance customer interaction with AI-powered chatbots.
+          Leverage the power of Artificial Intelligence to boost productivity and transform your business.
 
           </p>
           <button className={styles.button} style={{ backgroundColor: "#e4ebfe", border: "1px solid #e4ebfe", color: "#000" }}>

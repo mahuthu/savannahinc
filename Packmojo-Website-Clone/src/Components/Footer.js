@@ -20,7 +20,7 @@ const Footer = () => {
             <ul className={styles.list}>
               <h5 className={styles.heading}>Contact Information</h5>
               <li>Savannah Inc</li>
-              <li>Kahawa Sukari, Thika Road,</li>
+              <li>Westlands, The Piano.</li>
               <li>Nairobi, Kenya</li>
               <li>Phone1: 0793704217</li>
               <li>Phone2: 0726258462</li>
@@ -44,7 +44,7 @@ const Footer = () => {
               <h5 className={styles.heading}>Our Solutions</h5>
               <li><NavLink to="/website" className={styles.navLink}>Website Design and Development</NavLink></li>
               <li><NavLink to="/social" className={styles.navLink}>Social Media Management</NavLink></li>
-              <li><NavLink to="/business" className={styles.navLink}>Management Information Systems</NavLink></li>
+              <li><NavLink to="/business" className={styles.navLink}>Information Management Systems</NavLink></li>
               <li><NavLink to="/chatbot" className={styles.navLink}>Chatbots</NavLink></li>
               <li><NavLink to="/recommend" className={styles.navLink}>Recommendation Engines</NavLink></li>
               <li><NavLink to="/collection" className={styles.navLink}>Data collection and annotation</NavLink></li>
@@ -74,18 +74,18 @@ const Footer = () => {
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                   <i className={`fab fa-facebook-f ${styles.socialIcon}`} style={{ color: iconColors.facebook }}></i>
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                   <i className={`fab fa-instagram ${styles.socialIcon}`} style={{ color: iconColors.instagram }}></i>
-                </a>
+                </a> */}
                 <a href="https://www.linkedin.com/company/savannahinc" target="_blank" rel="noopener noreferrer">
                   <i className={`fab fa-linkedin ${styles.socialIcon}`} style={{ color: iconColors.linkedin }}></i>
                 </a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                   <i className={`fab fa-twitter-square ${styles.socialIcon}`} style={{ color: iconColors.twitter }}></i>
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                {/* <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                   <i className={`fab fa-youtube ${styles.socialIcon}`} style={{ color: iconColors.youtube }}></i>
-                </a>
+                </a> */}
               </h4>
             </div>
           </div>

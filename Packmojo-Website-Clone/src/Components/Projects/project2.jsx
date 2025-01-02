@@ -70,7 +70,7 @@ const Projects1 = () => {
   return (
     <div>
       <h2 style={headingStyle}>
-        Our Partners
+        Our Providers
         <span style={headingBeforeStyle}></span>
       </h2>
     <div className="projects-container">

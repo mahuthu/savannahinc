@@ -66,7 +66,7 @@ const ContactSection = () => {
           <p>Fill out the form and we will be in touch.</p>
           <div className={styles.location}>
             <h3>Kenya, Nairobi</h3>
-            <p><span role="img" aria-label="map marker">📍</span> Office 14, 2nd Floor, Three Sails Complex Kahawa Sukari, Kenya</p>
+            <p><span role="img" aria-label="map marker">📍</span> The Piano, Westlands, Kenya</p>
             <p><span role="img" aria-label="phone">📞</span> +254 793 704217</p>
             <p><span role="img" aria-label="email">📧</span> info@savannahinc.co.ke</p>
             <p><span role="img" aria-label="clock">🕒</span> Monday - Friday: 9:00 AM - 5:00 PM</p>
@@ -157,15 +157,15 @@ const ContactSection = () => {
       <div className={styles.mapContainer}>
         <h2 className={styles.mapHeading}>Find Us Here</h2>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.529362042036!2d36.82332131475668!3d-1.2868839990559196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f18a0d6e5b0f7%3A0x2b6d5a6f6f8e9b5e!2sSavannah%20Builders!5e0!3m2!1sen!2ske!4v1634392388359!5m2!1sen!2ske"
-          width="600"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          title="Google Maps"
-          className={styles.mapIframe}
-        ></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.529362042036!2d36.796308156905546!3d-1.255741903140399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f18a0d6e5b0f7%3A0x2b6d5a6f6f8e9b5e!2sSavannah%20Builders!5e0!3m2!1sen!2ske!4v1634392388359!5m2!1sen!2ske"
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        title="Google Maps"
+        className={styles.mapIframe}
+      ></iframe>
       </div>
     </section>
   );
