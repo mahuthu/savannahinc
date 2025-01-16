@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import UniqueSVG from '../UniqueSVG';
 import accountingIcon from '../../Dataset/accounting&finance.svg';
 import hrmsIcon from '../../Dataset/hrms.svg';
@@ -22,23 +22,58 @@ const iconPaths = {
 };
 
 const SoftwareModules = () => {
+  const modulesRef = useRef(null);
+
+  useEffect(() => {
+    const targetElement = modulesRef.current;
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const cards = entry.target.getElementsByClassName(styles.moduleCard);
+          Array.from(cards).forEach(card => {
+            card.classList.add(styles.visible);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    if (targetElement) {
+      observer.observe(targetElement);
+    }
+
+    return () => {
+      if (targetElement) {
+        observer.unobserve(targetElement);
+      }
+    };
+  }, []);
+
   return (
-    <div className={styles.softwareModules}
-    style={{
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-    }}
+    <div 
+      className={styles.softwareModules}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
     >
       <h2 className={styles.heading}>Software Modules</h2>
-      <div className={styles.modulesContainer}>
+      <div className={styles.modulesContainer} ref={modulesRef}>
         <ModuleCard
           title="IMS"
           description="Automate inventory tracking and management for streamlined operations."
           iconName="ImssIcon"
           iconColor="#FF5733"
-          link = "/ims"
+          link="/ims"
         />
         <ModuleCard
           title="ERP"
@@ -86,10 +121,7 @@ const ModuleCard = ({ title, description, iconName, iconColor, link }) => {
   const svgData = iconPaths[iconName];
 
   return (
-    <div 
-      className={styles.moduleCard} 
-      
-    >
+    <div className={styles.moduleCard}>
       <div className={styles.cardContent}>
         <h3>{title}</h3>
         <p>{description}</p>

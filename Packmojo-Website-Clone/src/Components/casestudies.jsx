@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './case.module.css'; // Assuming you're using CSS Modules
 import logo1 from "../Dataset/logo1.png";
 import logo2 from "../Dataset/logo2.png";
@@ -7,6 +7,40 @@ import logo4 from "../Dataset/logo4.jpg";
 import backgroundImage from '../Dataset/bac3.jpg'; // Import your background image
 
 const CaseStudies = () => {
+  const gridRef = useRef(null);
+
+  useEffect(() => {
+    const targetElement = gridRef.current;
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const cards = entry.target.getElementsByClassName(styles.caseStudyCard);
+          Array.from(cards).forEach(card => {
+            card.classList.add(styles.visible);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    if (targetElement) {
+      observer.observe(targetElement);
+    }
+
+    return () => {
+      if (targetElement) {
+        observer.unobserve(targetElement);
+      }
+    };
+  }, []);
+
   return (
     <div className={styles.caseStudiesContainer}
     style={{
@@ -17,7 +51,7 @@ const CaseStudies = () => {
     }}
     >
       <h2 className={styles.caseStudiesHeading}>Case Studies</h2>
-      <div className={styles.caseStudiesGrid}>
+      <div className={styles.caseStudiesGrid} ref={gridRef}>
         <CaseStudyCard 
           logo={logo1}
           company="KICC"

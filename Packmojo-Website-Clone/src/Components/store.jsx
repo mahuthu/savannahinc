@@ -2,13 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import styles from './store.module.css';
 import macbook from "../Dataset/macbook2019.jpg"
-import gaming from "../Dataset/RTX.webp"
+// import gaming from "../Dataset/RTX.webp"
 import dell from "../Dataset/Dell-XPS-15-7590-Laptop.webp"
 import monitor from "../Dataset/HP-34F-Monitor.jpg"
 import mouse from "../Dataset/mouse4.webp"
 import ssd from "../Dataset/harddrive.jpg"
 import lenovo from "../Dataset/lenovox1carbon.jpg"
 import keyboard from "../Dataset/mechanical keyboard.jpeg"
+import hp_deskjet_2320 from "../Dataset/HP-DeskJet-2320.jpg"
 
 
 
@@ -33,28 +34,31 @@ const products = [
       warranty: "1 Year Limited Warranty"
     }
   },
+  // 
+  
+
+
   {
-    id: 2,
-    image: gaming,
-    title: "Gaming PC RTX 4060",
-    description: " Custom build PC Ryzen 5 5500 16/32GB DDR4 1TB SSD Intel i9, NVMe ",
-    price: 118000,
-    specs: {
-      processor: "AMD Ryzeen",
-      memory: "16/32GB DDR4",
-      storage: "1TB SSD",
-      display: "27-inch 4K",
-      resolution: "3840 x 2160",
-      graphics: "NVIDIA RTX 4060",
-      battery: "100Wh lithium-polymer", 
-      ports: ["4 Thunderbolt 3", "3.5mm Headphone Jack"],
-      weight: "2.0 kg",
-      os: "Windows 10",
-      warranty: "1 Year Limited Warranty"
+    "id": 2,
+    "image": hp_deskjet_2320,
+    "title": "HP DeskJet 2320 All-in-One Printer",
+    "description": "Affordable all-in-one printer for everyday printing, scanning, and copying needs.",
+    "price": 8000,
+    "specs": {
+      "functions": ["Print", "Copy", "Scan"],
+      "print_speed": "Up to 7.5 ppm (black), Up to 5.5 ppm (color)",
+      "print_resolution": "Up to 4800 x 1200 optimized dpi",
+      "scanner_type": "Flatbed",
+      "scan_resolution": "Up to 1200 dpi",
+      "connectivity": ["Hi-Speed USB 2.0"],
+      "compatible_cartridges": ["HP 305 Black", "HP 305 Tri-Color"],
+      "dimensions": "425.2 x 304.1 x 149.1 mm",
+      "weight": "3.42 kg",
+      "os_compatibility": ["Windows 11", "Windows 10"],
+      "warranty": "1 Year Limited Warranty"
     }
-
-
   },
+  
   {
     id: 3,
     image: dell,
