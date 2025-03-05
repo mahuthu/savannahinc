@@ -44,7 +44,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://savannahinc.co.ke",
     "https://savannahinc.co.ke",
-    "https://www.savannahinc.co.ke"   # Frontend URL
+    "https://www.savannahinc.co.ke",  # Frontend URL
     "http://savannahinc.co.ke",
     "http://www.savannahinc.co.ke",
     'http://localhost:3000',
