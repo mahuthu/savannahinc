@@ -38,22 +38,12 @@ const Introduction = () => {
   }, [nextImageIndex]);
 
   useEffect(() => {
-    // Load particles.js and initialize it
-    const scriptParticles = document.createElement('script');
-    scriptParticles.src = '/scripts/particles.js'; // Path to particles.js
-    scriptParticles.async = true;
-
-    const scriptApp = document.createElement('script');
-    scriptApp.src = '/scripts/app.js'; // Path to app.js
-    scriptApp.async = true;
-
-    document.body.appendChild(scriptParticles);
-    document.body.appendChild(scriptApp);
-
-    // Ensure particles.js has loaded and initialized
-    scriptParticles.onload = () => {
-      scriptApp.onload = () => {
-        // Initialize particles.js if needed
+    // Create a function to load particles.js from CDN
+    const loadParticlesJS = () => {
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+      script.async = true;
+      script.onload = () => {
         if (window.particlesJS) {
           window.particlesJS('particles-js', {
             particles: {
@@ -137,12 +127,18 @@ const Introduction = () => {
           });
         }
       };
+      document.body.appendChild(script);
+      return script;
     };
 
-    // Cleanup scripts on component unmount
+    // Load the script
+    const script = loadParticlesJS();
+
+    // Cleanup
     return () => {
-      document.body.removeChild(scriptParticles);
-      document.body.removeChild(scriptApp);
+      if (script && document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
 

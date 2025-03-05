@@ -10,10 +10,50 @@ import ssd from "../Dataset/harddrive.jpg"
 import lenovo from "../Dataset/lenovox1carbon.jpg"
 import keyboard from "../Dataset/mechanical keyboard.jpeg"
 import hp_deskjet_2320 from "../Dataset/HP-DeskJet-2320.jpg"
+import desktop from "../Dataset/desktop.webp"
+import pos_terminal from "../Dataset/POS1.png"
+import receipt_printer from "../Dataset/thermal1.jpg"
 
 
 
 const products = [
+  {
+    id: 10,
+    image: pos_terminal, // You'll need to import this image
+    title: "POS Terminal System",
+    description: "All-in-one point of sale system with touch screen",
+    price: 40000,
+    specs: {
+      display: "15.6-inch Touch Screen",
+      processor: "Intel Core i5",
+      memory: "8GB DDR4",
+      storage: "256GB SSD",
+      os: "Windows 10 IoT Enterprise",
+      ports: ["6 USB", "2 Serial", "1 Ethernet", "1 Cash Drawer"],
+      connectivity: ["Wi-Fi", "Bluetooth", "Ethernet"],
+      accessories: ["58mm Thermal Printer", "Barcode Scanner", "Cash Drawer"],
+      warranty: "1 Year Limited Warranty"
+    }
+  },
+  {
+    id: 11,
+    image: receipt_printer, // You'll need to import this image
+    title: "Thermal Receipt Printer",
+    description: "High-speed 80mm thermal receipt printer",
+    price: 5500,
+    specs: {
+      printMethod: "Direct Thermal",
+      paperWidth: "80mm",
+      printSpeed: "250mm/second",
+      connectivity: ["USB", "Ethernet", "Serial"],
+      autocut: "Yes",
+      compatibility: ["Windows", "Linux", "Mac OS"],
+      paperRollDiameter: "83mm max",
+      printResolution: "203 DPI",
+      warranty: "1 Year Limited Warranty"
+    }
+  },
+
   {
     id: 1,
     image: macbook,
@@ -42,7 +82,7 @@ const products = [
     "id": 2,
     "image": hp_deskjet_2320,
     "title": "HP DeskJet 2320 All-in-One Printer",
-    "description": "Affordable all-in-one printer for everyday printing, scanning, and copying needs.",
+    "description": "All-in-one printer for everyday printing, scanning, and copying needs.",
     "price": 8000,
     "specs": {
       "functions": ["Print", "Copy", "Scan"],
@@ -58,7 +98,34 @@ const products = [
       "warranty": "1 Year Limited Warranty"
     }
   },
-  
+  {
+    id: 9,
+    image: desktop,
+    title: "HP ProDesk 600 G2 Business Desktop",
+    description: "Complete business desktop solution with 19-inch monitor",
+    price: 28000,
+    specs: {
+      processor: "Intel Core i5",
+      memory: "8GB DDR4",
+      storage: "500GB HDD",
+      display: "19-inch Monitor",
+      graphics: "Intel Integrated Graphics",
+      ports: [
+        "USB 3.0",
+        "USB 2.0",
+        "DisplayPort",
+        "VGA",
+        "Audio ports",
+        "Ethernet"
+      ],
+      networking: "Gigabit Ethernet",
+      security: "TPM Security",
+      formFactor: "Small Form Factor",
+      expansion: ["PCIe x16", "PCIe x1", "Optional Serial Port"],
+      os: "Windows 10 Pro",
+      warranty: "1 Year Business Warranty"
+    }
+  },
   {
     id: 3,
     image: dell,
@@ -166,6 +233,7 @@ const products = [
       warranty: "1 Year Limited Warranty"
     }
   }
+  
 ];
 
 const HardwareStore = () => {
