@@ -20,10 +20,10 @@ const ContactSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // Combine country code and phone number
     const fullPhoneNumber = `${formData.countryCode}${formData.phone}`;
-    
+
     // Create the final data object to send to the backend
     const dataToSubmit = {
       ...formData,
@@ -32,7 +32,7 @@ const ContactSection = () => {
     };
 
     try {
-      const response = await axios.post('https://savannahinc.co.ke/api/feedback/', dataToSubmit);
+      const response = await axios.post('/api/feedback/', dataToSubmit);
       console.log(response.data);
       alert('Feedback submitted successfully');
       setFormData({
@@ -68,7 +68,7 @@ const ContactSection = () => {
             <h3>Kenya, Nairobi</h3>
             <p><span role="img" aria-label="map marker">📍</span> The Piano, Westlands, Kenya</p>
             <p><span role="img" aria-label="phone">📞</span> +254 793 704217</p>
-            <p><span role="img" aria-label="email">📧</span> info@savannahinc.co.ke</p>
+            <p><span role="img" aria-label="email">📧</span> info@savannah.co.ke</p>
             <p><span role="img" aria-label="clock">🕒</span> Monday - Friday: 9:00 AM - 5:00 PM</p>
           </div>
         </div>
@@ -116,17 +116,17 @@ const ContactSection = () => {
               <label htmlFor="phone">Phone Number*</label>
               <div className={styles.phoneInput}>
                 <select name="countryCode" value={formData.countryCode} onChange={handleChange}>
-                <option value="+254">Kenya (+254)</option>
-                <option value="+256">Uganda (+256)</option>
-                <option value="+255">Tanzania (+255)</option>
-                <option value="+250">Rwanda (+250)</option>
-                <option value="+257">Burundi (+257)</option>
-                <option value="+251">Ethiopia (+251)</option>
-                <option value="+211">South Sudan (+211)</option>
-                <option value="+27">South Africa (+27)</option>
-                <option value="+234">Nigeria (+234)</option>
-                <option value="+20">Egypt (+20)</option>
-                <option value="+971">UAE (+971)</option>
+                  <option value="+254">Kenya (+254)</option>
+                  <option value="+256">Uganda (+256)</option>
+                  <option value="+255">Tanzania (+255)</option>
+                  <option value="+250">Rwanda (+250)</option>
+                  <option value="+257">Burundi (+257)</option>
+                  <option value="+251">Ethiopia (+251)</option>
+                  <option value="+211">South Sudan (+211)</option>
+                  <option value="+27">South Africa (+27)</option>
+                  <option value="+234">Nigeria (+234)</option>
+                  <option value="+20">Egypt (+20)</option>
+                  <option value="+971">UAE (+971)</option>
                 </select>
                 <input
                   type="tel"
@@ -157,15 +157,15 @@ const ContactSection = () => {
       <div className={styles.mapContainer}>
         <h2 className={styles.mapHeading}>Find Us Here</h2>
         <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.529362042036!2d36.796308156905546!3d-1.255741903140399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f18a0d6e5b0f7%3A0x2b6d5a6f6f8e9b5e!2sSavannah%20Builders!5e0!3m2!1sen!2ske!4v1634392388359!5m2!1sen!2ske"
-        width="600"
-        height="450"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-        title="Google Maps"
-        className={styles.mapIframe}
-      ></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.529362042036!2d36.796308156905546!3d-1.255741903140399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f18a0d6e5b0f7%3A0x2b6d5a6f6f8e9b5e!2sSavannah%20Builders!5e0!3m2!1sen!2ske!4v1634392388359!5m2!1sen!2ske"
+          width="600"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          title="Google Maps"
+          className={styles.mapIframe}
+        ></iframe>
       </div>
     </section>
   );

@@ -69,11 +69,11 @@ const SoftwareModules = () => {
       <h2 className={styles.heading}>Software Modules</h2>
       <div className={styles.modulesContainer} ref={modulesRef}>
         <ModuleCard
-          title="IMS"
+          title="POS"
           description="Automate inventory tracking and management for streamlined operations."
           iconName="ImssIcon"
           iconColor="#FF5733"
-          link="/ims"
+          link="/pos"
         />
         <ModuleCard
           title="ERP"

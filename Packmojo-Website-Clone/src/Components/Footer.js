@@ -23,8 +23,8 @@ const Footer = () => {
               <li>Westlands, The Piano.</li>
               <li>Nairobi, Kenya</li>
               <li>Phone1: 0793704217</li>
-              <li>Phone2: 0726258462</li>
-              <li>Email: info@savannahinc.co.ke</li>
+              <li>Phone2: 0780395677</li>
+              <li>Email: info@savannah.co.ke</li>
             </ul>
           </div>
 
@@ -65,7 +65,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-6 col-12">
               <p className={styles.copyright}>
-                &copy; 2024 Savannah Inc, All Rights Reserved. | Privacy Policy | Terms
+                &copy; 2026 Savannah Inc, All Rights Reserved. | Privacy Policy | Terms
               </p>
             </div>
 

@@ -11,6 +11,7 @@ import project6Image from '../../Dataset/gold2.png';
 import project7Image from '../../Dataset/odoolearning.png';
 import project9Image from '../../Dataset/zoho1.png';
 import project10Image from "../../Dataset/infobip.png";
+import project11Image from '../../Dataset/passo.png';
 import './Projects2.css';
 
 const Projects1 = () => {
@@ -23,7 +24,8 @@ const Projects1 = () => {
     { id: 7, imageUrl: project7Image, description: 'Odoo' },
     { id: 8, imageUrl: project4Image, description: 'Tableau' },
     { id: 9, imageUrl: project9Image, description: 'Zoho' },
-    { id: 10, imageUrl: project10Image, description: 'Infobip' }
+    { id: 10, imageUrl: project10Image, description: 'Infobip' },
+    { id: 11, imageUrl: project11Image, description: 'Passo' }
   ];
 
   const sliderSettings = {

@@ -61,8 +61,8 @@ const CaseStudies = () => {
          <CaseStudyCard 
           logo={logo4}
           company="Slimways Hardware"
-          title="IMS Integration and Website Development"
-          description="Integration of an Inventory Management System (IMS) and a custom website."
+          title="POS Integration and Website Development"
+          description="Integration of a Point of Sale System and a custom website."
         />
        
         <CaseStudyCard 

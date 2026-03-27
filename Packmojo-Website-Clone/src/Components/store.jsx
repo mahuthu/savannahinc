@@ -13,6 +13,7 @@ import hp_deskjet_2320 from "../Dataset/HP-DeskJet-2320.jpg"
 import desktop from "../Dataset/desktop.webp"
 import pos_terminal from "../Dataset/POS1.png"
 import receipt_printer from "../Dataset/thermal1.jpg"
+import desktop1 from "../Dataset/desktop3.jpg"
 
 
 
@@ -51,6 +52,21 @@ const products = [
       paperRollDiameter: "83mm max",
       printResolution: "203 DPI",
       warranty: "1 Year Limited Warranty"
+    }
+  },
+  {
+    id: 12,
+    image: desktop1,
+    title: "HP Pro Tower 290 G9 PCI Desktop PC Bundle",
+    description: "Intel Core i5-13500, 16GB DDR4 RAM, 512GB SSD Storage, Intel UHD Graphics 770, plus keyboard & mouse.",
+    price: 68999,
+    specs: {
+      processor: "Intel Core i5-13500",
+      memory: "16GB DDR4",
+      storage: "512GB SSD",
+      graphics: "Intel UHD Graphics 770",
+      accessories: ["Keyboard", "Mouse"],
+      formFactor: "Tower"
     }
   },
 
@@ -126,6 +142,7 @@ const products = [
       warranty: "1 Year Business Warranty"
     }
   },
+
   {
     id: 3,
     image: dell,

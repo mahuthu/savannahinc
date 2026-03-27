@@ -9,7 +9,7 @@ import person4 from '../Dataset/person8.jpeg';
 import person5 from '../Dataset/person9.jpeg';
 import person6 from '../Dataset/person5.jpeg';
 import person7 from '../Dataset/person7.jpeg';
-import logoNathanDigital from "../Dataset/7.png";
+import logoNathanDigital from "../Dataset/afroprompt1.png";
 import backgroundImage from '../Dataset/bac7.jpg'; // Import your background image
 
 

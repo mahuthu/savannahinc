@@ -10,6 +10,7 @@ import project6Image from '../Dataset/gold.jpeg';
 import project7Image from '../Dataset/ODOO.jpeg';
 import project9Image from '../Dataset/zoho1.png';
 import project10Image from '../Dataset/infobip.png';
+import project11Image from '../Dataset/passo.png';
 
 const images = [
   project1Image,
@@ -21,6 +22,7 @@ const images = [
   project7Image,
   project9Image,
   project10Image,
+  project11Image,
 ];
 
 const ImageGallery = () => {
