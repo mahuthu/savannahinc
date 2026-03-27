@@ -1,0 +1,26 @@
+# Savannah Docker Compose
+version: '3.9'
+
+services:
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    volumes:
+      - ./backend/db.sqlite3:/app/db.sqlite3
+      - ./backend/media:/app/media
+    environment:
+      - DEBUG=False
+      - ALLOWED_HOSTS=savannahinc.co.ke,www.savannahinc.co.ke,20.250.163.236,localhost,127.0.0.1
+    ports:
+      - "8010:8000"
+
+  frontend:
+    build: ./Packmojo-Website-Clone
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "8011:80"
+
+volumes:
+  postgres_data:
