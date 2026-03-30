@@ -8,7 +8,7 @@ ENV NODE_OPTIONS=--openssl-legacy-provider
 
 # Install dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Build the app
 COPY . .
