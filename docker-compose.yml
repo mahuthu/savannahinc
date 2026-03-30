@@ -9,7 +9,7 @@ services:
       - ./backend/media:/app/media
     environment:
       - DEBUG=False
-      - ALLOWED_HOSTS=savannahinc.co.ke,www.savannahinc.co.ke,20.250.163.236,localhost,127.0.0.1
+      - ALLOWED_HOSTS=savannah.co.ke,www.savannah.co.ke,20.250.163.236,localhost,127.0.0.1
     ports:
       - "8010:8000"
 
